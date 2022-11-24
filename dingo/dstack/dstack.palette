@@ -2,7 +2,7 @@
     "modelData": {
         "fileType": "Palette",
         "repoService": "GitHub",
-        "repoBranch": "master",
+        "repoBranch": "metadata",
         "repo": "alxndrwllmsn/EAGLE-graph-repo",
         "filePath": "dingo/dstack/dstack.palette",
         "eagleVersion": "v4.5.5",
@@ -386,6 +386,14 @@
                     "event": false,
                     "type": "String",
                     "description": "The template parset to use for the parset creation."
+                },
+                {
+                    "Id": "83c396be-c7cd-40a2-97a4-575962beb5cd",
+                    "IdText": "metdata_json",
+                    "text": "Metadata JSON",
+                    "event": false,
+                    "type": "String",
+                    "description": "The JSON file that contains the metadata for each observation"
                 }
             ],
             "outputPorts": [
@@ -1159,6 +1167,14 @@
                     "event": false,
                     "type": "String",
                     "description": "The input file containing the list of files."
+                },
+                {
+                    "Id": "a73bc1ab-6daf-45df-8d6a-a1e58f669503",
+                    "IdText": "metadata_list",
+                    "text": "Metadata List",
+                    "event": false,
+                    "type": "String",
+                    "description": "Dummy input port"
                 }
             ],
             "outputPorts": [
