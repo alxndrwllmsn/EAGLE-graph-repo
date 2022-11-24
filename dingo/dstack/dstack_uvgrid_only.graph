@@ -2,7 +2,7 @@
     "modelData": {
         "fileType": "Graph",
         "repoService": "GitHub",
-        "repoBranch": "master",
+        "repoBranch": "metadata",
         "repo": "alxndrwllmsn/EAGLE-graph-repo",
         "filePath": "dingo/dstack/dstack_uvgrid_only.graph",
         "eagleVersion": "v4.5.5",
@@ -14,7 +14,7 @@
         "lastModifiedName": "",
         "lastModifiedEmail": "",
         "lastModifiedDatetime": 0,
-        "numLGNodes": 13
+        "numLGNodes": 15
     },
     "nodeDataArray": [
         {
@@ -119,6 +119,14 @@
                     "event": false,
                     "type": "String",
                     "description": "The input file containing the list of files."
+                },
+                {
+                    "Id": "7311cf42-f931-4024-b880-ebfc966d99cd",
+                    "IdText": "metadata_list",
+                    "text": "Metadata List",
+                    "event": false,
+                    "type": "String",
+                    "description": "Dummy input port"
                 }
             ],
             "outputPorts": [],
@@ -544,6 +552,42 @@
                     "precious": false,
                     "options": [],
                     "positional": false
+                },
+                {
+                    "text": "Input File",
+                    "name": "inFile",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The input file containing the list of files.",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Output File Name",
+                    "name": "outFilename",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The output file name",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Metadata List",
+                    "name": "metadata_list",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Dummy input port",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
                 }
             ],
             "outputAppFields": [],
@@ -564,8 +608,8 @@
             "key": -1,
             "text": "Create Parset",
             "description": "This App takes in a measurement set path, a template parset path and outputs a full parset.",
-            "x": -205.673414589002,
-            "y": -708.5985295472872,
+            "x": -190.19199812430526,
+            "y": -703.9541046078778,
             "width": 200,
             "height": 72,
             "collapsed": true,
@@ -593,6 +637,14 @@
                     "event": false,
                     "type": "String",
                     "description": "The template parset to use for the parset creation."
+                },
+                {
+                    "Id": "1389db33-991c-49a8-9a4e-fa0d1a32892a",
+                    "IdText": "metadata_json",
+                    "text": "Metadata JSON",
+                    "event": false,
+                    "type": "String",
+                    "description": "The JSON file containing the metadata for each observation"
                 }
             ],
             "outputPorts": [
@@ -1048,8 +1100,8 @@
             "key": -3,
             "text": "Memory",
             "description": "In-memory storage of intermediate data products",
-            "x": -382.3961633850914,
-            "y": -759.0093686600169,
+            "x": -303.4409394151381,
+            "y": -763.6537935994261,
             "width": 200,
             "height": 72,
             "collapsed": true,
@@ -1284,8 +1336,8 @@
             "key": -2,
             "text": "TemplateParset",
             "description": "A standard file on a filesystem mounted to the deployment machine",
-            "x": -416.479751963725,
-            "y": -626.893683026403,
+            "x": -390.70070302658456,
+            "y": -693.8859643481742,
             "width": 200,
             "height": 72,
             "collapsed": true,
@@ -2088,6 +2140,293 @@
             "outputApplicationType": "None",
             "outputApplicationKey": null,
             "outputApplicationDescription": ""
+        },
+        {
+            "category": "File",
+            "isGroup": false,
+            "color": "#2c2c2c",
+            "drawOrderHint": 0,
+            "key": -9,
+            "text": "Metadata List",
+            "description": "A standard file on a filesystem mounted to the deployment machine",
+            "x": -631.802636651679,
+            "y": -773.4564932895868,
+            "width": 200,
+            "height": 72,
+            "collapsed": true,
+            "flipPorts": false,
+            "streaming": false,
+            "precious": false,
+            "subject": null,
+            "expanded": false,
+            "git_url": "",
+            "sha": "",
+            "inputPorts": [],
+            "outputPorts": [
+                {
+                    "Id": "da5118f1-bbf8-448e-b7ad-d209ba64868d",
+                    "IdText": "metadata_list",
+                    "text": "Metadata List",
+                    "event": false,
+                    "type": "String",
+                    "description": "Dummy output port"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": 5,
+                    "defaultValue": "5",
+                    "description": "Estimated size of the data contained in this node",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Is this node the end of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Delete parent directory",
+                    "name": "delete_parent_directory",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Also delete the parent directory of this file when deleting the file itself",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Check file path exists",
+                    "name": "check_filepath_exists",
+                    "value": true,
+                    "defaultValue": "False",
+                    "description": "Perform a check to make sure the file path exists before proceeding with the application",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "File Path",
+                    "name": "filepath",
+                    "value": "MetadataList.txt",
+                    "defaultValue": "",
+                    "description": "Path to the file for this node",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Directory name",
+                    "name": "dirname",
+                    "value": "/scratch/director2193/awilliamson1/component-testing/data",
+                    "defaultValue": "",
+                    "description": "Path to the file for this node",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Streaming",
+                    "name": "streaming",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Specifies whether this data component streams input and output data",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Persist",
+                    "name": "persist",
+                    "value": true,
+                    "defaultValue": "True",
+                    "description": "Specifies whether this data component contains data that should not be deleted after execution",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
+        },
+        {
+            "category": "File",
+            "isGroup": false,
+            "color": "#2c2c2c",
+            "drawOrderHint": 0,
+            "key": -13,
+            "text": "metadata JSON",
+            "description": "A standard file on a filesystem mounted to the deployment machine",
+            "x": -387.19625650947006,
+            "y": -617.0941869961491,
+            "width": 200,
+            "height": 72,
+            "collapsed": true,
+            "flipPorts": false,
+            "streaming": false,
+            "precious": false,
+            "subject": null,
+            "expanded": false,
+            "git_url": "",
+            "sha": "",
+            "group": -10,
+            "inputPorts": [],
+            "outputPorts": [
+                {
+                    "Id": "d12c3526-3b56-48af-a64a-f1d0bac6a767",
+                    "IdText": "metadata_json",
+                    "text": "Metadata JSON",
+                    "event": false,
+                    "type": "String",
+                    "description": "Contains the required metadata for each observation"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": 5,
+                    "defaultValue": "5",
+                    "description": "Estimated size of the data contained in this node",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Is this node the end of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Delete parent directory",
+                    "name": "delete_parent_directory",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Also delete the parent directory of this file when deleting the file itself",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Check file path exists",
+                    "name": "check_filepath_exists",
+                    "value": true,
+                    "defaultValue": "False",
+                    "description": "Perform a check to make sure the file path exists before proceeding with the application",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "File Path",
+                    "name": "filepath",
+                    "value": "metadata.json",
+                    "defaultValue": "",
+                    "description": "Path to the file for this node",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Directory name",
+                    "name": "dirname",
+                    "value": "/software/projects/ja3/awilliamson1/code-dev/metadata/",
+                    "defaultValue": "",
+                    "description": "Path to the file for this node",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Streaming",
+                    "name": "streaming",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Specifies whether this data component streams input and output data",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Persist",
+                    "name": "persist",
+                    "value": true,
+                    "defaultValue": "True",
+                    "description": "Specifies whether this data component contains data that should not be deleted after execution",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         }
     ],
     "linkDataArray": [
@@ -2168,6 +2507,22 @@
             "fromPort": "1bca2aa6-c846-4602-a2df-aa500b846466",
             "to": -8,
             "toPort": "7ba33422-c431-4a80-a415-cb5683d2cb99",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -9,
+            "fromPort": "da5118f1-bbf8-448e-b7ad-d209ba64868d",
+            "to": -10,
+            "toPort": "7311cf42-f931-4024-b880-ebfc966d99cd",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -13,
+            "fromPort": "d12c3526-3b56-48af-a64a-f1d0bac6a767",
+            "to": -1,
+            "toPort": "1389db33-991c-49a8-9a4e-fa0d1a32892a",
             "loop_aware": "0",
             "closesLoop": false
         }
