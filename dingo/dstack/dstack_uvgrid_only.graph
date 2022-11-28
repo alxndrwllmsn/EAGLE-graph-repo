@@ -592,6 +592,30 @@
                     "precious": false,
                     "options": [],
                     "positional": false
+                },
+                {
+                    "text": "Input File",
+                    "name": "inFile",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The input file containing the list of files.",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Output File Name",
+                    "name": "outFilename",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The output file name",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
                 }
             ],
             "outputAppFields": [],
@@ -737,18 +761,6 @@
                     "defaultValue": "",
                     "description": "The location of the CASA Telemetry data",
                     "readonly": true,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Container Path",
-                    "name": "container_path",
-                    "value": "/software/projects/ja3/awilliamson1/containers-dev/dstack.sif",
-                    "defaultValue": "",
-                    "description": "The path to the container running the dstack package",
-                    "readonly": false,
                     "type": "String",
                     "precious": false,
                     "options": [],
@@ -1031,7 +1043,7 @@
                 {
                     "text": "Run Test",
                     "name": "echo_test",
-                    "value": true,
+                    "value": false,
                     "defaultValue": "false",
                     "description": "Echo the command instead of running the program",
                     "readonly": false,
@@ -1043,7 +1055,7 @@
                 {
                     "text": "Run Profiler",
                     "name": "run_profiler",
-                    "value": false,
+                    "value": true,
                     "defaultValue": "false",
                     "description": "Output profiling information to file",
                     "readonly": false,
