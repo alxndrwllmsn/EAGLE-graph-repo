@@ -588,6 +588,42 @@
                     "precious": false,
                     "options": [],
                     "positional": false
+                },
+                {
+                    "text": "Input File",
+                    "name": "inFile",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The input file containing the list of files.",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Metadata List",
+                    "name": "metadata_list",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Dummy input port",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Output File Name",
+                    "name": "outFilename",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The output file name",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
                 }
             ],
             "outputAppFields": [],
@@ -1035,7 +1071,7 @@
                 {
                     "text": "Run Test",
                     "name": "echo_test",
-                    "value": true,
+                    "value": false,
                     "defaultValue": "false",
                     "description": "Echo the command instead of running the program",
                     "readonly": false,
