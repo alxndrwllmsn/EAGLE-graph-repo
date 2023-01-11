@@ -5,11 +5,11 @@
         "repoBranch": "master",
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
-        "filePath": "test.palette",
+        "filePath": "dstack.palette",
         "repositoryUrl": "code-dev",
         "commitHash": "0.1",
         "downloadUrl": "",
-        "signature": "4af24c9c9aaa9c556f8d70cc4536a173ccd8a63aebaf9fe201e9e15bdba0ef5c"
+        "signature": "710f699ed42316fa04f245dd171a5ed39786b6de467af1df801a2e8ccea375ae"
     },
     "nodeDataArray": [
         {
@@ -587,6 +587,19 @@
                     "positional": false
                 },
                 {
+                    "text": "Metadata JSON",
+                    "name": "metadata_json",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The json file containing the required pointing",
+                    "type": "String",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
                     "text": "Output Parset",
                     "name": "parset_out",
                     "value": "",
@@ -604,7 +617,7 @@
             "repositoryUrl": null,
             "commitHash": null,
             "paletteDownloadUrl": "",
-            "dataHash": "4b15807df4acdf21d3919ab5c7b476b671d54860ac73da2d0587b091f9ee9749"
+            "dataHash": "d74bd9adf951434d89826ea3c144f7050cd6f30d8ac123d4485bff82f05c7b83"
         },
         {
             "category": "PythonApp",
@@ -621,337 +634,6 @@
             "outputApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-<<<<<<< HEAD
-            "outputApplicationKey": null,
-            "outputApplicationDescription": ""
-        },
-        {
-            "category": "PythonApp",
-            "key": -8,
-            "text": "GenericGather",
-            "description": "A placeholder APP to aid construction of new applications. This is mainly useful (and used) when starting a new workflow from scratch.",
-            "streaming": false,
-            "precious": false,
-            "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "bb5f78c",
-            "embedKey": -7,
-            "inputPorts": [
-                {
-                    "Id": "88378f43-4452-4b94-89c5-4f7d6051583d",
-                    "IdText": "input",
-                    "text": "input",
-                    "event": false,
-                    "type": "String",
-                    "description": ""
-                }
-            ],
-            "outputPorts": [],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "fields": [
-                {
-                    "text": "Application Class",
-                    "name": "appclass",
-                    "value": "dlg_dstack_components.apps.GenericGather",
-                    "defaultValue": "",
-                    "description": "Application class",
-                    "readonly": true,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "No. of CPUs",
-                    "name": "num_cpus",
-                    "value": 1,
-                    "defaultValue": "",
-                    "description": "Number of cores used",
-                    "readonly": true,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Execution Time",
-                    "name": "execution_time",
-                    "value": 5,
-                    "defaultValue": "",
-                    "description": "Estimated execution time",
-                    "readonly": true,
-                    "type": "Float",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": false,
-                    "defaultValue": "",
-                    "description": "Is this node the start of a group?",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                }
-            ],
-            "applicationArgs": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "inputApplicationKey": null,
-            "inputApplicationDescription": "",
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "outputApplicationKey": null,
-            "outputApplicationDescription": ""
-        },
-        {
-            "category": "PythonApp",
-            "key": -1,
-            "text": "Grid Stacking",
-            "description": "This App takes in a list of filenames and runs a subprocess that stacks all of the grids given as the input into a file given as the output.",
-            "streaming": false,
-            "precious": false,
-            "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "63d7df9",
-            "inputPorts": [
-                {
-                    "Id": "87ba5840-ed33-4aab-9cf4-02f7619b191d",
-                    "IdText": "fnamesIn",
-                    "text": "Filenames",
-                    "event": false,
-                    "type": "String",
-                    "description": ""
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "bf31c9be-e9c5-4e04-b563-4581c7713270",
-                    "IdText": "fileOut",
-                    "text": "Output File",
-                    "event": false,
-                    "type": "String",
-                    "description": ""
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "fields": [
-                {
-                    "text": "Application Class",
-                    "name": "appclass",
-                    "value": "dlg_dstack_components.apps.GridStacking",
-                    "defaultValue": "",
-                    "description": "Application class",
-                    "readonly": true,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "No. of CPUs",
-                    "name": "num_cpus",
-                    "value": 1,
-                    "defaultValue": "",
-                    "description": "Number of cores used",
-                    "readonly": true,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Execution Time",
-                    "name": "execution_time",
-                    "value": 5,
-                    "defaultValue": "",
-                    "description": "Estimated execution time",
-                    "readonly": true,
-                    "type": "Float",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": false,
-                    "defaultValue": "",
-                    "description": "Is this node the start of a group?",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                }
-            ],
-            "applicationArgs": [
-                {
-                    "text": "CASA Data Path",
-                    "name": "casadata",
-                    "value": "/scratch/director2193/awilliamson1/component-testing/casadata",
-                    "defaultValue": "",
-                    "description": "",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Container Path",
-                    "name": "container_path",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "The path to the container running the dstack package",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Run as Test",
-                    "name": "echo_test",
-                    "value": false,
-                    "defaultValue": "",
-                    "description": "Echo the command instead of running the program",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                }
-            ],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "inputApplicationKey": null,
-            "inputApplicationDescription": "",
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "outputApplicationKey": null,
-            "outputApplicationDescription": ""
-        },
-        {
-            "category": "PythonApp",
-            "key": -2,
-            "text": "Scatter Filenames",
-            "description": "This app takes in a file containing a list of paths (one path per line) and sends each via the output.",
-            "streaming": false,
-            "precious": false,
-            "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "63d7df9",
-            "inputPorts": [
-                {
-                    "Id": "cc48ed5d-42c8-4766-95fd-08589ccfadfb",
-                    "IdText": "inFile",
-                    "text": "Input File",
-                    "event": false,
-                    "type": "String",
-                    "description": "The input file containing the list of files."
-                },
-                {
-                    "Id": "a73bc1ab-6daf-45df-8d6a-a1e58f669503",
-                    "IdText": "metadata_list",
-                    "text": "Metadata List",
-                    "event": false,
-                    "type": "String",
-                    "description": "Dummy input port"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "ba959bd2-597a-42be-b02b-1efaf91073c1",
-                    "IdText": "outFilename",
-                    "text": "Output File Name",
-                    "event": false,
-                    "type": "String",
-                    "description": "The output file name"
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "fields": [
-                {
-                    "text": "Application Class",
-                    "name": "appclass",
-                    "value": "dlg_dstack_components.apps.ScatterFilenames",
-                    "defaultValue": "",
-                    "description": "Application class",
-                    "readonly": true,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "No. of CPUs",
-                    "name": "num_cpus",
-                    "value": 1,
-                    "defaultValue": "",
-                    "description": "Number of cores used",
-                    "readonly": true,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Execution Time",
-                    "name": "execution_time",
-                    "value": 5,
-                    "defaultValue": "",
-                    "description": "Estimated execution time",
-                    "readonly": true,
-                    "type": "Float",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": false,
-                    "defaultValue": "",
-                    "description": "Is this node the start of a group?",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                }
-            ],
-            "applicationArgs": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "inputApplicationKey": null,
-            "inputApplicationDescription": "",
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "outputApplicationKey": null,
-            "outputApplicationDescription": ""
-        },
-        {
-            "category": "PythonApp",
-            "key": -7,
-            "text": "Test Srun",
-            "description": "Tests that an srun app will run",
-            "streaming": false,
-            "precious": false,
-            "git_url": "",
-            "sha": "",
-=======
->>>>>>> master
             "inputPorts": [],
             "outputPorts": [],
             "inputLocalPorts": [],
@@ -1833,6 +1515,19 @@
                     "positional": false
                 },
                 {
+                    "text": "Metadata List",
+                    "name": "metadata_list",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The input file containing a list of metadata ( SB,Band,Beam)",
+                    "type": "String",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
                     "text": "Output File Name",
                     "name": "outFilename",
                     "value": "",
@@ -1850,7 +1545,7 @@
             "repositoryUrl": null,
             "commitHash": null,
             "paletteDownloadUrl": "",
-            "dataHash": "0675df5eeeeea2d9e97469393b3402a15275423510b3af8a86a707f3e62d2cb7"
+            "dataHash": "12b029bf7933dec3d89701e19352ddda8ae8a47041d1612db4592abf15d19cca"
         },
         {
             "category": "PythonApp",
