@@ -9,7 +9,7 @@
         "repositoryUrl": "code-dev",
         "commitHash": "0.1",
         "downloadUrl": "",
-        "signature": "710f699ed42316fa04f245dd171a5ed39786b6de467af1df801a2e8ccea375ae"
+        "signature": "26ae54f46c2ca185b7d18807e2f3b3210f3721bb57c18040cfde92510c5acc08"
     },
     "nodeDataArray": [
         {
@@ -298,6 +298,45 @@
                     "positional": false
                 },
                 {
+                    "text": "Schedule Block",
+                    "name": "sched_block",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The schedule block id (eg. SB11091) for the purpose of retrieving the pointing",
+                    "type": "String",
+                    "fieldType": "ApplicationArgument",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Band",
+                    "name": "band",
+                    "value": "A",
+                    "defaultValue": "A",
+                    "description": "The Band (A or B) for the purpose of retrieving the pointing",
+                    "type": "String",
+                    "fieldType": "ApplicationArgument",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Beam",
+                    "name": "beam",
+                    "value": "0",
+                    "defaultValue": "0",
+                    "description": "The Beam (as an integer) for the purpose of retrieving the pointing",
+                    "type": "Integer",
+                    "fieldType": "ApplicationArgument",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
                     "text": "Visibility Grid",
                     "name": "visgrid",
                     "value": "",
@@ -350,6 +389,19 @@
                     "positional": false
                 },
                 {
+                    "text": "Metadata JSON",
+                    "name": "metadata_json",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The json file containing the required pointing",
+                    "type": "String",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
                     "text": "Output Parset",
                     "name": "parset_out",
                     "value": "",
@@ -367,7 +419,7 @@
             "repositoryUrl": null,
             "commitHash": null,
             "paletteDownloadUrl": "",
-            "dataHash": "7779182e1b09855cec3fa2d72976edd603a28cb1eadf402c63f3d024cb47df91"
+            "dataHash": "09cd08235c5f5713ed4d3da8fb4be23f0c5118a1d84ab324f50b4813f98dcdda"
         },
         {
             "category": "PythonApp",
