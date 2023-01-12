@@ -16,7 +16,7 @@
         "lastModifiedName": "",
         "lastModifiedEmail": "",
         "lastModifiedDatetime": 0,
-        "numLGNodes": 15
+        "numLGNodes": 13
     },
     "nodeDataArray": [
         {
@@ -42,26 +42,28 @@
             "dataHash": "",
             "inputPorts": [
                 {
-                    "Id": "cf58b2cc-fb6e-461e-9b32-ee2272a6accc",
+                    "Id": "42bff939-a293-4418-bbf6-b52cdba1ebb2",
                     "IdText": "inFile",
                     "text": "Input File",
                     "event": false,
                     "type": "String",
-                    "description": "The input file containing the list of files."
+                    "description": "The input file containing the list of files.",
+                    "keyAttribute": false
                 },
                 {
-                    "Id": "7311cf42-f931-4024-b880-ebfc966d99cd",
+                    "Id": "6e6fc497-aef0-4d0a-8cd9-acdee8392420",
                     "IdText": "metadata_list",
                     "text": "Metadata List",
                     "event": false,
                     "type": "String",
-                    "description": "Dummy input port"
+                    "description": "The input file containing a list of metadata ( SB,Band,Beam)",
+                    "keyAttribute": false
                 }
             ],
             "outputPorts": [],
             "inputLocalPorts": [
                 {
-                    "Id": "c655c1b4-3097-412f-a1b0-617628e31f07",
+                    "Id": "28b750b7-0de7-4677-a53e-15637bcef04f",
                     "IdText": "outFilename",
                     "text": "Output File Name",
                     "event": false,
@@ -143,7 +145,7 @@
                 {
                     "text": "Execution Time",
                     "name": "execution_time",
-                    "value": 1,
+                    "value": 5,
                     "defaultValue": "5",
                     "description": "Estimated execution time",
                     "readonly": true,
@@ -193,6 +195,19 @@
                     "keyAttribute": false
                 },
                 {
+                    "text": "Metadata List",
+                    "name": "metadata_list",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The input file containing a list of metadata ( SB,Band,Beam)",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
                     "text": "Output File Name",
                     "name": "outFilename",
                     "value": "",
@@ -209,500 +224,8 @@
             "outputAppFields": [],
             "inputApplicationName": "Scatter Filenames",
             "inputApplicationType": "PythonApp",
-            "inputApplicationKey": -14,
+            "inputApplicationKey": -15,
             "inputApplicationDescription": "This app takes in a file containing a list of paths (one path per line) and sends each via the output.",
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "outputApplicationKey": null,
-            "outputApplicationDescription": ""
-        },
-        {
-            "category": "PythonApp",
-            "isGroup": false,
-            "color": "#0059a5",
-            "drawOrderHint": 0,
-            "key": -1,
-            "text": "Create Parset",
-            "description": "This App takes in a measurement set path, a template parset path and outputs a full parset.",
-            "x": -190.19199812430526,
-            "y": -703.9541046078778,
-            "width": 200,
-            "height": 72,
-            "collapsed": true,
-            "flipPorts": false,
-            "streaming": false,
-            "precious": false,
-            "subject": null,
-            "expanded": true,
-            "git_url": "",
-            "sha": "",
-            "group": -10,
-            "inputPorts": [
-                {
-                    "Id": "641133e5-d2d6-4223-ab90-7c7bc5e7ccfc",
-                    "IdText": "mSet",
-                    "text": "Measurement Set",
-                    "event": false,
-                    "type": "String",
-                    "description": "The filename of the input measurement set."
-                },
-                {
-                    "Id": "b7d395db-2be7-4342-b1b8-0782646105d7",
-                    "IdText": "parset",
-                    "text": "Parset",
-                    "event": false,
-                    "type": "String",
-                    "description": "The template parset to use for the parset creation."
-                },
-                {
-                    "Id": "1389db33-991c-49a8-9a4e-fa0d1a32892a",
-                    "IdText": "metadata_json",
-                    "text": "Metadata JSON",
-                    "event": false,
-                    "type": "String",
-                    "description": "The JSON file containing the metadata for each observation"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "176ff461-3dd5-469f-8eda-6a842a786bab",
-                    "IdText": "parset_out",
-                    "text": "Output Parset",
-                    "event": false,
-                    "type": "String",
-                    "description": "The parset to output"
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "fields": [
-                {
-                    "text": "Persist",
-                    "name": "persist",
-                    "value": false,
-                    "defaultValue": "false",
-                    "description": "Specifies whether this data component contains data that should not be deleted after execution",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Streaming",
-                    "name": "streaming",
-                    "value": false,
-                    "defaultValue": "false",
-                    "description": "Specifies whether this data component streams input and output data",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Application Class",
-                    "name": "appclass",
-                    "value": "dlg_dstack_components.apps.CreateParset",
-                    "defaultValue": "",
-                    "description": "Application class",
-                    "readonly": true,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "No. of CPUs",
-                    "name": "num_cpus",
-                    "value": 1,
-                    "defaultValue": "0",
-                    "description": "Number of cores used",
-                    "readonly": true,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Execution Time",
-                    "name": "execution_time",
-                    "value": 1,
-                    "defaultValue": "0",
-                    "description": "Estimated execution time",
-                    "readonly": true,
-                    "type": "Float",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": false,
-                    "defaultValue": "false",
-                    "description": "Is this node the start of a group?",
-                    "readonly": true,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                }
-            ],
-            "applicationArgs": [
-                {
-                    "text": "CASA Data Path",
-                    "name": "casadata",
-                    "value": "/scratch/director2193/awilliamson1/component-testing/casadata",
-                    "defaultValue": "",
-                    "description": "The location of the CASA Telemetry data",
-                    "readonly": true,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Container Path",
-                    "name": "container_path",
-                    "value": "/software/projects/ja3/awilliamson1/containers-dev/dstack.sif",
-                    "defaultValue": "",
-                    "description": "The path to the container running the dstack package",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Imager",
-                    "name": "imager",
-                    "value": "Cimager",
-                    "defaultValue": "",
-                    "description": "The imager to use",
-                    "readonly": true,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Name",
-                    "name": "name",
-                    "value": "image.dal_test.dumpgrid",
-                    "defaultValue": "",
-                    "description": "The name format to use",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Projection",
-                    "name": "projection",
-                    "value": "WProject",
-                    "defaultValue": "",
-                    "description": "The projection to use",
-                    "readonly": true,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Output Path",
-                    "name": "outpath",
-                    "value": ".",
-                    "defaultValue": "",
-                    "description": "The output path",
-                    "readonly": true,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Template Name",
-                    "name": "templateName",
-                    "value": "image.template",
-                    "defaultValue": "",
-                    "description": "The name template to use",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Extra Arguments",
-                    "name": "extra_args",
-                    "value": "Cniter=1 Cgain=0 freqframe=bary Channels=[108,3807] IrestFrequency=HI nchanpercore=4 nwriters=1",
-                    "defaultValue": "",
-                    "description": "A space separated list of arguments of the form argname=argvalue. Current extraArgs are Cniter, Cgain, freqframe, Channels, IrestFrequency, nchanpercore, and nwriters.",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Auto NCores",
-                    "name": "auto_ncore",
-                    "value": true,
-                    "defaultValue": "false",
-                    "description": "Automatically determine the number of channels per core from the SLURM_NTASKS environment variable",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Num Channels",
-                    "name": "nchannels",
-                    "value": 108,
-                    "defaultValue": "0",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Run Profiler",
-                    "name": "run_profiler",
-                    "value": false,
-                    "defaultValue": "on",
-                    "description": "Output profiling information to file",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                }
-            ],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "inputApplicationKey": null,
-            "inputApplicationDescription": "",
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "outputApplicationKey": null,
-            "outputApplicationDescription": ""
-        },
-        {
-            "category": "PythonApp",
-            "isGroup": false,
-            "color": "#0059a5",
-            "drawOrderHint": 0,
-            "key": -7,
-            "text": "First Pass Imaging",
-            "description": "Run's the askapsoft imager with the given parameter set, then writes the resultant filenames to the output to link with the next step.",
-            "x": 157.91544031587517,
-            "y": -731.0552029195948,
-            "width": 200,
-            "height": 72,
-            "collapsed": true,
-            "flipPorts": false,
-            "streaming": false,
-            "precious": false,
-            "subject": null,
-            "expanded": true,
-            "git_url": "",
-            "sha": "",
-            "group": -10,
-            "inputPorts": [
-                {
-                    "Id": "42a9c76a-e774-48bb-84d5-52cdf98b330f",
-                    "IdText": "parset",
-                    "text": "Parset",
-                    "event": false,
-                    "type": "String",
-                    "description": "The parset with which to run the imager"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "888e58ff-31f2-4543-82f0-24839f1c56e9",
-                    "IdText": "logfile",
-                    "text": "Log File",
-                    "event": false,
-                    "type": "String",
-                    "description": "The place to put all the logs"
-                },
-                {
-                    "Id": "b13e2fe1-a91e-47f3-b7c1-d236eee7e2ec",
-                    "IdText": "visgrid",
-                    "text": "Visibility Grid",
-                    "event": false,
-                    "type": "String",
-                    "description": "The output visibility grid"
-                },
-                {
-                    "Id": "57ebf873-20dd-41a9-804b-5536e632809c",
-                    "IdText": "psfgrid",
-                    "text": "PSFGrid",
-                    "event": false,
-                    "type": "String",
-                    "description": "The output psfgrid"
-                },
-                {
-                    "Id": "1bca2aa6-c846-4602-a2df-aa500b846466",
-                    "IdText": "pcfgrid",
-                    "text": "PCFGrid",
-                    "event": false,
-                    "type": "String",
-                    "description": "The output pcfgrid"
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "fields": [
-                {
-                    "text": "Persist",
-                    "name": "persist",
-                    "value": false,
-                    "defaultValue": "false",
-                    "description": "Specifies whether this data component contains data that should not be deleted after execution",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Streaming",
-                    "name": "streaming",
-                    "value": false,
-                    "defaultValue": "false",
-                    "description": "Specifies whether this data component streams input and output data",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Application Class",
-                    "name": "appclass",
-                    "value": "dlg_dstack_components.apps.FirstPassImaging",
-                    "defaultValue": "",
-                    "description": "Application class",
-                    "readonly": true,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "No. of CPUs",
-                    "name": "num_cpus",
-                    "value": 28,
-                    "defaultValue": "0",
-                    "description": "Number of cores used",
-                    "readonly": true,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Execution Time",
-                    "name": "execution_time",
-                    "value": 8,
-                    "defaultValue": "0",
-                    "description": "Estimated execution time",
-                    "readonly": true,
-                    "type": "Float",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": false,
-                    "defaultValue": "false",
-                    "description": "Is this node the start of a group?",
-                    "readonly": true,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "No. of Procs",
-                    "name": "num_of_procs",
-                    "value": 28,
-                    "defaultValue": "1",
-                    "description": "the number of processes to use for srun",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                }
-            ],
-            "applicationArgs": [
-                {
-                    "text": "Run Test",
-                    "name": "echo_test",
-                    "value": false,
-                    "defaultValue": "false",
-                    "description": "Echo the command instead of running the program",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Run Profiler",
-                    "name": "run_profiler",
-                    "value": false,
-                    "defaultValue": "false",
-                    "description": "Output profiling information to file",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Auto NCores",
-                    "name": "auto_ncore",
-                    "value": true,
-                    "defaultValue": "on",
-                    "description": "Automatically determine the number of channels per core from the SLURM_NTASKS environment variable",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Container Path",
-                    "name": "container_path",
-                    "value": "/scratch/director2193/awilliamson1/component-testing/yanda.sif",
-                    "defaultValue": "",
-                    "description": "The path to the container running the yandasoft stack",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                }
-            ],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "inputApplicationKey": null,
-            "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
             "outputApplicationKey": null,
@@ -717,8 +240,8 @@
             "key": -3,
             "text": "Memory",
             "description": "In-memory storage of intermediate data products",
-            "x": -303.4409394151381,
-            "y": -763.6537935994261,
+            "x": -312.4773299108302,
+            "y": -776.0788305310027,
             "width": 200,
             "height": 72,
             "collapsed": true,
@@ -1832,24 +1355,25 @@
         },
         {
             "category": "File",
+            "categoryType": "Data",
             "isGroup": false,
             "color": "#2c2c2c",
             "drawOrderHint": 0,
             "key": -9,
             "text": "Metadata List",
             "description": "A standard file on a filesystem mounted to the deployment machine",
-            "x": -631.802636651679,
-            "y": -773.4564932895868,
+            "x": -649.839724271242,
+            "y": -765.565267456028,
             "width": 200,
             "height": 72,
             "collapsed": true,
             "flipPorts": false,
-            "streaming": false,
-            "precious": false,
             "subject": null,
-            "expanded": false,
-            "git_url": "",
-            "sha": "",
+            "expanded": true,
+            "repositoryUrl": "",
+            "commitHash": "",
+            "paletteDownloadUrl": "",
+            "dataHash": "",
             "inputPorts": [],
             "outputPorts": [
                 {
@@ -1858,12 +1382,39 @@
                     "text": "Metadata List",
                     "event": false,
                     "type": "String",
-                    "description": "Dummy output port"
+                    "description": "Dummy output port",
+                    "keyAttribute": false
                 }
             ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "fields": [
+                {
+                    "text": "Persist",
+                    "name": "persist",
+                    "value": false,
+                    "defaultValue": "false",
+                    "description": "Specifies whether this data component contains data that should not be deleted after execution",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Streaming",
+                    "name": "streaming",
+                    "value": false,
+                    "defaultValue": "false",
+                    "description": "Specifies whether this data component streams input and output data",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
                 {
                     "text": "Data volume",
                     "name": "data_volume",
@@ -1874,7 +1425,8 @@
                     "type": "Float",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Group end",
@@ -1886,7 +1438,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Delete parent directory",
@@ -1898,7 +1451,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Check file path exists",
@@ -1910,7 +1464,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "File Path",
@@ -1922,7 +1477,8 @@
                     "type": "String",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Directory name",
@@ -1934,7 +1490,8 @@
                     "type": "String",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Streaming",
@@ -1946,7 +1503,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Persist",
@@ -1958,7 +1516,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 }
             ],
             "applicationArgs": [],
@@ -1975,6 +1534,7 @@
         },
         {
             "category": "File",
+            "categoryType": "Data",
             "isGroup": false,
             "color": "#2c2c2c",
             "drawOrderHint": 0,
@@ -1987,12 +1547,12 @@
             "height": 72,
             "collapsed": true,
             "flipPorts": false,
-            "streaming": false,
-            "precious": false,
             "subject": null,
-            "expanded": false,
-            "git_url": "",
-            "sha": "",
+            "expanded": true,
+            "repositoryUrl": "",
+            "commitHash": "",
+            "paletteDownloadUrl": "",
+            "dataHash": "",
             "group": -10,
             "inputPorts": [],
             "outputPorts": [
@@ -2002,12 +1562,39 @@
                     "text": "Metadata JSON",
                     "event": false,
                     "type": "String",
-                    "description": "Contains the required metadata for each observation"
+                    "description": "Contains the required metadata for each observation",
+                    "keyAttribute": false
                 }
             ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "fields": [
+                {
+                    "text": "Persist",
+                    "name": "persist",
+                    "value": false,
+                    "defaultValue": "false",
+                    "description": "Specifies whether this data component contains data that should not be deleted after execution",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Streaming",
+                    "name": "streaming",
+                    "value": false,
+                    "defaultValue": "false",
+                    "description": "Specifies whether this data component streams input and output data",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
                 {
                     "text": "Data volume",
                     "name": "data_volume",
@@ -2018,7 +1605,8 @@
                     "type": "Float",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Group end",
@@ -2030,7 +1618,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Delete parent directory",
@@ -2042,7 +1631,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Check file path exists",
@@ -2054,7 +1644,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "File Path",
@@ -2066,7 +1657,8 @@
                     "type": "String",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Directory name",
@@ -2078,7 +1670,8 @@
                     "type": "String",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Streaming",
@@ -2090,7 +1683,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Persist",
@@ -2102,10 +1696,451 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 }
             ],
             "applicationArgs": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
+        },
+        {
+            "category": "PythonApp",
+            "categoryType": "Application",
+            "isGroup": false,
+            "color": "#0059a5",
+            "drawOrderHint": 0,
+            "key": -14,
+            "text": "First Pass Imaging",
+            "description": "Run's the askapsoft imager with the given parameter set, then writes the resultant filenames to the output to link with the next step.",
+            "x": 204.45007043104326,
+            "y": -747.0211276747502,
+            "width": 200,
+            "height": 72,
+            "collapsed": true,
+            "flipPorts": false,
+            "subject": null,
+            "expanded": true,
+            "repositoryUrl": null,
+            "commitHash": null,
+            "paletteDownloadUrl": "https://raw.githubusercontent.com/alxndrwllmsn/EAGLE-graph-repo/e72f6803dcdf95fa3f4f7eda1990225ccb2953d9/dingo/dstack/dstack.palette",
+            "dataHash": "dce8ef70316961cd16004d384b3febde191616992474017955ea50b4f734c136",
+            "group": -10,
+            "inputPorts": [
+                {
+                    "Id": "b868345e-0119-49ce-a264-188d122eb653",
+                    "IdText": "parset",
+                    "text": "Parset",
+                    "event": false,
+                    "type": "String",
+                    "description": "The parset with which to run the imager",
+                    "keyAttribute": false
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "a5496ee8-dad2-49b8-bdf1-23ce41fea906",
+                    "IdText": "logfile",
+                    "text": "Log File",
+                    "event": false,
+                    "type": "String",
+                    "description": "The place to put all the logs",
+                    "keyAttribute": false
+                },
+                {
+                    "Id": "130f2b5e-8dff-4de6-8a25-6d1c681da87c",
+                    "IdText": "visgrid",
+                    "text": "Visibility Grid",
+                    "event": false,
+                    "type": "String",
+                    "description": "The output visibility grid",
+                    "keyAttribute": false
+                },
+                {
+                    "Id": "ec5c10d2-7dc1-4e26-ace3-69d18138792b",
+                    "IdText": "psfgrid",
+                    "text": "PSFGrid",
+                    "event": false,
+                    "type": "String",
+                    "description": "The output psfgrid",
+                    "keyAttribute": false
+                },
+                {
+                    "Id": "c7f03871-341f-4d2b-b550-39369870880e",
+                    "IdText": "pcfgrid",
+                    "text": "PCFGrid",
+                    "event": false,
+                    "type": "String",
+                    "description": "The output pcfgrid",
+                    "keyAttribute": false
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg_dstack_components.FirstPassImaging",
+                    "defaultValue": "dlg_dstack_components.FirstPassImaging",
+                    "description": "Import direction for application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": 8,
+                    "defaultValue": "5",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": 109,
+                    "defaultValue": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Is this node the start of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "No. of Procs",
+                    "name": "num_of_procs",
+                    "value": 109,
+                    "defaultValue": "1",
+                    "description": "the number of processes to use for srun",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                }
+            ],
+            "applicationArgs": [
+                {
+                    "text": "Run as Test",
+                    "name": "echo_test",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Echo the command instead of running the program",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Run Profiler",
+                    "name": "run_profiler",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Output profiling information to file",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Container Path",
+                    "name": "container_path",
+                    "value": "/scratch/director2193/awilliamson1/component-testing/yanda.sif",
+                    "defaultValue": "",
+                    "description": "The path to the container running the yandasoft stack",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
+        },
+        {
+            "category": "PythonApp",
+            "categoryType": "Application",
+            "isGroup": false,
+            "color": "#0059a5",
+            "drawOrderHint": 0,
+            "key": -7,
+            "text": "Create Parset",
+            "description": "This App takes in a measurement set path, a template parset path and outputs a full parset",
+            "x": -159.26464702055654,
+            "y": -732.3369931192512,
+            "width": 200,
+            "height": 72,
+            "collapsed": true,
+            "flipPorts": false,
+            "subject": null,
+            "expanded": true,
+            "repositoryUrl": null,
+            "commitHash": null,
+            "paletteDownloadUrl": "https://raw.githubusercontent.com/alxndrwllmsn/EAGLE-graph-repo/e72f6803dcdf95fa3f4f7eda1990225ccb2953d9/dingo/dstack/dstack.palette",
+            "dataHash": "d74bd9adf951434d89826ea3c144f7050cd6f30d8ac123d4485bff82f05c7b83",
+            "group": -10,
+            "inputPorts": [
+                {
+                    "Id": "03753b1c-61ba-4f97-8736-bf35b1c88293",
+                    "IdText": "mSet",
+                    "text": "Measurement Set",
+                    "event": false,
+                    "type": "Object.List",
+                    "description": "The filename of the input measurement set in a list with an index to be appended to the output.",
+                    "keyAttribute": false
+                },
+                {
+                    "Id": "81751c1d-c33b-473b-b5b7-fa9e4cde91f9",
+                    "IdText": "parset",
+                    "text": "Parset",
+                    "event": false,
+                    "type": "String",
+                    "description": "The template parset to use for the parset creation.",
+                    "keyAttribute": false
+                },
+                {
+                    "Id": "290b075e-0475-4fbd-90ce-fbb88266b22f",
+                    "IdText": "metadata_json",
+                    "text": "Metadata JSON",
+                    "event": false,
+                    "type": "String",
+                    "description": "The json file containing the required pointing",
+                    "keyAttribute": false
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "8edaf3ce-0976-4881-a2d1-1e0508d12c9c",
+                    "IdText": "parset_out",
+                    "text": "Output Parset",
+                    "event": false,
+                    "type": "String",
+                    "description": "The parset to output",
+                    "keyAttribute": false
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg_dstack_components.CreateParset",
+                    "defaultValue": "dlg_dstack_components.CreateParset",
+                    "description": "Import direction for application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": 1,
+                    "defaultValue": "5",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "defaultValue": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Is this node the start of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                }
+            ],
+            "applicationArgs": [
+                {
+                    "text": "CASA Data Path",
+                    "name": "casadata",
+                    "value": "/scratch/director2193/awilliamson1/component-testing/casadata",
+                    "defaultValue": "",
+                    "description": "The location of the CASA Telemetry data",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Container Path",
+                    "name": "container_path",
+                    "value": "/software/projects/ja3/awilliamson1/containers-dev/dstack.sif",
+                    "defaultValue": "",
+                    "description": "The path to the container running the dstack package",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Imager",
+                    "name": "imager",
+                    "value": "Cimager",
+                    "defaultValue": "Cimager",
+                    "description": "The imager to use",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Name",
+                    "name": "name",
+                    "value": "image.dal_test.dumpgrid",
+                    "defaultValue": "image.dal_test.dumpgrid",
+                    "description": "The name format to use",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Projection",
+                    "name": "projection",
+                    "value": "WProject",
+                    "defaultValue": "WProject",
+                    "description": "The projection to use",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Output Path",
+                    "name": "outpath",
+                    "value": ".",
+                    "defaultValue": "",
+                    "description": "The output path",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Template Name",
+                    "name": "templateName",
+                    "value": "image.template",
+                    "defaultValue": "image.template",
+                    "description": "The name template to use",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Extra Arguments",
+                    "name": "extra_args",
+                    "value": "Cniter=1 Cgain=0 freqframe=bary Channels=[108,3807] IrestFrequency=HI nchanpercore=1 nwriters=1",
+                    "defaultValue": "",
+                    "description": "A space separated list of arguments of the form argname=argvalue. Current extraArgs are Cniter, Cgain, freqframe, Channels, IrestFrequency, nchanpercore, and nwriters.",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Run Profiler",
+                    "name": "run_profiler",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Output profiling information to file",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                }
+            ],
             "inputAppFields": [],
             "outputAppFields": [],
             "inputApplicationName": "",
@@ -2123,88 +2158,7 @@
             "from": -11,
             "fromPort": "72361e09-df75-42c7-923c-92804b3a16a3",
             "to": -10,
-            "toPort": "cf58b2cc-fb6e-461e-9b32-ee2272a6accc",
-            "dataType": "String",
-            "loop_aware": "0",
-            "closesLoop": false
-        },
-        {
-            "from": -10,
-            "fromPort": "c655c1b4-3097-412f-a1b0-617628e31f07",
-            "to": -3,
-            "toPort": "d1922635-4ebe-4e8c-99ff-55c48704898c",
-            "dataType": "Object.List",
-            "loop_aware": "0",
-            "closesLoop": false
-        },
-        {
-            "from": -3,
-            "fromPort": "7afc089b-81f1-4598-b650-9ea5c1938ce8",
-            "to": -9,
-            "toPort": "3f426ba0-f025-47cc-b7d0-c1965d0a600f",
-            "dataType": "Object.List",
-            "loop_aware": "0",
-            "closesLoop": false
-        },
-        {
-            "from": -2,
-            "fromPort": "b4a50513-ef60-4a31-b088-f04f71c7e6aa",
-            "to": -9,
-            "toPort": "2707cf89-cd98-451d-a22d-17d6073353a3",
-            "dataType": "String",
-            "loop_aware": "0",
-            "closesLoop": false
-        },
-        {
-            "from": -9,
-            "fromPort": "b49b4a66-b26a-4e52-83ff-4af1c9e9aee7",
-            "to": -12,
-            "toPort": "12526780-e287-4cfc-a3b7-2ac16c7149d2",
-            "dataType": "String",
-            "loop_aware": "0",
-            "closesLoop": false
-        },
-        {
-            "from": -12,
-            "fromPort": "85a49599-2230-4088-bc49-93f9401b0415",
-            "to": -1,
-            "toPort": "7c1a9342-54a4-4781-81ec-60dd9d251bfc",
-            "dataType": "String",
-            "loop_aware": "0",
-            "closesLoop": false
-        },
-        {
-            "from": -1,
-            "fromPort": "76d1f5ec-2f87-40f9-845b-833a4a0d51c3",
-            "to": -4,
-            "toPort": "d9b78bc5-95da-4b2f-96db-6793afa5e67c",
-            "dataType": "String",
-            "loop_aware": "0",
-            "closesLoop": false
-        },
-        {
-            "from": -1,
-            "fromPort": "18b0e2c4-fded-43b2-89dc-fe7bf8d18523",
-            "to": -5,
-            "toPort": "23427a87-4c86-45be-b6d5-78781d0f59e8",
-            "dataType": "String",
-            "loop_aware": "0",
-            "closesLoop": false
-        },
-        {
-            "from": -1,
-            "fromPort": "6b7a046a-59c4-455d-b455-948da996e633",
-            "to": -6,
-            "toPort": "3c4cfa5f-7773-4188-9248-8fc970a6f6e8",
-            "dataType": "String",
-            "loop_aware": "0",
-            "closesLoop": false
-        },
-        {
-            "from": -1,
-            "fromPort": "829112dc-965f-42c6-a90b-bda5d3a09d2e",
-            "to": -8,
-            "toPort": "7ba33422-c431-4a80-a415-cb5683d2cb99",
+            "toPort": "42bff939-a293-4418-bbf6-b52cdba1ebb2",
             "dataType": "String",
             "loop_aware": "0",
             "closesLoop": false
@@ -2213,15 +2167,98 @@
             "from": -9,
             "fromPort": "da5118f1-bbf8-448e-b7ad-d209ba64868d",
             "to": -10,
-            "toPort": "7311cf42-f931-4024-b880-ebfc966d99cd",
+            "toPort": "6e6fc497-aef0-4d0a-8cd9-acdee8392420",
+            "dataType": "String",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -10,
+            "fromPort": "28b750b7-0de7-4677-a53e-15637bcef04f",
+            "to": -3,
+            "toPort": "d1922635-4ebe-4e8c-99ff-55c48704898c",
+            "dataType": "Object.List",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -14,
+            "fromPort": "a5496ee8-dad2-49b8-bdf1-23ce41fea906",
+            "to": -4,
+            "toPort": "d9b78bc5-95da-4b2f-96db-6793afa5e67c",
+            "dataType": "String",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -14,
+            "fromPort": "130f2b5e-8dff-4de6-8a25-6d1c681da87c",
+            "to": -5,
+            "toPort": "23427a87-4c86-45be-b6d5-78781d0f59e8",
+            "dataType": "String",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -14,
+            "fromPort": "ec5c10d2-7dc1-4e26-ace3-69d18138792b",
+            "to": -6,
+            "toPort": "3c4cfa5f-7773-4188-9248-8fc970a6f6e8",
+            "dataType": "String",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -14,
+            "fromPort": "c7f03871-341f-4d2b-b550-39369870880e",
+            "to": -8,
+            "toPort": "7ba33422-c431-4a80-a415-cb5683d2cb99",
+            "dataType": "String",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -12,
+            "fromPort": "85a49599-2230-4088-bc49-93f9401b0415",
+            "to": -14,
+            "toPort": "b868345e-0119-49ce-a264-188d122eb653",
+            "dataType": "String",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -3,
+            "fromPort": "7afc089b-81f1-4598-b650-9ea5c1938ce8",
+            "to": -7,
+            "toPort": "03753b1c-61ba-4f97-8736-bf35b1c88293",
+            "dataType": "Object.List",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -2,
+            "fromPort": "b4a50513-ef60-4a31-b088-f04f71c7e6aa",
+            "to": -7,
+            "toPort": "81751c1d-c33b-473b-b5b7-fa9e4cde91f9",
+            "dataType": "String",
             "loop_aware": "0",
             "closesLoop": false
         },
         {
             "from": -13,
             "fromPort": "d12c3526-3b56-48af-a64a-f1d0bac6a767",
-            "to": -1,
-            "toPort": "1389db33-991c-49a8-9a4e-fa0d1a32892a",
+            "to": -7,
+            "toPort": "290b075e-0475-4fbd-90ce-fbb88266b22f",
+            "dataType": "String",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -7,
+            "fromPort": "8edaf3ce-0976-4881-a2d1-1e0508d12c9c",
+            "to": -12,
+            "toPort": "12526780-e287-4cfc-a3b7-2ac16c7149d2",
+            "dataType": "String",
             "loop_aware": "0",
             "closesLoop": false
         }
