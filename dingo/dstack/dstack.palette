@@ -5,11 +5,11 @@
         "repoBranch": "master",
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
-        "filePath": "EAGLE-graph-repo/dingo/dstack/dstack.palette",
+        "filePath": "dstack.palette",
         "repositoryUrl": "code-dev",
         "commitHash": "0.1",
         "downloadUrl": "",
-        "signature": "87a0209e18386a07c5c79942d0eb2b791deb42c5c713b387b647fc0606c2d15d"
+        "signature": "26ae54f46c2ca185b7d18807e2f3b3210f3721bb57c18040cfde92510c5acc08"
     },
     "nodeDataArray": [
         {
@@ -1571,6 +1571,19 @@
                     "name": "metadata_list",
                     "value": "",
                     "defaultValue": "",
+                    "description": "The input file containing a list of metadata ( SB,Band,Beam)",
+                    "type": "String",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Metadata List",
+                    "name": "metadata_list",
+                    "value": "",
+                    "defaultValue": "",
                     "description": "The input file containing a list of metadata ( SB,Band,Beam) (this input is optional, delete if not in use)",
                     "type": "String",
                     "fieldType": "InputPort",
@@ -1597,7 +1610,7 @@
             "repositoryUrl": null,
             "commitHash": null,
             "paletteDownloadUrl": "",
-            "dataHash": "107276946db14c4b795e4871a9ecf53d45e166f8964ff764bbdb4e93894cbf82"
+            "dataHash": "12b029bf7933dec3d89701e19352ddda8ae8a47041d1612db4592abf15d19cca"
         },
         {
             "category": "PythonApp",
