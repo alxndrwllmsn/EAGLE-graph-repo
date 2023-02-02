@@ -7,7 +7,7 @@
         "readonly": true,
         "filePath": "dstack.palette",
         "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-        "commitHash": "200efe8",
+        "commitHash": "dac1569",
         "downloadUrl": "",
         "signature": "87a0209e18386a07c5c79942d0eb2b791deb42c5c713b387b647fc0606c2d15d"
     },
@@ -115,7 +115,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "200efe8",
+            "commitHash": "dac1569",
             "paletteDownloadUrl": "",
             "dataHash": "52c90309fec54b9826e7289b4a1c8e9e73210905dcd1cbf0730971552c47d67b"
         },
@@ -417,7 +417,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "200efe8",
+            "commitHash": "dac1569",
             "paletteDownloadUrl": "",
             "dataHash": "09cd08235c5f5713ed4d3da8fb4be23f0c5118a1d84ab324f50b4813f98dcdda"
         },
@@ -667,7 +667,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "200efe8",
+            "commitHash": "dac1569",
             "paletteDownloadUrl": "",
             "dataHash": "d74bd9adf951434d89826ea3c144f7050cd6f30d8ac123d4485bff82f05c7b83"
         },
@@ -865,7 +865,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "200efe8",
+            "commitHash": "dac1569",
             "paletteDownloadUrl": "",
             "dataHash": "1030b4786b3b9293c34f059954a265c014f1fb1656bb4ca0e9a8e97c45013a10"
         },
@@ -1011,7 +1011,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "200efe8",
+            "commitHash": "dac1569",
             "paletteDownloadUrl": "",
             "dataHash": "591a5e779bce5f419ab6d10921d6cc51231454f12235664c230341e1a43af592"
         },
@@ -1209,7 +1209,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "200efe8",
+            "commitHash": "dac1569",
             "paletteDownloadUrl": "",
             "dataHash": "dce8ef70316961cd16004d384b3febde191616992474017955ea50b4f734c136"
         },
@@ -1368,7 +1368,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "200efe8",
+            "commitHash": "dac1569",
             "paletteDownloadUrl": "",
             "dataHash": "ed8e7a9fd2b5ff812747f2d24673c279d78194e89fcf6f3238341fd2d43cd7f1"
         },
@@ -1475,7 +1475,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "200efe8",
+            "commitHash": "dac1569",
             "paletteDownloadUrl": "",
             "dataHash": "715360d0c338f97d0f22cc843814e55f5b7e71c705830607d8d49307bda80f09"
         },
@@ -1595,7 +1595,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "200efe8",
+            "commitHash": "dac1569",
             "paletteDownloadUrl": "",
             "dataHash": "107276946db14c4b795e4871a9ecf53d45e166f8964ff764bbdb4e93894cbf82"
         },
@@ -1676,7 +1676,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "200efe8",
+            "commitHash": "dac1569",
             "paletteDownloadUrl": "",
             "dataHash": "1ace4ff2bd672279d9a77932501eebdc8281bd2dbe4c7bcd2e7bd77d8ecad5b7"
         },
@@ -1757,7 +1757,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "200efe8",
+            "commitHash": "dac1569",
             "paletteDownloadUrl": "",
             "dataHash": "fe53dcf28bf79d7edfb3d1ba3224e534d5cd8d83aeaad697aabe9587367e3627"
         },
@@ -1851,7 +1851,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "200efe8",
+            "commitHash": "dac1569",
             "paletteDownloadUrl": "",
             "dataHash": "3835153070bc204a98ba7275c8b8dc62b2b86872bdadd7cd8dc238f83ff0e3c7"
         }
