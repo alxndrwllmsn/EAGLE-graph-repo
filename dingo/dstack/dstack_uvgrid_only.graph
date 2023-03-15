@@ -5,12 +5,14 @@
         "repoBranch": "adios_integration",
         "repo": "alxndrwllmsn/EAGLE-graph-repo",
         "filePath": "dingo/dstack/dstack_uvgrid_only.graph",
-        "eagleVersion": "v4.5.5",
-        "eagleCommitHash": "33c76f928cb1ba8317f079f74a48af13e50df702",
+        "eagleVersion": "v5.0.2",
+        "eagleCommitHash": "b2fd8a70ec57730ec1c00e1fdcbfb7b72e7e86f2",
         "schemaVersion": "OJS",
         "readonly": true,
-        "sha": "",
-        "gitUrl": "",
+        "repositoryUrl": "",
+        "commitHash": "",
+        "downloadUrl": "",
+        "signature": "",
         "lastModifiedName": "",
         "lastModifiedEmail": "",
         "lastModifiedDatetime": 0,
@@ -18,118 +20,56 @@
     },
     "nodeDataArray": [
         {
-            "category": "Comment",
-            "isGroup": false,
-            "color": "rgb(157 43 96)",
-            "drawOrderHint": 0,
-            "key": -25,
-            "text": "Comment",
-            "description": "A node that places a comment in the graph. The comment can be used to communicate important information or intention",
-            "x": 162.53545958775004,
-            "y": -441.1502306239035,
-            "width": 200,
-            "height": 72,
-            "collapsed": true,
-            "flipPorts": false,
-            "streaming": false,
-            "precious": false,
-            "subject": null,
-            "expanded": false,
-            "git_url": "",
-            "sha": "",
-            "inputPorts": [],
-            "outputPorts": [],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "fields": [],
-            "applicationArgs": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "inputApplicationKey": null,
-            "inputApplicationDescription": "",
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "outputApplicationKey": null,
-            "outputApplicationDescription": ""
-        },
-        {
-            "category": "Comment",
-            "isGroup": false,
-            "color": "rgb(157 43 96)",
-            "drawOrderHint": 0,
-            "key": -30,
-            "text": "Comment",
-            "description": "A node that places a comment in the graph. The comment can be used to communicate important information or intention",
-            "x": -254.35872071019614,
-            "y": -419.65673991734786,
-            "width": 200,
-            "height": 72,
-            "collapsed": true,
-            "flipPorts": false,
-            "streaming": false,
-            "precious": false,
-            "subject": null,
-            "expanded": false,
-            "git_url": "",
-            "sha": "",
-            "inputPorts": [],
-            "outputPorts": [],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "fields": [],
-            "applicationArgs": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "inputApplicationKey": null,
-            "inputApplicationDescription": "",
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "outputApplicationKey": null,
-            "outputApplicationDescription": ""
-        },
-        {
             "category": "Scatter",
+            "categoryType": "Construct",
             "isGroup": true,
             "color": "rgb(211 165 0)",
             "drawOrderHint": 0,
             "key": -10,
             "text": "Scatter",
             "description": "A construct that splits inputs into multiple parallel processing instances",
-            "x": -375.68507451662737,
+            "x": -372.6643271198777,
             "y": -875.0525328565201,
             "width": 955.3863565559299,
             "height": 394.27094776647743,
             "collapsed": false,
             "flipPorts": false,
-            "streaming": false,
-            "precious": false,
             "subject": null,
             "expanded": true,
-            "git_url": "",
-            "sha": "",
+            "repositoryUrl": "",
+            "commitHash": "",
+            "paletteDownloadUrl": "",
+            "dataHash": "",
             "inputPorts": [
                 {
-                    "Id": "cc48ed5d-42c8-4766-95fd-08589ccfadfb",
+                    "Id": "42bff939-a293-4418-bbf6-b52cdba1ebb2",
                     "IdText": "inFile",
                     "text": "Input File",
                     "event": false,
                     "type": "String",
-                    "description": "The input file containing the list of files."
+                    "description": "The input file containing the list of files.",
+                    "keyAttribute": false
+                },
+                {
+                    "Id": "6e6fc497-aef0-4d0a-8cd9-acdee8392420",
+                    "IdText": "metadata_list",
+                    "text": "Metadata List",
+                    "event": false,
+                    "type": "String",
+                    "description": "The input file containing a list of metadata ( SB,Band,Beam)",
+                    "keyAttribute": false
                 }
             ],
             "outputPorts": [],
             "inputLocalPorts": [
                 {
-                    "Id": "ba959bd2-597a-42be-b02b-1efaf91073c1",
+                    "Id": "28b750b7-0de7-4677-a53e-15637bcef04f",
                     "IdText": "outFilename",
                     "text": "Output File Name",
                     "event": false,
-                    "type": "String",
-                    "description": "The output file name"
+                    "type": "Object.List",
+                    "description": "The output file name and an index to go with it",
+                    "keyAttribute": false
                 }
             ],
             "outputLocalPorts": [],
@@ -144,7 +84,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Streaming",
@@ -156,7 +97,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Number of copies",
@@ -168,7 +110,8 @@
                     "type": "Integer",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Scatter axis",
@@ -180,7 +123,8 @@
                     "type": "String",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 }
             ],
             "applicationArgs": [],
@@ -188,50 +132,54 @@
                 {
                     "text": "Application Class",
                     "name": "appclass",
-                    "value": "dlg_dstack_components.apps.ScatterFilenames",
-                    "defaultValue": "",
-                    "description": "Application class",
+                    "value": "dlg_dstack_components.ScatterFilenames",
+                    "defaultValue": "dlg_dstack_components.ScatterFilenames",
+                    "description": "Import direction for application class",
                     "readonly": true,
                     "type": "String",
                     "precious": false,
                     "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "No. of CPUs",
-                    "name": "num_cpus",
-                    "value": 1,
-                    "defaultValue": "",
-                    "description": "Number of cores used",
-                    "readonly": true,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Execution Time",
                     "name": "execution_time",
-                    "value": 1,
-                    "defaultValue": "",
+                    "value": 5,
+                    "defaultValue": "5",
                     "description": "Estimated execution time",
                     "readonly": true,
                     "type": "Float",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "defaultValue": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
                     "value": false,
-                    "defaultValue": "",
+                    "defaultValue": "False",
                     "description": "Is this node the start of a group?",
-                    "readonly": true,
+                    "readonly": false,
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Input File",
@@ -243,19 +191,34 @@
                     "type": "String",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Metadata List",
+                    "name": "metadata_list",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The input file containing a list of metadata ( SB,Band,Beam)",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Output File Name",
                     "name": "outFilename",
                     "value": "",
                     "defaultValue": "",
-                    "description": "The output file name",
+                    "description": "The output file name and an index to go with it",
                     "readonly": false,
-                    "type": "String",
+                    "type": "Object.List",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Input File",
@@ -267,16 +230,30 @@
                     "type": "String",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Metadata List",
+                    "name": "metadata_list",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The input file containing a list of metadata ( SB,Band,Beam)",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Output File Name",
                     "name": "outFilename",
                     "value": "",
                     "defaultValue": "",
-                    "description": "The output file name",
+                    "description": "The output file name and an index to go with it",
                     "readonly": false,
-                    "type": "String",
+                    "type": "Object.List",
                     "precious": false,
                     "options": [],
                     "positional": false
@@ -645,7 +622,7 @@
             "outputAppFields": [],
             "inputApplicationName": "Scatter Filenames",
             "inputApplicationType": "PythonApp",
-            "inputApplicationKey": -39,
+            "inputApplicationKey": -15,
             "inputApplicationDescription": "This app takes in a file containing a list of paths (one path per line) and sends each via the output.",
             "outputApplicationName": "",
             "outputApplicationType": "None",
@@ -856,24 +833,25 @@
         },
         {
             "category": "Memory",
+            "categoryType": "Data",
             "isGroup": false,
             "color": "#2c2c2c",
             "drawOrderHint": 0,
             "key": -3,
             "text": "Memory",
             "description": "In-memory storage of intermediate data products",
-            "x": -382.3961633850914,
-            "y": -759.0093686600169,
+            "x": -312.4773299108302,
+            "y": -776.0788305310027,
             "width": 200,
             "height": 72,
             "collapsed": true,
             "flipPorts": false,
-            "streaming": false,
-            "precious": false,
             "subject": null,
             "expanded": true,
-            "git_url": "",
-            "sha": "",
+            "repositoryUrl": "",
+            "commitHash": "",
+            "paletteDownloadUrl": "",
+            "dataHash": "",
             "group": -10,
             "inputPorts": [
                 {
@@ -881,8 +859,9 @@
                     "IdText": "dummy",
                     "text": "dummy",
                     "event": false,
-                    "type": "String",
-                    "description": "Dummy input port"
+                    "type": "Object.List",
+                    "description": "Dummy input port",
+                    "keyAttribute": false
                 }
             ],
             "outputPorts": [
@@ -891,8 +870,9 @@
                     "IdText": "dummy",
                     "text": "dummy",
                     "event": false,
-                    "type": "String",
-                    "description": "Dummy output port"
+                    "type": "Object.List",
+                    "description": "Dummy output port",
+                    "keyAttribute": false
                 }
             ],
             "inputLocalPorts": [],
@@ -908,7 +888,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Streaming",
@@ -920,7 +901,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Data volume",
@@ -932,7 +914,8 @@
                     "type": "Float",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Group end",
@@ -944,7 +927,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 }
             ],
             "applicationArgs": [],
@@ -961,24 +945,25 @@
         },
         {
             "category": "File",
+            "categoryType": "Data",
             "isGroup": false,
             "color": "#2c2c2c",
             "drawOrderHint": 0,
             "key": -11,
             "text": "MeasurementSetList",
             "description": "A standard file on a filesystem mounted to the deployment machine",
-            "x": -629.9144325536678,
-            "y": -855.4935760814775,
+            "x": -649.9823572083516,
+            "y": -849.323911601588,
             "width": 200,
             "height": 72,
             "collapsed": true,
             "flipPorts": false,
-            "streaming": false,
-            "precious": false,
             "subject": null,
             "expanded": true,
-            "git_url": "",
-            "sha": "",
+            "repositoryUrl": "",
+            "commitHash": "",
+            "paletteDownloadUrl": "",
+            "dataHash": "",
             "inputPorts": [],
             "outputPorts": [
                 {
@@ -987,7 +972,8 @@
                     "text": "Filename",
                     "event": false,
                     "type": "String",
-                    "description": "Dummy output port"
+                    "description": "Dummy output port",
+                    "keyAttribute": false
                 }
             ],
             "inputLocalPorts": [],
@@ -1003,7 +989,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Streaming",
@@ -1015,7 +1002,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Data volume",
@@ -1027,7 +1015,8 @@
                     "type": "Float",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Group end",
@@ -1039,7 +1028,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Check file path exists",
@@ -1051,7 +1041,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "File Path",
@@ -1063,7 +1054,8 @@
                     "type": "String",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Directory name",
@@ -1075,7 +1067,8 @@
                     "type": "String",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 }
             ],
             "applicationArgs": [],
@@ -1092,24 +1085,25 @@
         },
         {
             "category": "File",
+            "categoryType": "Data",
             "isGroup": false,
             "color": "#2c2c2c",
             "drawOrderHint": 0,
             "key": -2,
             "text": "TemplateParset",
             "description": "A standard file on a filesystem mounted to the deployment machine",
-            "x": -416.479751963725,
-            "y": -626.893683026403,
+            "x": -390.70070302658456,
+            "y": -693.8859643481742,
             "width": 200,
             "height": 72,
             "collapsed": true,
             "flipPorts": false,
-            "streaming": false,
-            "precious": false,
             "subject": null,
             "expanded": true,
-            "git_url": "",
-            "sha": "",
+            "repositoryUrl": "",
+            "commitHash": "",
+            "paletteDownloadUrl": "",
+            "dataHash": "",
             "group": -10,
             "inputPorts": [],
             "outputPorts": [
@@ -1119,7 +1113,8 @@
                     "text": "Filename",
                     "event": false,
                     "type": "String",
-                    "description": "Dummy output port"
+                    "description": "Dummy output port",
+                    "keyAttribute": false
                 }
             ],
             "inputLocalPorts": [],
@@ -1135,7 +1130,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Streaming",
@@ -1147,7 +1143,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Data volume",
@@ -1159,7 +1156,8 @@
                     "type": "Float",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Group end",
@@ -1171,7 +1169,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Check file path exists",
@@ -1183,7 +1182,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "File Path",
@@ -1195,7 +1195,8 @@
                     "type": "String",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Directory name",
@@ -1207,7 +1208,8 @@
                     "type": "String",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 }
             ],
             "applicationArgs": [],
@@ -1224,24 +1226,25 @@
         },
         {
             "category": "File",
+            "categoryType": "Data",
             "isGroup": false,
             "color": "#2c2c2c",
             "drawOrderHint": 0,
             "key": -12,
             "text": "Parset",
             "description": "A standard file on a filesystem mounted to the deployment machine",
-            "x": -35.35352765722425,
-            "y": -701.7266859724298,
+            "x": -3.6356799913529594,
+            "y": -707.768180765929,
             "width": 200,
             "height": 72,
             "collapsed": true,
             "flipPorts": false,
-            "streaming": false,
-            "precious": false,
             "subject": null,
             "expanded": true,
-            "git_url": "",
-            "sha": "",
+            "repositoryUrl": "",
+            "commitHash": "",
+            "paletteDownloadUrl": "",
+            "dataHash": "",
             "group": -10,
             "inputPorts": [
                 {
@@ -1250,7 +1253,8 @@
                     "text": "Filename",
                     "event": false,
                     "type": "String",
-                    "description": "Input file object"
+                    "description": "Input file object",
+                    "keyAttribute": false
                 }
             ],
             "outputPorts": [
@@ -1260,7 +1264,8 @@
                     "text": "Filename",
                     "event": false,
                     "type": "String",
-                    "description": ""
+                    "description": "",
+                    "keyAttribute": false
                 }
             ],
             "inputLocalPorts": [],
@@ -1276,7 +1281,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Streaming",
@@ -1288,7 +1294,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Data volume",
@@ -1300,7 +1307,8 @@
                     "type": "Float",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Group end",
@@ -1312,7 +1320,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Check file path exists",
@@ -1324,7 +1333,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "File Path",
@@ -1336,7 +1346,8 @@
                     "type": "String",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Directory name",
@@ -1348,7 +1359,8 @@
                     "type": "String",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 }
             ],
             "applicationArgs": [],
@@ -1365,24 +1377,25 @@
         },
         {
             "category": "File",
+            "categoryType": "Data",
             "isGroup": false,
             "color": "#2c2c2c",
             "drawOrderHint": 0,
             "key": -4,
             "text": "Log File",
             "description": "A generic Data drop, whose functionality can be provided by an arbitrary class, as specified in the 'dataclass' component parameter",
-            "x": 391.4116311770185,
+            "x": 392.92200487539327,
             "y": -808.2949376976159,
             "width": 200,
             "height": 72,
             "collapsed": true,
             "flipPorts": false,
-            "streaming": false,
-            "precious": false,
             "subject": null,
             "expanded": true,
-            "git_url": "",
-            "sha": "",
+            "repositoryUrl": "",
+            "commitHash": "",
+            "paletteDownloadUrl": "",
+            "dataHash": "",
             "group": -10,
             "inputPorts": [
                 {
@@ -1391,7 +1404,8 @@
                     "text": "LogFile",
                     "event": false,
                     "type": "String",
-                    "description": "Dummy input port"
+                    "description": "Dummy input port",
+                    "keyAttribute": false
                 }
             ],
             "outputPorts": [
@@ -1401,7 +1415,8 @@
                     "text": "LogFile",
                     "event": false,
                     "type": "Object",
-                    "description": "Dummy output port"
+                    "description": "Dummy output port",
+                    "keyAttribute": false
                 }
             ],
             "inputLocalPorts": [],
@@ -1417,7 +1432,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Streaming",
@@ -1429,7 +1445,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Data Class",
@@ -1441,7 +1458,8 @@
                     "type": "String",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Data volume",
@@ -1453,7 +1471,8 @@
                     "type": "Float",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Group end",
@@ -1465,7 +1484,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Order ID",
@@ -1477,7 +1497,8 @@
                     "type": "Integer",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "File Path",
@@ -1489,7 +1510,8 @@
                     "type": "String",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Directory Name",
@@ -1501,7 +1523,8 @@
                     "type": "String",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 }
             ],
             "applicationArgs": [],
@@ -1518,24 +1541,25 @@
         },
         {
             "category": "Memory",
+            "categoryType": "Data",
             "isGroup": false,
             "color": "#2c2c2c",
             "drawOrderHint": 0,
             "key": -5,
             "text": "Grid",
             "description": "A generic Data drop, whose functionality can be provided by an arbitrary class, as specified in the 'dataclass' component parameter",
-            "x": 391.0354777132707,
+            "x": 395.5665988083952,
             "y": -732.6064971914826,
             "width": 200,
             "height": 72,
             "collapsed": true,
             "flipPorts": false,
-            "streaming": false,
-            "precious": false,
             "subject": null,
             "expanded": true,
-            "git_url": "",
-            "sha": "",
+            "repositoryUrl": "",
+            "commitHash": "",
+            "paletteDownloadUrl": "",
+            "dataHash": "",
             "group": -10,
             "inputPorts": [
                 {
@@ -1544,7 +1568,8 @@
                     "text": "grid",
                     "event": false,
                     "type": "String",
-                    "description": "Dummy input port"
+                    "description": "Dummy input port",
+                    "keyAttribute": false
                 }
             ],
             "outputPorts": [
@@ -1554,7 +1579,8 @@
                     "text": "grid",
                     "event": false,
                     "type": "String",
-                    "description": "Dummy output port"
+                    "description": "Dummy output port",
+                    "keyAttribute": false
                 }
             ],
             "inputLocalPorts": [],
@@ -1570,7 +1596,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Streaming",
@@ -1582,7 +1609,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Data Class",
@@ -1594,7 +1622,8 @@
                     "type": "String",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Data volume",
@@ -1606,7 +1635,8 @@
                     "type": "Float",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Group end",
@@ -1618,7 +1648,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Order ID",
@@ -1630,7 +1661,8 @@
                     "type": "Integer",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 }
             ],
             "applicationArgs": [],
@@ -1647,24 +1679,25 @@
         },
         {
             "category": "Memory",
+            "categoryType": "Data",
             "isGroup": false,
             "color": "#2c2c2c",
             "drawOrderHint": 0,
             "key": -6,
             "text": "Grid",
             "description": "A generic Data drop, whose functionality can be provided by an arbitrary class, as specified in the 'dataclass' component parameter",
-            "x": 388.283170785775,
+            "x": 392.8142918808995,
             "y": -678.9365121053155,
             "width": 200,
             "height": 72,
             "collapsed": true,
             "flipPorts": false,
-            "streaming": false,
-            "precious": false,
             "subject": null,
             "expanded": true,
-            "git_url": "",
-            "sha": "",
+            "repositoryUrl": "",
+            "commitHash": "",
+            "paletteDownloadUrl": "",
+            "dataHash": "",
             "group": -10,
             "inputPorts": [
                 {
@@ -1673,7 +1706,8 @@
                     "text": "grid",
                     "event": false,
                     "type": "String",
-                    "description": "Dummy input port"
+                    "description": "Dummy input port",
+                    "keyAttribute": false
                 }
             ],
             "outputPorts": [
@@ -1683,7 +1717,8 @@
                     "text": "grid",
                     "event": false,
                     "type": "String",
-                    "description": "Dummy output port"
+                    "description": "Dummy output port",
+                    "keyAttribute": false
                 }
             ],
             "inputLocalPorts": [],
@@ -1699,7 +1734,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Streaming",
@@ -1711,7 +1747,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Data Class",
@@ -1723,7 +1760,8 @@
                     "type": "String",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Data volume",
@@ -1735,7 +1773,8 @@
                     "type": "Float",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Group end",
@@ -1747,7 +1786,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Order ID",
@@ -1759,7 +1799,8 @@
                     "type": "Integer",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 }
             ],
             "applicationArgs": [],
@@ -1776,24 +1817,25 @@
         },
         {
             "category": "Memory",
+            "categoryType": "Data",
             "isGroup": false,
             "color": "#2c2c2c",
             "drawOrderHint": 0,
             "key": -8,
             "text": "Grid",
             "description": "A generic Data drop, whose functionality can be provided by an arbitrary class, as specified in the 'dataclass' component parameter",
-            "x": 392.4116311770186,
-            "y": -607.3765319904263,
+            "x": 395.43237857376823,
+            "y": -605.8661582920515,
             "width": 200,
             "height": 72,
             "collapsed": true,
             "flipPorts": false,
-            "streaming": false,
-            "precious": false,
             "subject": null,
             "expanded": true,
-            "git_url": "",
-            "sha": "",
+            "repositoryUrl": "",
+            "commitHash": "",
+            "paletteDownloadUrl": "",
+            "dataHash": "",
             "group": -10,
             "inputPorts": [
                 {
@@ -1802,7 +1844,8 @@
                     "text": "grid",
                     "event": false,
                     "type": "String",
-                    "description": "Dummy input port"
+                    "description": "Dummy input port",
+                    "keyAttribute": false
                 }
             ],
             "outputPorts": [
@@ -1812,7 +1855,8 @@
                     "text": "grid",
                     "event": false,
                     "type": "String",
-                    "description": "Dummy output port"
+                    "description": "Dummy output port",
+                    "keyAttribute": false
                 }
             ],
             "inputLocalPorts": [],
@@ -1828,7 +1872,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Streaming",
@@ -1840,7 +1885,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Data Class",
@@ -1852,7 +1898,8 @@
                     "type": "String",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Data volume",
@@ -1864,7 +1911,8 @@
                     "type": "Float",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Group end",
@@ -1876,7 +1924,8 @@
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Order ID",
@@ -1888,7 +1937,8 @@
                     "type": "Integer",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 }
             ],
             "applicationArgs": [],
@@ -1917,29 +1967,399 @@
             "height": 72,
             "collapsed": true,
             "flipPorts": false,
-            "streaming": false,
-            "precious": false,
             "subject": null,
-            "expanded": false,
-            "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "63d7df9",
+            "expanded": true,
+            "repositoryUrl": "",
+            "commitHash": "",
+            "paletteDownloadUrl": "",
+            "dataHash": "",
+            "inputPorts": [],
+            "outputPorts": [
+                {
+                    "Id": "da5118f1-bbf8-448e-b7ad-d209ba64868d",
+                    "IdText": "metadata_list",
+                    "text": "Metadata List",
+                    "event": false,
+                    "type": "String",
+                    "description": "Dummy output port",
+                    "keyAttribute": false
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Persist",
+                    "name": "persist",
+                    "value": false,
+                    "defaultValue": "false",
+                    "description": "Specifies whether this data component contains data that should not be deleted after execution",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Streaming",
+                    "name": "streaming",
+                    "value": false,
+                    "defaultValue": "false",
+                    "description": "Specifies whether this data component streams input and output data",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": 5,
+                    "defaultValue": "5",
+                    "description": "Estimated size of the data contained in this node",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Is this node the end of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Delete parent directory",
+                    "name": "delete_parent_directory",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Also delete the parent directory of this file when deleting the file itself",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Check file path exists",
+                    "name": "check_filepath_exists",
+                    "value": true,
+                    "defaultValue": "False",
+                    "description": "Perform a check to make sure the file path exists before proceeding with the application",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "File Path",
+                    "name": "filepath",
+                    "value": "MetadataList.txt",
+                    "defaultValue": "",
+                    "description": "Path to the file for this node",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Directory name",
+                    "name": "dirname",
+                    "value": "/scratch/director2193/awilliamson1/component-testing/data",
+                    "defaultValue": "",
+                    "description": "Path to the file for this node",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Streaming",
+                    "name": "streaming",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Specifies whether this data component streams input and output data",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Persist",
+                    "name": "persist",
+                    "value": true,
+                    "defaultValue": "True",
+                    "description": "Specifies whether this data component contains data that should not be deleted after execution",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                }
+            ],
+            "applicationArgs": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
+        },
+        {
+            "category": "File",
+            "categoryType": "Data",
+            "isGroup": false,
+            "color": "#2c2c2c",
+            "drawOrderHint": 0,
+            "key": -13,
+            "text": "metadata JSON",
+            "description": "A standard file on a filesystem mounted to the deployment machine",
+            "x": -387.19625650947006,
+            "y": -617.0941869961491,
+            "width": 200,
+            "height": 72,
+            "collapsed": true,
+            "flipPorts": false,
+            "subject": null,
+            "expanded": true,
+            "repositoryUrl": "",
+            "commitHash": "",
+            "paletteDownloadUrl": "",
+            "dataHash": "",
+            "group": -10,
+            "inputPorts": [],
+            "outputPorts": [
+                {
+                    "Id": "d12c3526-3b56-48af-a64a-f1d0bac6a767",
+                    "IdText": "metadata_json",
+                    "text": "Metadata JSON",
+                    "event": false,
+                    "type": "String",
+                    "description": "Contains the required metadata for each observation",
+                    "keyAttribute": false
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Persist",
+                    "name": "persist",
+                    "value": false,
+                    "defaultValue": "false",
+                    "description": "Specifies whether this data component contains data that should not be deleted after execution",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Streaming",
+                    "name": "streaming",
+                    "value": false,
+                    "defaultValue": "false",
+                    "description": "Specifies whether this data component streams input and output data",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": 5,
+                    "defaultValue": "5",
+                    "description": "Estimated size of the data contained in this node",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Is this node the end of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Delete parent directory",
+                    "name": "delete_parent_directory",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Also delete the parent directory of this file when deleting the file itself",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Check file path exists",
+                    "name": "check_filepath_exists",
+                    "value": true,
+                    "defaultValue": "False",
+                    "description": "Perform a check to make sure the file path exists before proceeding with the application",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "File Path",
+                    "name": "filepath",
+                    "value": "metadata.json",
+                    "defaultValue": "",
+                    "description": "Path to the file for this node",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Directory name",
+                    "name": "dirname",
+                    "value": "/software/projects/ja3/awilliamson1/code-dev/metadata/",
+                    "defaultValue": "",
+                    "description": "Path to the file for this node",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Streaming",
+                    "name": "streaming",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Specifies whether this data component streams input and output data",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Persist",
+                    "name": "persist",
+                    "value": true,
+                    "defaultValue": "True",
+                    "description": "Specifies whether this data component contains data that should not be deleted after execution",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                }
+            ],
+            "applicationArgs": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
+        },
+        {
+            "category": "PythonApp",
+            "categoryType": "Application",
+            "isGroup": false,
+            "color": "#0059a5",
+            "drawOrderHint": 0,
+            "key": -1,
+            "text": "Create Parset",
+            "description": "This App takes in a measurement set path, a template parset path and outputs a full parset",
+            "x": -168.403107486931,
+            "y": -721.8769078475688,
+            "width": 200,
+            "height": 72,
+            "collapsed": true,
+            "flipPorts": false,
+            "subject": null,
+            "expanded": true,
+            "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
+            "commitHash": "008f13b",
+            "paletteDownloadUrl": "https://raw.githubusercontent.com/alxndrwllmsn/EAGLE-graph-repo/5b46a6dbb7f0c751557dfd83dca2de1a5963d19d/dingo/dstack/dstack.palette",
+            "dataHash": "8ecb8b4e211681a27c4f3080deeff132e819733b9d269fe66c558d0b12ddd834",
             "group": -10,
             "inputPorts": [
                 {
-                    "Id": "819b79e0-b1d5-4694-a91b-80fb86a0400b",
+                    "Id": "283d6196-5d3b-4e9e-bd9b-b6acfa13de44",
                     "IdText": "mSet",
                     "text": "Measurement Set",
                     "event": false,
-                    "type": "String",
-                    "description": "The filename of the input measurement set."
+                    "type": "Object.List",
+                    "description": "The filename of the input measurement set in a list with an index to be appended to the output.",
+                    "keyAttribute": false
                 },
                 {
-                    "Id": "ad3c6eb6-32b0-41d1-b7fc-15dd4497d48a",
+                    "Id": "a2ae046f-f5ae-4f53-b449-4525ba27feec",
                     "IdText": "parset",
                     "text": "Parset",
                     "event": false,
                     "type": "String",
-                    "description": "The template parset to use for the parset creation."
+                    "description": "The template parset to use for the parset creation.",
+                    "keyAttribute": false
+                },
+                {
+                    "Id": "337faea4-68ee-404b-8ae8-bd8448b8290d",
+                    "IdText": "metadata_json",
+                    "text": "Metadata JSON",
+                    "event": false,
+                    "type": "String",
+                    "description": "The json file containing the required pointing",
+                    "keyAttribute": false
                 }
             ],
             "outputPorts": [
@@ -1949,7 +2369,8 @@
                     "text": "Output Parset",
                     "event": false,
                     "type": "String",
-                    "description": "The parset to output"
+                    "description": "The parset to output",
+                    "keyAttribute": false
                 }
             ],
             "inputLocalPorts": [],
@@ -1958,9 +2379,9 @@
                 {
                     "text": "Application Class",
                     "name": "appclass",
-                    "value": "dlg_dstack_components.apps.CreateParset",
-                    "defaultValue": "",
-                    "description": "Application class",
+                    "value": "dlg_dstack_components.CreateParset",
+                    "defaultValue": "dlg_dstack_components.CreateParset",
+                    "description": "Import direction for application class",
                     "readonly": true,
                     "type": "String",
                     "precious": false,
@@ -1982,26 +2403,41 @@
                 {
                     "text": "Execution Time",
                     "name": "execution_time",
-                    "value": 5,
-                    "defaultValue": "",
+                    "value": 1,
+                    "defaultValue": "5",
                     "description": "Estimated execution time",
                     "readonly": true,
                     "type": "Float",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "defaultValue": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
                     "value": false,
-                    "defaultValue": "",
+                    "defaultValue": "False",
                     "description": "Is this node the start of a group?",
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 }
             ],
             "applicationArgs": [
@@ -2015,55 +2451,60 @@
                     "type": "String",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Container Path",
                     "name": "container_path",
-                    "value": "/scratch/director2193/awilliamson1/component-testing/dstack.sif",
+                    "value": "/software/projects/ja3/awilliamson1/containers-dev/dstack.sif",
                     "defaultValue": "",
                     "description": "The path to the container running the dstack package",
                     "readonly": false,
                     "type": "String",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Imager",
                     "name": "imager",
                     "value": "Cimager",
-                    "defaultValue": "",
+                    "defaultValue": "Cimager",
                     "description": "The imager to use",
                     "readonly": false,
                     "type": "String",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Name",
                     "name": "name",
                     "value": "image.dal_test.dumpgrid",
-                    "defaultValue": "",
+                    "defaultValue": "image.dal_test.dumpgrid",
                     "description": "The name format to use",
                     "readonly": false,
                     "type": "String",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Projection",
                     "name": "projection",
                     "value": "WProject",
-                    "defaultValue": "",
+                    "defaultValue": "WProject",
                     "description": "The projection to use",
                     "readonly": false,
                     "type": "String",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Output Path",
@@ -2075,55 +2516,265 @@
                     "type": "String",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Template Name",
                     "name": "templateName",
                     "value": "image.template",
-                    "defaultValue": "",
+                    "defaultValue": "image.template",
                     "description": "The name template to use",
                     "readonly": false,
                     "type": "String",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
                     "text": "Extra Arguments",
                     "name": "extra_args",
-                    "value": "Cniter=1 Cgain=0 freqframe=bary Channels=[108,3807] IrestFrequency=HI nchanpercore=4 nwriters=1",
+                    "value": "Cniter=1 Cgain=0 freqframe=bary Channels=[108,3807] IrestFrequency=HI nchanpercore=1 nwriters=1",
                     "defaultValue": "",
                     "description": "A space separated list of arguments of the form argname=argvalue. Current extraArgs are Cniter, Cgain, freqframe, Channels, IrestFrequency, nchanpercore, and nwriters.",
                     "readonly": false,
                     "type": "String",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
-                    "text": "Auto NCores",
-                    "name": "auto_ncores",
+                    "text": "Run Profiler",
+                    "name": "run_profiler",
                     "value": false,
-                    "defaultValue": "",
-                    "description": "Automatically determine the number of channels per core from the SLURM_NTASKS environment variable",
+                    "defaultValue": "False",
+                    "description": "Output profiling information to file",
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
                 },
                 {
-                    "text": "Num Channels",
-                    "name": "nchannels",
-                    "value": 0,
-                    "defaultValue": "0",
-                    "description": "The number of channels in the input dataset",
+                    "text": "Auto NCore",
+                    "name": "auto_ncore",
+                    "value": true,
+                    "defaultValue": "False",
+                    "description": "use slurm ntask-per-node environment variable to set the nchanpercore argument",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
+        },
+        {
+            "category": "PythonApp",
+            "categoryType": "Application",
+            "isGroup": false,
+            "color": "#0059a5",
+            "drawOrderHint": 0,
+            "key": -7,
+            "text": "First Pass Imaging",
+            "description": "Run's the askapsoft imager with the given parameter set, then writes the resultant filenames to the output to link with the next step.",
+            "x": 207.94911052869955,
+            "y": -744.6383741681923,
+            "width": 200,
+            "height": 72,
+            "collapsed": true,
+            "flipPorts": false,
+            "subject": null,
+            "expanded": true,
+            "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
+            "commitHash": "008f13b",
+            "paletteDownloadUrl": "https://raw.githubusercontent.com/alxndrwllmsn/EAGLE-graph-repo/5b46a6dbb7f0c751557dfd83dca2de1a5963d19d/dingo/dstack/dstack.palette",
+            "dataHash": "6e7e810037fd8790a5ada56445695dc23b8b998e4c0cfb3b191e303e34e0514b",
+            "group": -10,
+            "inputPorts": [
+                {
+                    "Id": "6c2208b5-3022-4727-99a0-07a6b28ab003",
+                    "IdText": "parset",
+                    "text": "Parset",
+                    "event": false,
+                    "type": "String",
+                    "description": "The parset with which to run the imager",
+                    "keyAttribute": false
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "b9762d6d-89c5-4ec0-8fd4-2791c6e678ba",
+                    "IdText": "logfile",
+                    "text": "Log File",
+                    "event": false,
+                    "type": "String",
+                    "description": "The place to put all the logs",
+                    "keyAttribute": false
+                },
+                {
+                    "Id": "6c9d32f2-4193-44c5-b388-ed066d200a30",
+                    "IdText": "visgrid",
+                    "text": "Visibility Grid",
+                    "event": false,
+                    "type": "String",
+                    "description": "The output visibility grid",
+                    "keyAttribute": false
+                },
+                {
+                    "Id": "1d78043a-a39a-48fc-bc53-54e59e818b87",
+                    "IdText": "psfgrid",
+                    "text": "PSFGrid",
+                    "event": false,
+                    "type": "String",
+                    "description": "The output psfgrid",
+                    "keyAttribute": false
+                },
+                {
+                    "Id": "5f2c72fc-cdda-4b1e-9ef7-8c0b86308167",
+                    "IdText": "pcfgrid",
+                    "text": "PCFGrid",
+                    "event": false,
+                    "type": "String",
+                    "description": "The output pcfgrid",
+                    "keyAttribute": false
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg_dstack_components.FirstPassImaging",
+                    "defaultValue": "dlg_dstack_components.FirstPassImaging",
+                    "description": "Import direction for application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": 8,
+                    "defaultValue": "5",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": 108,
+                    "defaultValue": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Is this node the start of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "No. of Procs",
+                    "name": "num_of_procs",
+                    "value": 108,
+                    "defaultValue": "1",
+                    "description": "the number of processes to use for srun",
                     "readonly": false,
                     "type": "Integer",
                     "precious": false,
                     "options": [],
-                    "positional": false
+                    "positional": false,
+                    "keyAttribute": false
+                }
+            ],
+            "applicationArgs": [
+                {
+                    "text": "Run as Test",
+                    "name": "echo_test",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Echo the command instead of running the program",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Run Profiler",
+                    "name": "run_profiler",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Output profiling information to file",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Container Path",
+                    "name": "container_path",
+                    "value": "/scratch/director2193/awilliamson1/component-testing/yanda.sif",
+                    "defaultValue": "",
+                    "description": "The path to the container running the yandasoft stack",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Auto NCore",
+                    "name": "auto_ncore",
+                    "value": true,
+                    "defaultValue": "False",
+                    "description": "use slurm ntask-per-node environment variable to set the srun ntasks parameter",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
                 }
             ],
             "inputAppFields": [],
@@ -2140,18 +2791,65 @@
     ],
     "linkDataArray": [
         {
-            "from": -10,
-            "fromPort": "ba959bd2-597a-42be-b02b-1efaf91073c1",
-            "to": -3,
-            "toPort": "d1922635-4ebe-4e8c-99ff-55c48704898c",
+            "from": -11,
+            "fromPort": "72361e09-df75-42c7-923c-92804b3a16a3",
+            "to": -10,
+            "toPort": "42bff939-a293-4418-bbf6-b52cdba1ebb2",
+            "dataType": "String",
             "loop_aware": "0",
             "closesLoop": false
         },
         {
-            "from": -11,
-            "fromPort": "72361e09-df75-42c7-923c-92804b3a16a3",
+            "from": -9,
+            "fromPort": "da5118f1-bbf8-448e-b7ad-d209ba64868d",
             "to": -10,
-            "toPort": "cc48ed5d-42c8-4766-95fd-08589ccfadfb",
+            "toPort": "6e6fc497-aef0-4d0a-8cd9-acdee8392420",
+            "dataType": "String",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -10,
+            "fromPort": "28b750b7-0de7-4677-a53e-15637bcef04f",
+            "to": -3,
+            "toPort": "d1922635-4ebe-4e8c-99ff-55c48704898c",
+            "dataType": "Object.List",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -3,
+            "fromPort": "7afc089b-81f1-4598-b650-9ea5c1938ce8",
+            "to": -1,
+            "toPort": "283d6196-5d3b-4e9e-bd9b-b6acfa13de44",
+            "dataType": "Object.List",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -2,
+            "fromPort": "b4a50513-ef60-4a31-b088-f04f71c7e6aa",
+            "to": -1,
+            "toPort": "a2ae046f-f5ae-4f53-b449-4525ba27feec",
+            "dataType": "String",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -13,
+            "fromPort": "d12c3526-3b56-48af-a64a-f1d0bac6a767",
+            "to": -1,
+            "toPort": "337faea4-68ee-404b-8ae8-bd8448b8290d",
+            "dataType": "String",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -1,
+            "fromPort": "bbaf94ee-4a25-44a9-af78-1d2a6ca795c0",
+            "to": -12,
+            "toPort": "12526780-e287-4cfc-a3b7-2ac16c7149d2",
+            "dataType": "String",
             "loop_aware": "0",
             "closesLoop": false
         },
@@ -2159,39 +2857,44 @@
             "from": -12,
             "fromPort": "85a49599-2230-4088-bc49-93f9401b0415",
             "to": -7,
-            "toPort": "42a9c76a-e774-48bb-84d5-52cdf98b330f",
-            "loop_aware": "1",
+            "toPort": "6c2208b5-3022-4727-99a0-07a6b28ab003",
+            "dataType": "String",
+            "loop_aware": "0",
             "closesLoop": false
         },
         {
             "from": -7,
-            "fromPort": "888e58ff-31f2-4543-82f0-24839f1c56e9",
+            "fromPort": "b9762d6d-89c5-4ec0-8fd4-2791c6e678ba",
             "to": -4,
             "toPort": "d9b78bc5-95da-4b2f-96db-6793afa5e67c",
-            "loop_aware": "1",
+            "dataType": "String",
+            "loop_aware": "0",
             "closesLoop": false
         },
         {
             "from": -7,
-            "fromPort": "b13e2fe1-a91e-47f3-b7c1-d236eee7e2ec",
+            "fromPort": "6c9d32f2-4193-44c5-b388-ed066d200a30",
             "to": -5,
             "toPort": "23427a87-4c86-45be-b6d5-78781d0f59e8",
+            "dataType": "String",
             "loop_aware": "0",
             "closesLoop": false
         },
         {
             "from": -7,
-            "fromPort": "57ebf873-20dd-41a9-804b-5536e632809c",
+            "fromPort": "1d78043a-a39a-48fc-bc53-54e59e818b87",
             "to": -6,
             "toPort": "3c4cfa5f-7773-4188-9248-8fc970a6f6e8",
+            "dataType": "String",
             "loop_aware": "0",
             "closesLoop": false
         },
         {
             "from": -7,
-            "fromPort": "1bca2aa6-c846-4602-a2df-aa500b846466",
+            "fromPort": "5f2c72fc-cdda-4b1e-9ef7-8c0b86308167",
             "to": -8,
             "toPort": "7ba33422-c431-4a80-a415-cb5683d2cb99",
+            "dataType": "String",
             "loop_aware": "0",
             "closesLoop": false
         },
