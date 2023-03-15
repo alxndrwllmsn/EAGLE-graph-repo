@@ -804,6 +804,45 @@
                     "options": [],
                     "positional": false,
                     "keyAttribute": false
+                },
+                {
+                    "text": "Input File",
+                    "name": "inFile",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The input file containing the list of files.",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Metadata List",
+                    "name": "metadata_list",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The input file containing a list of metadata ( SB,Band,Beam)",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Output File Name",
+                    "name": "outFilename",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The output file name and an index to go with it",
+                    "readonly": false,
+                    "type": "Object.List",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
                 }
             ],
             "outputAppFields": [],
@@ -2458,7 +2497,7 @@
                 {
                     "text": "Extra Arguments",
                     "name": "extra_args",
-                    "value": "Cniter=1 Cgain=0 freqframe=bary Channels=[108,3807] IrestFrequency=HI nchanpercore=1 nwriters=1",
+                    "value": "Cniter=1 Cgain=0 freqframe=bary Channels=[108,6387] IrestFrequency=HI nchanpercore=1 nwriters=1",
                     "defaultValue": "",
                     "description": "A space separated list of arguments of the form argname=argvalue. Current extraArgs are Cniter, Cgain, freqframe, Channels, IrestFrequency, nchanpercore, and nwriters.",
                     "readonly": false,
@@ -2484,7 +2523,7 @@
                 {
                     "text": "Auto NCore",
                     "name": "auto_ncore",
-                    "value": false,
+                    "value": true,
                     "defaultValue": "False",
                     "description": "use slurm ntask-per-node environment variable to set the nchanpercore argument",
                     "readonly": false,
@@ -2522,7 +2561,7 @@
             "collapsed": true,
             "flipPorts": false,
             "subject": null,
-            "expanded": false,
+            "expanded": true,
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
             "commitHash": "1b2e132",
             "paletteDownloadUrl": "https://raw.githubusercontent.com/alxndrwllmsn/EAGLE-graph-repo/701e5e26b5ed4d5c05eb5534347eae4af56cdd22/dingo/dstack/dstack.palette",
@@ -2609,7 +2648,7 @@
                 {
                     "text": "No. of CPUs",
                     "name": "num_cpus",
-                    "value": 1,
+                    "value": 108,
                     "defaultValue": "1",
                     "description": "Number of cores used",
                     "readonly": true,
@@ -2635,7 +2674,7 @@
                 {
                     "text": "No. of Procs",
                     "name": "num_of_procs",
-                    "value": 1,
+                    "value": 108,
                     "defaultValue": "1",
                     "description": "the number of processes to use for srun",
                     "readonly": false,
