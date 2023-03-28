@@ -7,9 +7,9 @@
         "readonly": true,
         "filePath": "dstack.palette",
         "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-        "commitHash": "1b2e132",
+        "commitHash": "89a1060",
         "downloadUrl": "",
-        "signature": "3cbd005bf0152b52ad5c1c6e442f76c6c032d32f5e14bc9adb27985ad93b5f02"
+        "signature": "9ccda2879481e2c3a15a9f052fe644a8d9d30b21df02b1d11705535fd6aca2ae"
     },
     "nodeDataArray": [
         {
@@ -115,7 +115,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "1b2e132",
+            "commitHash": "89a1060",
             "paletteDownloadUrl": "",
             "dataHash": "52c90309fec54b9826e7289b4a1c8e9e73210905dcd1cbf0730971552c47d67b"
         },
@@ -443,7 +443,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "1b2e132",
+            "commitHash": "89a1060",
             "paletteDownloadUrl": "",
             "dataHash": "691770e58745439fdb5d64ee9f868ec89f79c5f3ccc4145610d2f3f8358cc8d3"
         },
@@ -706,7 +706,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "1b2e132",
+            "commitHash": "89a1060",
             "paletteDownloadUrl": "",
             "dataHash": "8ecb8b4e211681a27c4f3080deeff132e819733b9d269fe66c558d0b12ddd834"
         },
@@ -850,19 +850,6 @@
                     "positional": false
                 },
                 {
-                    "text": "Container Path",
-                    "name": "container_path",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "The path to the container running the yandasoft stack",
-                    "type": "String",
-                    "fieldType": "ApplicationArgument",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
                     "text": "Log File",
                     "name": "logfile",
                     "value": "",
@@ -917,9 +904,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "1b2e132",
+            "commitHash": "89a1060",
             "paletteDownloadUrl": "",
-            "dataHash": "2673ee919692fb53c7a1c7a1c173ae616e1d781e6529dd4e9cd4b6e3017440bf"
+            "dataHash": "d3e0fb0e901ebd79e7d93b2b4b9069ef6bd5822351ac12f8acc334818cd783f4"
         },
         {
             "category": "File",
@@ -1063,7 +1050,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "1b2e132",
+            "commitHash": "89a1060",
             "paletteDownloadUrl": "",
             "dataHash": "591a5e779bce5f419ab6d10921d6cc51231454f12235664c230341e1a43af592"
         },
@@ -1194,19 +1181,6 @@
                     "positional": false
                 },
                 {
-                    "text": "Container Path",
-                    "name": "container_path",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "The path to the container running the yandasoft stack",
-                    "type": "String",
-                    "fieldType": "ApplicationArgument",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
                     "text": "Auto NCore",
                     "name": "auto_ncore",
                     "value": "False",
@@ -1274,9 +1248,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "1b2e132",
+            "commitHash": "89a1060",
             "paletteDownloadUrl": "",
-            "dataHash": "6e7e810037fd8790a5ada56445695dc23b8b998e4c0cfb3b191e303e34e0514b"
+            "dataHash": "617de168042f048db28d7e4a8874d9190b6fa921c3931e7def6a2437e1678456"
         },
         {
             "category": "PythonApp",
@@ -1433,7 +1407,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "1b2e132",
+            "commitHash": "89a1060",
             "paletteDownloadUrl": "",
             "dataHash": "ed8e7a9fd2b5ff812747f2d24673c279d78194e89fcf6f3238341fd2d43cd7f1"
         },
@@ -1540,7 +1514,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "1b2e132",
+            "commitHash": "89a1060",
             "paletteDownloadUrl": "",
             "dataHash": "715360d0c338f97d0f22cc843814e55f5b7e71c705830607d8d49307bda80f09"
         },
@@ -1660,7 +1634,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "1b2e132",
+            "commitHash": "89a1060",
             "paletteDownloadUrl": "",
             "dataHash": "107276946db14c4b795e4871a9ecf53d45e166f8964ff764bbdb4e93894cbf82"
         },
@@ -1741,7 +1715,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "1b2e132",
+            "commitHash": "89a1060",
             "paletteDownloadUrl": "",
             "dataHash": "1ace4ff2bd672279d9a77932501eebdc8281bd2dbe4c7bcd2e7bd77d8ecad5b7"
         },
@@ -1822,7 +1796,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "1b2e132",
+            "commitHash": "89a1060",
             "paletteDownloadUrl": "",
             "dataHash": "fe53dcf28bf79d7edfb3d1ba3224e534d5cd8d83aeaad697aabe9587367e3627"
         },
@@ -1916,7 +1890,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "1b2e132",
+            "commitHash": "89a1060",
             "paletteDownloadUrl": "",
             "dataHash": "3835153070bc204a98ba7275c8b8dc62b2b86872bdadd7cd8dc238f83ff0e3c7"
         }
