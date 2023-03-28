@@ -2,7 +2,7 @@
     "modelData": {
         "fileType": "Graph",
         "repoService": "GitHub",
-        "repoBranch": "auto_ncore",
+        "repoBranch": "runtime_args",
         "repo": "alxndrwllmsn/EAGLE-graph-repo",
         "filePath": "dingo/dstack/dstack_stacking_and_imaging_only.graph",
         "eagleVersion": "v5.0.2",
@@ -1679,6 +1679,32 @@
                     "options": [],
                     "positional": false,
                     "keyAttribute": false
+                },
+                {
+                    "text": "Filename",
+                    "name": "fname",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The input Filenames to combine",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Combined Str",
+                    "name": "combined_str",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The combined string of filenames",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
                 }
             ],
             "outputAppFields": [],
@@ -2051,6 +2077,32 @@
                     "options": [],
                     "positional": false,
                     "keyAttribute": false
+                },
+                {
+                    "text": "Filename",
+                    "name": "fname",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The input Filenames to combine",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Combined Str",
+                    "name": "combined_str",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The combined string of filenames",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
                 }
             ],
             "outputAppFields": [],
@@ -2211,6 +2263,32 @@
                     "description": "Is this node the start of a group?",
                     "readonly": false,
                     "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Filename",
+                    "name": "fname",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The input Filenames to combine",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Combined Str",
+                    "name": "combined_str",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The combined string of filenames",
+                    "readonly": false,
+                    "type": "String",
                     "precious": false,
                     "options": [],
                     "positional": false,
@@ -3131,6 +3209,32 @@
                     "options": [],
                     "positional": false,
                     "keyAttribute": false
+                },
+                {
+                    "text": "Input File",
+                    "name": "inFile",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The input file containing the list of files.",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Output File Name",
+                    "name": "outFilename",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The output file name and an index to go with it",
+                    "readonly": false,
+                    "type": "Object.List",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
                 }
             ],
             "outputAppFields": [],
@@ -3503,6 +3607,32 @@
                     "options": [],
                     "positional": false,
                     "keyAttribute": false
+                },
+                {
+                    "text": "Input File",
+                    "name": "inFile",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The input file containing the list of files.",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Output File Name",
+                    "name": "outFilename",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The output file name and an index to go with it",
+                    "readonly": false,
+                    "type": "Object.List",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
                 }
             ],
             "outputAppFields": [],
@@ -3663,6 +3793,32 @@
                     "description": "Is this node the start of a group?",
                     "readonly": false,
                     "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Input File",
+                    "name": "inFile",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The input file containing the list of files.",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Output File Name",
+                    "name": "outFilename",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The output file name and an index to go with it",
+                    "readonly": false,
+                    "type": "Object.List",
                     "precious": false,
                     "options": [],
                     "positional": false,
@@ -5297,210 +5453,6 @@
             "isGroup": false,
             "color": "#0059a5",
             "drawOrderHint": 0,
-            "key": -24,
-            "text": "Deep Imaging",
-            "description": "Run's the askapsoft cdeconvolver with the parameters specified.",
-            "x": 1589.4367573081802,
-            "y": -726.8740020183192,
-            "width": 200,
-            "height": 72,
-            "collapsed": true,
-            "flipPorts": false,
-            "subject": null,
-            "expanded": true,
-            "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "45dde04",
-            "paletteDownloadUrl": "https://raw.githubusercontent.com/alxndrwllmsn/EAGLE-graph-repo/367d6f0f13139424f91a51cc9c94c62bd3f3c0ef/dingo/dstack/dstack.palette",
-            "dataHash": "2673ee919692fb53c7a1c7a1c173ae616e1d781e6529dd4e9cd4b6e3017440bf",
-            "inputPorts": [
-                {
-                    "Id": "25657d12-0598-4996-af82-5ff0c4c0906d",
-                    "IdText": "parset",
-                    "text": "Parset",
-                    "event": false,
-                    "type": "String",
-                    "description": "The parset with which to run the imager",
-                    "keyAttribute": false
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "43a4d360-18d7-4b57-80f1-b3fd4c091708",
-                    "IdText": "logfile",
-                    "text": "Log File",
-                    "event": false,
-                    "type": "String",
-                    "description": "The place to put all the logs",
-                    "keyAttribute": false
-                },
-                {
-                    "Id": "f8f7c7f2-5e27-4f0e-8d05-f7b9321690ef",
-                    "IdText": "model",
-                    "text": "Model",
-                    "event": false,
-                    "type": "String",
-                    "description": "The output model",
-                    "keyAttribute": false
-                },
-                {
-                    "Id": "88a869c1-e434-4e93-9c39-2438daa2d707",
-                    "IdText": "image",
-                    "text": "Image",
-                    "event": false,
-                    "type": "String",
-                    "description": "The output image",
-                    "keyAttribute": false
-                },
-                {
-                    "Id": "e8f71e10-db13-4939-9293-3fd5f4a5769c",
-                    "IdText": "residual",
-                    "text": "Residual",
-                    "event": false,
-                    "type": "String",
-                    "description": "The output residual",
-                    "keyAttribute": false
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "fields": [
-                {
-                    "text": "Application Class",
-                    "name": "appclass",
-                    "value": "dlg_dstack_components.DeepImaging",
-                    "defaultValue": "dlg_dstack_components.DeepImaging",
-                    "description": "Import direction for application class",
-                    "readonly": true,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "keyAttribute": false
-                },
-                {
-                    "text": "Execution Time",
-                    "name": "execution_time",
-                    "value": 5,
-                    "defaultValue": "5",
-                    "description": "Estimated execution time",
-                    "readonly": true,
-                    "type": "Float",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "keyAttribute": false
-                },
-                {
-                    "text": "No. of CPUs",
-                    "name": "num_cpus",
-                    "value": 108,
-                    "defaultValue": "1",
-                    "description": "Number of cores used",
-                    "readonly": true,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "keyAttribute": false
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": false,
-                    "defaultValue": "False",
-                    "description": "Is this node the start of a group?",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "keyAttribute": false
-                },
-                {
-                    "text": "No. of Procs",
-                    "name": "num_of_procs",
-                    "value": 108,
-                    "defaultValue": "1",
-                    "description": "the number of processes to use for srun",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "keyAttribute": false
-                }
-            ],
-            "applicationArgs": [
-                {
-                    "text": "Run Test",
-                    "name": "echo_test",
-                    "value": false,
-                    "defaultValue": "False",
-                    "description": "Echo the command instead of running the program",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "keyAttribute": false
-                },
-                {
-                    "text": "Run Profiler",
-                    "name": "run_profiler",
-                    "value": false,
-                    "defaultValue": "False",
-                    "description": "Output profiling information to file",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "keyAttribute": false
-                },
-                {
-                    "text": "Auto NCore",
-                    "name": "auto_ncore",
-                    "value": true,
-                    "defaultValue": "False",
-                    "description": "use slurm ntask-per-node environment variable to set the slurm ntasks parameter",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "keyAttribute": false
-                },
-                {
-                    "text": "Container Path",
-                    "name": "container_path",
-                    "value": "/scratch/director2193/awilliamson1/component-testing/yanda.sif",
-                    "defaultValue": "",
-                    "description": "The path to the container running the yandasoft stack",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "keyAttribute": false
-                }
-            ],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "inputApplicationKey": null,
-            "inputApplicationDescription": "",
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "outputApplicationKey": null,
-            "outputApplicationDescription": ""
-        },
-        {
-            "category": "PythonApp",
-            "categoryType": "Application",
-            "isGroup": false,
-            "color": "#0059a5",
-            "drawOrderHint": 0,
             "key": -22,
             "text": "Create Cdec Parset",
             "description": "This App takes in a set of grids as paths, a template parset path and outputs a full parset",
@@ -5811,6 +5763,210 @@
             "outputApplicationType": "None",
             "outputApplicationKey": null,
             "outputApplicationDescription": ""
+        },
+        {
+            "category": "PythonApp",
+            "categoryType": "Application",
+            "isGroup": false,
+            "color": "#0059a5",
+            "drawOrderHint": 0,
+            "key": -13,
+            "text": "Deep Imaging",
+            "description": "Run's the askapsoft cdeconvolver with the parameters specified.",
+            "x": 1578.6414223865331,
+            "y": -715.3465488519522,
+            "width": 200,
+            "height": 72,
+            "collapsed": true,
+            "flipPorts": false,
+            "subject": null,
+            "expanded": false,
+            "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
+            "commitHash": "f8ac4f6",
+            "paletteDownloadUrl": "https://raw.githubusercontent.com/alxndrwllmsn/EAGLE-graph-repo/2a184ad1a9eb160c0f7961bade0c3de5824859ea/dingo/dstack/dstack.palette",
+            "dataHash": "ebd74424a2660d99f274065fa80902d92f74987f8e861683dc22d593e7263732",
+            "inputPorts": [
+                {
+                    "Id": "4b003837-191a-4fd8-956e-df2cceeae56c",
+                    "IdText": "parset",
+                    "text": "Parset",
+                    "event": false,
+                    "type": "String",
+                    "description": "The parset with which to run the imager",
+                    "keyAttribute": false
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "1364be8b-d67d-4248-b3c7-a7b3fba23a59",
+                    "IdText": "logfile",
+                    "text": "Log File",
+                    "event": false,
+                    "type": "String",
+                    "description": "The place to put all the logs",
+                    "keyAttribute": false
+                },
+                {
+                    "Id": "f6867737-2168-471d-aab3-8dbcffdc9e1e",
+                    "IdText": "model",
+                    "text": "Model",
+                    "event": false,
+                    "type": "String",
+                    "description": "The output model",
+                    "keyAttribute": false
+                },
+                {
+                    "Id": "0d81805e-cedf-48c3-9c52-5e1178b8049b",
+                    "IdText": "image",
+                    "text": "Image",
+                    "event": false,
+                    "type": "String",
+                    "description": "The output image",
+                    "keyAttribute": false
+                },
+                {
+                    "Id": "d34c221e-a75b-4d01-87d5-a3ca05ae344b",
+                    "IdText": "residual",
+                    "text": "Residual",
+                    "event": false,
+                    "type": "String",
+                    "description": "The output residual",
+                    "keyAttribute": false
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg_dstack_components.DeepImaging",
+                    "defaultValue": "dlg_dstack_components.DeepImaging",
+                    "description": "Import direction for application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": 8,
+                    "defaultValue": "5",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": 108,
+                    "defaultValue": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Is this node the start of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "No. of Procs",
+                    "name": "num_of_procs",
+                    "value": 108,
+                    "defaultValue": "1",
+                    "description": "the number of processes to use for srun",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                }
+            ],
+            "applicationArgs": [
+                {
+                    "text": "Run Test",
+                    "name": "echo_test",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Echo the command instead of running the program",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Run Profiler",
+                    "name": "run_profiler",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Output profiling information to file",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Auto NCore",
+                    "name": "auto_ncore",
+                    "value": true,
+                    "defaultValue": "False",
+                    "description": "use slurm ntask-per-node environment variable to set the slurm ntasks parameter",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Runtime Arguments",
+                    "name": "runtime_args",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Optional arguments to include at runtime (eg. \"-l askap.log_cfg\")",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         }
     ],
     "linkDataArray": [
@@ -5977,51 +6133,6 @@
             "closesLoop": false
         },
         {
-            "from": -28,
-            "fromPort": "4169bc99-916c-43fa-b36e-f3f7ebdd49cc",
-            "to": -24,
-            "toPort": "25657d12-0598-4996-af82-5ff0c4c0906d",
-            "dataType": "String",
-            "loop_aware": "0",
-            "closesLoop": false
-        },
-        {
-            "from": -24,
-            "fromPort": "43a4d360-18d7-4b57-80f1-b3fd4c091708",
-            "to": -32,
-            "toPort": "3195c2fc-9331-47e6-b217-c08f343887b7",
-            "dataType": "String",
-            "loop_aware": "0",
-            "closesLoop": false
-        },
-        {
-            "from": -24,
-            "fromPort": "f8f7c7f2-5e27-4f0e-8d05-f7b9321690ef",
-            "to": -34,
-            "toPort": "78212abc-f68d-4514-9440-be966bb86a9a",
-            "dataType": "String",
-            "loop_aware": "0",
-            "closesLoop": false
-        },
-        {
-            "from": -24,
-            "fromPort": "88a869c1-e434-4e93-9c39-2438daa2d707",
-            "to": -35,
-            "toPort": "e17328c2-4ba8-411f-8613-7b6cf9a365d4",
-            "dataType": "String",
-            "loop_aware": "0",
-            "closesLoop": false
-        },
-        {
-            "from": -24,
-            "fromPort": "e8f71e10-db13-4939-9293-3fd5f4a5769c",
-            "to": -36,
-            "toPort": "9c6a7b47-8dd6-4192-b39b-4b4cca50a32b",
-            "dataType": "String",
-            "loop_aware": "0",
-            "closesLoop": false
-        },
-        {
             "from": -19,
             "fromPort": "d13466b7-1665-46b7-a5fe-e03824cdbf20",
             "to": -22,
@@ -6071,6 +6182,51 @@
             "fromPort": "b4e8a41a-2cb6-4cd5-ad16-35b0c645ec50",
             "to": -28,
             "toPort": "b5815ca9-51fe-4e52-83e0-e1c707dadf4c",
+            "dataType": "String",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -28,
+            "fromPort": "4169bc99-916c-43fa-b36e-f3f7ebdd49cc",
+            "to": -13,
+            "toPort": "4b003837-191a-4fd8-956e-df2cceeae56c",
+            "dataType": "String",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -13,
+            "fromPort": "1364be8b-d67d-4248-b3c7-a7b3fba23a59",
+            "to": -32,
+            "toPort": "3195c2fc-9331-47e6-b217-c08f343887b7",
+            "dataType": "String",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -13,
+            "fromPort": "f6867737-2168-471d-aab3-8dbcffdc9e1e",
+            "to": -34,
+            "toPort": "78212abc-f68d-4514-9440-be966bb86a9a",
+            "dataType": "String",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -13,
+            "fromPort": "0d81805e-cedf-48c3-9c52-5e1178b8049b",
+            "to": -35,
+            "toPort": "e17328c2-4ba8-411f-8613-7b6cf9a365d4",
+            "dataType": "String",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -13,
+            "fromPort": "d34c221e-a75b-4d01-87d5-a3ca05ae344b",
+            "to": -36,
+            "toPort": "9c6a7b47-8dd6-4192-b39b-4b4cca50a32b",
             "dataType": "String",
             "loop_aware": "0",
             "closesLoop": false
