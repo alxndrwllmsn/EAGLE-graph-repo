@@ -2,7 +2,7 @@
     "modelData": {
         "fileType": "Graph",
         "repoService": "GitHub",
-        "repoBranch": "master",
+        "repoBranch": "runtime_args",
         "repo": "alxndrwllmsn/EAGLE-graph-repo",
         "filePath": "dingo/dstack/dstack_uvgrid_only.graph",
         "eagleVersion": "v5.0.2",
@@ -176,6 +176,45 @@
                     "description": "Is this node the start of a group?",
                     "readonly": false,
                     "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Input File",
+                    "name": "inFile",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The input file containing the list of files.",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Metadata List",
+                    "name": "metadata_list",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The input file containing a list of metadata ( SB,Band,Beam)",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Output File Name",
+                    "name": "outFilename",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The output file name and an index to go with it",
+                    "readonly": false,
+                    "type": "Object.List",
                     "precious": false,
                     "options": [],
                     "positional": false,
@@ -2018,11 +2057,11 @@
             "isGroup": false,
             "color": "#0059a5",
             "drawOrderHint": 0,
-            "key": -7,
+            "key": -14,
             "text": "First Pass Imaging",
             "description": "Run's the askapsoft imager with the given parameter set, then writes the resultant filenames to the output to link with the next step.",
-            "x": 207.94911052869955,
-            "y": -744.6383741681923,
+            "x": 182.43350737522252,
+            "y": -705.2808820644979,
             "width": 200,
             "height": 72,
             "collapsed": true,
@@ -2030,13 +2069,13 @@
             "subject": null,
             "expanded": true,
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "008f13b",
-            "paletteDownloadUrl": "https://raw.githubusercontent.com/alxndrwllmsn/EAGLE-graph-repo/5b46a6dbb7f0c751557dfd83dca2de1a5963d19d/dingo/dstack/dstack.palette",
-            "dataHash": "6e7e810037fd8790a5ada56445695dc23b8b998e4c0cfb3b191e303e34e0514b",
+            "commitHash": "f8ac4f6",
+            "paletteDownloadUrl": "https://raw.githubusercontent.com/alxndrwllmsn/EAGLE-graph-repo/2a184ad1a9eb160c0f7961bade0c3de5824859ea/dingo/dstack/dstack.palette",
+            "dataHash": "eeb48f5f62026ba1b8eac1e17676b6d0037e46497b4f164820779644eea9cce1",
             "group": -10,
             "inputPorts": [
                 {
-                    "Id": "6c2208b5-3022-4727-99a0-07a6b28ab003",
+                    "Id": "6852b52a-7034-49b4-9366-f602d53c0b81",
                     "IdText": "parset",
                     "text": "Parset",
                     "event": false,
@@ -2047,7 +2086,7 @@
             ],
             "outputPorts": [
                 {
-                    "Id": "b9762d6d-89c5-4ec0-8fd4-2791c6e678ba",
+                    "Id": "d8b2a2fe-52a3-4bfc-9da0-8232fb9fb021",
                     "IdText": "logfile",
                     "text": "Log File",
                     "event": false,
@@ -2056,7 +2095,7 @@
                     "keyAttribute": false
                 },
                 {
-                    "Id": "6c9d32f2-4193-44c5-b388-ed066d200a30",
+                    "Id": "dd87bff5-fa58-44a4-b3ed-e803a6ec41c0",
                     "IdText": "visgrid",
                     "text": "Visibility Grid",
                     "event": false,
@@ -2065,7 +2104,7 @@
                     "keyAttribute": false
                 },
                 {
-                    "Id": "1d78043a-a39a-48fc-bc53-54e59e818b87",
+                    "Id": "11c8d3dc-9088-4ca7-84bc-c27d2db0d02c",
                     "IdText": "psfgrid",
                     "text": "PSFGrid",
                     "event": false,
@@ -2074,7 +2113,7 @@
                     "keyAttribute": false
                 },
                 {
-                    "Id": "5f2c72fc-cdda-4b1e-9ef7-8c0b86308167",
+                    "Id": "928cfbe6-9717-4eae-ad1b-c076cb2e02f4",
                     "IdText": "pcfgrid",
                     "text": "PCFGrid",
                     "event": false,
@@ -2180,19 +2219,6 @@
                     "keyAttribute": false
                 },
                 {
-                    "text": "Container Path",
-                    "name": "container_path",
-                    "value": "/scratch/director2193/awilliamson1/component-testing/yanda.sif",
-                    "defaultValue": "",
-                    "description": "The path to the container running the yandasoft stack",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "keyAttribute": false
-                },
-                {
                     "text": "Auto NCore",
                     "name": "auto_ncore",
                     "value": true,
@@ -2200,6 +2226,19 @@
                     "description": "use slurm ntask-per-node environment variable to set the srun ntasks parameter",
                     "readonly": false,
                     "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Runtime Arguments",
+                    "name": "runtime_args",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Optional arguments to include at runtime (eg. \"-l askap.log_cfg\")",
+                    "readonly": false,
+                    "type": "String",
                     "precious": false,
                     "options": [],
                     "positional": false,
@@ -2285,15 +2324,15 @@
         {
             "from": -12,
             "fromPort": "85a49599-2230-4088-bc49-93f9401b0415",
-            "to": -7,
-            "toPort": "6c2208b5-3022-4727-99a0-07a6b28ab003",
+            "to": -14,
+            "toPort": "6852b52a-7034-49b4-9366-f602d53c0b81",
             "dataType": "String",
             "loop_aware": "0",
             "closesLoop": false
         },
         {
-            "from": -7,
-            "fromPort": "b9762d6d-89c5-4ec0-8fd4-2791c6e678ba",
+            "from": -14,
+            "fromPort": "d8b2a2fe-52a3-4bfc-9da0-8232fb9fb021",
             "to": -4,
             "toPort": "d9b78bc5-95da-4b2f-96db-6793afa5e67c",
             "dataType": "String",
@@ -2301,8 +2340,8 @@
             "closesLoop": false
         },
         {
-            "from": -7,
-            "fromPort": "6c9d32f2-4193-44c5-b388-ed066d200a30",
+            "from": -14,
+            "fromPort": "dd87bff5-fa58-44a4-b3ed-e803a6ec41c0",
             "to": -5,
             "toPort": "23427a87-4c86-45be-b6d5-78781d0f59e8",
             "dataType": "String",
@@ -2310,8 +2349,8 @@
             "closesLoop": false
         },
         {
-            "from": -7,
-            "fromPort": "1d78043a-a39a-48fc-bc53-54e59e818b87",
+            "from": -14,
+            "fromPort": "11c8d3dc-9088-4ca7-84bc-c27d2db0d02c",
             "to": -6,
             "toPort": "3c4cfa5f-7773-4188-9248-8fc970a6f6e8",
             "dataType": "String",
@@ -2319,8 +2358,8 @@
             "closesLoop": false
         },
         {
-            "from": -7,
-            "fromPort": "5f2c72fc-cdda-4b1e-9ef7-8c0b86308167",
+            "from": -14,
+            "fromPort": "928cfbe6-9717-4eae-ad1b-c076cb2e02f4",
             "to": -8,
             "toPort": "7ba33422-c431-4a80-a415-cb5683d2cb99",
             "dataType": "String",
