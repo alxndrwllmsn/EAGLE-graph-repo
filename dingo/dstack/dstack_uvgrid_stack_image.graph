@@ -2,7 +2,7 @@
     "modelData": {
         "fileType": "Graph",
         "repoService": "GitHub",
-        "repoBranch": "adios_integration",
+        "repoBranch": "runtime_args",
         "repo": "alxndrwllmsn/EAGLE-graph-repo",
         "filePath": "dingo/dstack/dstack_uvgrid_stack_image.graph",
         "eagleVersion": "v5.0.2",
@@ -543,198 +543,6 @@
                     "description": "Output profiling information to file",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "keyAttribute": false
-                }
-            ],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "inputApplicationKey": null,
-            "inputApplicationDescription": "",
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "outputApplicationKey": null,
-            "outputApplicationDescription": ""
-        },
-        {
-            "category": "PythonApp",
-            "categoryType": "Application",
-            "isGroup": false,
-            "color": "#0059a5",
-            "drawOrderHint": 0,
-            "key": -68,
-            "text": "First Pass Imaging",
-            "description": "Run's the askapsoft imager with the given parameter set, then writes the resultant filenames to the output to link with the next step.",
-            "x": -10.634348280685552,
-            "y": -744.9059744304712,
-            "width": 200,
-            "height": 72,
-            "collapsed": true,
-            "flipPorts": false,
-            "subject": null,
-            "expanded": true,
-            "repositoryUrl": null,
-            "commitHash": null,
-            "paletteDownloadUrl": "https://raw.githubusercontent.com/alxndrwllmsn/EAGLE-graph-repo/e72f6803dcdf95fa3f4f7eda1990225ccb2953d9/dingo/dstack/dstack.palette",
-            "dataHash": "dce8ef70316961cd16004d384b3febde191616992474017955ea50b4f734c136",
-            "group": -5,
-            "inputPorts": [
-                {
-                    "Id": "1f90b1f1-7ef8-461a-8378-7ce9c447ffa7",
-                    "IdText": "parset",
-                    "text": "Parset",
-                    "event": false,
-                    "type": "String",
-                    "description": "The parset with which to run the imager",
-                    "keyAttribute": false
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "b906dc71-37a3-4b0a-8513-2a31d0b41deb",
-                    "IdText": "logfile",
-                    "text": "Log File",
-                    "event": false,
-                    "type": "String",
-                    "description": "The place to put all the logs",
-                    "keyAttribute": false
-                },
-                {
-                    "Id": "b570a6ba-007d-462e-bc3f-140fbbb8ae87",
-                    "IdText": "visgrid",
-                    "text": "Visibility Grid",
-                    "event": false,
-                    "type": "String",
-                    "description": "The output visibility grid",
-                    "keyAttribute": false
-                },
-                {
-                    "Id": "1e6e9e0f-ab27-4218-b66b-cf677a221780",
-                    "IdText": "psfgrid",
-                    "text": "PSFGrid",
-                    "event": false,
-                    "type": "String",
-                    "description": "The output psfgrid",
-                    "keyAttribute": false
-                },
-                {
-                    "Id": "7867911d-fc87-4170-b9bb-d4423c9e670b",
-                    "IdText": "pcfgrid",
-                    "text": "PCFGrid",
-                    "event": false,
-                    "type": "String",
-                    "description": "The output pcfgrid",
-                    "keyAttribute": false
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "fields": [
-                {
-                    "text": "Application Class",
-                    "name": "appclass",
-                    "value": "dlg_dstack_components.FirstPassImaging",
-                    "defaultValue": "dlg_dstack_components.FirstPassImaging",
-                    "description": "Import direction for application class",
-                    "readonly": true,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "keyAttribute": false
-                },
-                {
-                    "text": "Execution Time",
-                    "name": "execution_time",
-                    "value": 8,
-                    "defaultValue": "5",
-                    "description": "Estimated execution time",
-                    "readonly": true,
-                    "type": "Float",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "keyAttribute": false
-                },
-                {
-                    "text": "No. of CPUs",
-                    "name": "num_cpus",
-                    "value": 109,
-                    "defaultValue": "1",
-                    "description": "Number of cores used",
-                    "readonly": true,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "keyAttribute": false
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": false,
-                    "defaultValue": "False",
-                    "description": "Is this node the start of a group?",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "keyAttribute": false
-                },
-                {
-                    "text": "No. of Procs",
-                    "name": "num_of_procs",
-                    "value": 109,
-                    "defaultValue": "1",
-                    "description": "the number of processes to use for srun",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "keyAttribute": false
-                }
-            ],
-            "applicationArgs": [
-                {
-                    "text": "Run as Test",
-                    "name": "echo_test",
-                    "value": false,
-                    "defaultValue": "False",
-                    "description": "Echo the command instead of running the program",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "keyAttribute": false
-                },
-                {
-                    "text": "Run Profiler",
-                    "name": "run_profiler",
-                    "value": false,
-                    "defaultValue": "False",
-                    "description": "Output profiling information to file",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "keyAttribute": false
-                },
-                {
-                    "text": "Container Path",
-                    "name": "container_path",
-                    "value": "/scratch/director2193/awilliamson1/component-testing/yanda.sif",
-                    "defaultValue": "",
-                    "description": "The path to the container running the yandasoft stack",
-                    "readonly": false,
-                    "type": "String",
                     "precious": false,
                     "options": [],
                     "positional": false,
@@ -1920,210 +1728,6 @@
             "outputApplicationDescription": ""
         },
         {
-            "category": "PythonApp",
-            "categoryType": "Application",
-            "isGroup": false,
-            "color": "#0059a5",
-            "drawOrderHint": 0,
-            "key": -4,
-            "text": "Deep Imaging",
-            "description": "Run's the askapsoft cdeconvolver with the parameters specified.",
-            "x": 1674.4350281764303,
-            "y": -800.7603932724578,
-            "width": 200,
-            "height": 72,
-            "collapsed": true,
-            "flipPorts": false,
-            "subject": null,
-            "expanded": true,
-            "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "45dde04",
-            "paletteDownloadUrl": "https://raw.githubusercontent.com/alxndrwllmsn/EAGLE-graph-repo/367d6f0f13139424f91a51cc9c94c62bd3f3c0ef/dingo/dstack/dstack.palette",
-            "dataHash": "2673ee919692fb53c7a1c7a1c173ae616e1d781e6529dd4e9cd4b6e3017440bf",
-            "inputPorts": [
-                {
-                    "Id": "ad1f8ccc-e8cb-45b0-874e-68f55137175a",
-                    "IdText": "parset",
-                    "text": "Parset",
-                    "event": false,
-                    "type": "String",
-                    "description": "The parset with which to run the imager",
-                    "keyAttribute": false
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "2fb6be9d-54ba-42a6-97b5-82184e2fc95b",
-                    "IdText": "logfile",
-                    "text": "Log File",
-                    "event": false,
-                    "type": "String",
-                    "description": "The place to put all the logs",
-                    "keyAttribute": false
-                },
-                {
-                    "Id": "f25ada37-04ad-4f2f-8319-1499c461baa8",
-                    "IdText": "model",
-                    "text": "Model",
-                    "event": false,
-                    "type": "String",
-                    "description": "The output model",
-                    "keyAttribute": false
-                },
-                {
-                    "Id": "2b0f4ace-2619-4afe-88ba-dc443d98adb0",
-                    "IdText": "image",
-                    "text": "Image",
-                    "event": false,
-                    "type": "String",
-                    "description": "The output image",
-                    "keyAttribute": false
-                },
-                {
-                    "Id": "06419703-dd42-4d31-a8da-5801223597a3",
-                    "IdText": "residual",
-                    "text": "Residual",
-                    "event": false,
-                    "type": "String",
-                    "description": "The output residual",
-                    "keyAttribute": false
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "fields": [
-                {
-                    "text": "Application Class",
-                    "name": "appclass",
-                    "value": "dlg_dstack_components.DeepImaging",
-                    "defaultValue": "dlg_dstack_components.DeepImaging",
-                    "description": "Import direction for application class",
-                    "readonly": true,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "keyAttribute": false
-                },
-                {
-                    "text": "Execution Time",
-                    "name": "execution_time",
-                    "value": 5,
-                    "defaultValue": "5",
-                    "description": "Estimated execution time",
-                    "readonly": true,
-                    "type": "Float",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "keyAttribute": false
-                },
-                {
-                    "text": "No. of CPUs",
-                    "name": "num_cpus",
-                    "value": 108,
-                    "defaultValue": "1",
-                    "description": "Number of cores used",
-                    "readonly": true,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "keyAttribute": false
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": false,
-                    "defaultValue": "False",
-                    "description": "Is this node the start of a group?",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "keyAttribute": false
-                },
-                {
-                    "text": "No. of Procs",
-                    "name": "num_of_procs",
-                    "value": 108,
-                    "defaultValue": "1",
-                    "description": "the number of processes to use for srun",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "keyAttribute": false
-                }
-            ],
-            "applicationArgs": [
-                {
-                    "text": "Run Test",
-                    "name": "echo_test",
-                    "value": false,
-                    "defaultValue": "False",
-                    "description": "Echo the command instead of running the program",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "keyAttribute": false
-                },
-                {
-                    "text": "Run Profiler",
-                    "name": "run_profiler",
-                    "value": false,
-                    "defaultValue": "False",
-                    "description": "Output profiling information to file",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "keyAttribute": false
-                },
-                {
-                    "text": "Auto NCore",
-                    "name": "auto_ncore",
-                    "value": true,
-                    "defaultValue": "False",
-                    "description": "use slurm ntask-per-node environment variable to set the slurm ntasks parameter",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "keyAttribute": false
-                },
-                {
-                    "text": "Container Path",
-                    "name": "container_path",
-                    "value": "/scratch/director2193/awilliamson1/component-testing/yanda.sif",
-                    "defaultValue": "",
-                    "description": "The path to the container running the yandasoft stack",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "keyAttribute": false
-                }
-            ],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "inputApplicationKey": null,
-            "inputApplicationDescription": "",
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "outputApplicationKey": null,
-            "outputApplicationDescription": ""
-        },
-        {
             "category": "File",
             "categoryType": "Data",
             "isGroup": false,
@@ -2565,8 +2169,8 @@
             "key": -10,
             "text": "Model",
             "description": "A standard file on a filesystem mounted to the deployment machine",
-            "x": 1855.7613414839288,
-            "y": -876.0590805855628,
+            "x": 1855.0745508635398,
+            "y": -870.5634691500019,
             "width": 200,
             "height": 72,
             "collapsed": true,
@@ -6215,18 +5819,418 @@
             "outputApplicationType": "None",
             "outputApplicationKey": null,
             "outputApplicationDescription": ""
+        },
+        {
+            "category": "PythonApp",
+            "categoryType": "Application",
+            "isGroup": false,
+            "color": "#0059a5",
+            "drawOrderHint": 0,
+            "key": -34,
+            "text": "First Pass Imaging",
+            "description": "Run's the askapsoft imager with the given parameter set, then writes the resultant filenames to the output to link with the next step.",
+            "x": 20.197389669352887,
+            "y": -772.491333050745,
+            "width": 200,
+            "height": 72,
+            "collapsed": false,
+            "flipPorts": false,
+            "subject": null,
+            "expanded": false,
+            "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
+            "commitHash": "f8ac4f6",
+            "paletteDownloadUrl": "https://raw.githubusercontent.com/alxndrwllmsn/EAGLE-graph-repo/2a184ad1a9eb160c0f7961bade0c3de5824859ea/dingo/dstack/dstack.palette",
+            "dataHash": "eeb48f5f62026ba1b8eac1e17676b6d0037e46497b4f164820779644eea9cce1",
+            "group": -5,
+            "inputPorts": [
+                {
+                    "Id": "a5f020f5-575b-4803-b6d6-b45dea476fae",
+                    "IdText": "parset",
+                    "text": "Parset",
+                    "event": false,
+                    "type": "String",
+                    "description": "The parset with which to run the imager",
+                    "keyAttribute": false
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "19cd97df-6d25-4415-a987-9ea0ba7de131",
+                    "IdText": "logfile",
+                    "text": "Log File",
+                    "event": false,
+                    "type": "String",
+                    "description": "The place to put all the logs",
+                    "keyAttribute": false
+                },
+                {
+                    "Id": "2089065a-23ab-4576-b0aa-44ce27f2d3fb",
+                    "IdText": "visgrid",
+                    "text": "Visibility Grid",
+                    "event": false,
+                    "type": "String",
+                    "description": "The output visibility grid",
+                    "keyAttribute": false
+                },
+                {
+                    "Id": "4e371dfb-a51c-496c-8243-3c116dc8c83b",
+                    "IdText": "psfgrid",
+                    "text": "PSFGrid",
+                    "event": false,
+                    "type": "String",
+                    "description": "The output psfgrid",
+                    "keyAttribute": false
+                },
+                {
+                    "Id": "cb391a2a-9236-47c9-977a-64f08ec0c5a4",
+                    "IdText": "pcfgrid",
+                    "text": "PCFGrid",
+                    "event": false,
+                    "type": "String",
+                    "description": "The output pcfgrid",
+                    "keyAttribute": false
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg_dstack_components.FirstPassImaging",
+                    "defaultValue": "dlg_dstack_components.FirstPassImaging",
+                    "description": "Import direction for application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": 8,
+                    "defaultValue": "5",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": 108,
+                    "defaultValue": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Is this node the start of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "No. of Procs",
+                    "name": "num_of_procs",
+                    "value": 108,
+                    "defaultValue": "1",
+                    "description": "the number of processes to use for srun",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                }
+            ],
+            "applicationArgs": [
+                {
+                    "text": "Run as Test",
+                    "name": "echo_test",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Echo the command instead of running the program",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Run Profiler",
+                    "name": "run_profiler",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Output profiling information to file",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Auto NCore",
+                    "name": "auto_ncore",
+                    "value": true,
+                    "defaultValue": "False",
+                    "description": "use slurm ntask-per-node environment variable to set the srun ntasks parameter",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Runtime Arguments",
+                    "name": "runtime_args",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Optional arguments to include at runtime (eg. \"-l askap.log_cfg\")",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
+        },
+        {
+            "category": "PythonApp",
+            "categoryType": "Application",
+            "isGroup": false,
+            "color": "#0059a5",
+            "drawOrderHint": 0,
+            "key": -4,
+            "text": "Deep Imaging",
+            "description": "Run's the askapsoft cdeconvolver with the parameters specified.",
+            "x": 1661.3287582353546,
+            "y": -840.6820068847721,
+            "width": 200,
+            "height": 72,
+            "collapsed": true,
+            "flipPorts": false,
+            "subject": null,
+            "expanded": false,
+            "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
+            "commitHash": "f8ac4f6",
+            "paletteDownloadUrl": "https://raw.githubusercontent.com/alxndrwllmsn/EAGLE-graph-repo/2a184ad1a9eb160c0f7961bade0c3de5824859ea/dingo/dstack/dstack.palette",
+            "dataHash": "ebd74424a2660d99f274065fa80902d92f74987f8e861683dc22d593e7263732",
+            "inputPorts": [
+                {
+                    "Id": "eee191df-5ec2-4e7a-970e-bb88d848f475",
+                    "IdText": "parset",
+                    "text": "Parset",
+                    "event": false,
+                    "type": "String",
+                    "description": "The parset with which to run the imager",
+                    "keyAttribute": false
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "8f47b342-b4b5-442a-9165-af39e2a99ab7",
+                    "IdText": "logfile",
+                    "text": "Log File",
+                    "event": false,
+                    "type": "String",
+                    "description": "The place to put all the logs",
+                    "keyAttribute": false
+                },
+                {
+                    "Id": "c92ab242-379c-4078-b52d-1a5b85b1065f",
+                    "IdText": "model",
+                    "text": "Model",
+                    "event": false,
+                    "type": "String",
+                    "description": "The output model",
+                    "keyAttribute": false
+                },
+                {
+                    "Id": "b0931e1b-a0cf-440c-83e5-b7399b307702",
+                    "IdText": "image",
+                    "text": "Image",
+                    "event": false,
+                    "type": "String",
+                    "description": "The output image",
+                    "keyAttribute": false
+                },
+                {
+                    "Id": "896561d0-d040-4514-b4fc-20ee70802b5b",
+                    "IdText": "residual",
+                    "text": "Residual",
+                    "event": false,
+                    "type": "String",
+                    "description": "The output residual",
+                    "keyAttribute": false
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg_dstack_components.DeepImaging",
+                    "defaultValue": "dlg_dstack_components.DeepImaging",
+                    "description": "Import direction for application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": 8,
+                    "defaultValue": "5",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": 108,
+                    "defaultValue": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Is this node the start of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "No. of Procs",
+                    "name": "num_of_procs",
+                    "value": 108,
+                    "defaultValue": "1",
+                    "description": "the number of processes to use for srun",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                }
+            ],
+            "applicationArgs": [
+                {
+                    "text": "Run Test",
+                    "name": "echo_test",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Echo the command instead of running the program",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Run Profiler",
+                    "name": "run_profiler",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Output profiling information to file",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Auto NCore",
+                    "name": "auto_ncore",
+                    "value": true,
+                    "defaultValue": "False",
+                    "description": "use slurm ntask-per-node environment variable to set the slurm ntasks parameter",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "Runtime Arguments",
+                    "name": "runtime_args",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Optional arguments to include at runtime (eg. \"-l askap.log_cfg\")",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         }
     ],
     "linkDataArray": [
-        {
-            "from": -74,
-            "fromPort": "ca476ee6-b22a-48de-83ab-1c1e2e8d3c5d",
-            "to": -68,
-            "toPort": "1f90b1f1-7ef8-461a-8378-7ce9c447ffa7",
-            "dataType": "String",
-            "loop_aware": "0",
-            "closesLoop": false
-        },
         {
             "from": -76,
             "fromPort": "97333dc4-32f6-4407-a817-471eda0d8313",
@@ -6277,51 +6281,6 @@
             "fromPort": "167c24f2-6497-4551-9247-e435eace3d1a",
             "to": -5,
             "toPort": "f94b3c45-f4fc-4e71-aa24-8fe1be46d776",
-            "dataType": "String",
-            "loop_aware": "0",
-            "closesLoop": false
-        },
-        {
-            "from": -12,
-            "fromPort": "c67568b3-ad8d-4981-90ad-33e28a85495b",
-            "to": -4,
-            "toPort": "ad1f8ccc-e8cb-45b0-874e-68f55137175a",
-            "dataType": "String",
-            "loop_aware": "0",
-            "closesLoop": false
-        },
-        {
-            "from": -4,
-            "fromPort": "2fb6be9d-54ba-42a6-97b5-82184e2fc95b",
-            "to": -11,
-            "toPort": "b61e2402-97d6-4535-8c03-2d5e118a68e7",
-            "dataType": "String",
-            "loop_aware": "0",
-            "closesLoop": false
-        },
-        {
-            "from": -4,
-            "fromPort": "f25ada37-04ad-4f2f-8319-1499c461baa8",
-            "to": -10,
-            "toPort": "269811f9-a375-4871-a63d-67632c6eeed4",
-            "dataType": "String",
-            "loop_aware": "0",
-            "closesLoop": false
-        },
-        {
-            "from": -4,
-            "fromPort": "2b0f4ace-2619-4afe-88ba-dc443d98adb0",
-            "to": -9,
-            "toPort": "ac0fcbf7-b127-4240-aeb1-7c45907d97aa",
-            "dataType": "String",
-            "loop_aware": "0",
-            "closesLoop": false
-        },
-        {
-            "from": -4,
-            "fromPort": "06419703-dd42-4d31-a8da-5801223597a3",
-            "to": -8,
-            "toPort": "457c4eb6-923b-48d6-ad67-416f3e8ea9cf",
             "dataType": "String",
             "loop_aware": "0",
             "closesLoop": false
@@ -6471,42 +6430,6 @@
             "closesLoop": false
         },
         {
-            "from": -68,
-            "fromPort": "b906dc71-37a3-4b0a-8513-2a31d0b41deb",
-            "to": -30,
-            "toPort": "e1dd4a48-7737-4194-8103-b10806628c92",
-            "dataType": "String",
-            "loop_aware": "0",
-            "closesLoop": false
-        },
-        {
-            "from": -68,
-            "fromPort": "b570a6ba-007d-462e-bc3f-140fbbb8ae87",
-            "to": -31,
-            "toPort": "474f7749-06b9-4264-ba2a-07fc9aa074d8",
-            "dataType": "String",
-            "loop_aware": "0",
-            "closesLoop": false
-        },
-        {
-            "from": -68,
-            "fromPort": "1e6e9e0f-ab27-4218-b66b-cf677a221780",
-            "to": -32,
-            "toPort": "4873de45-5060-413e-b802-48fc671cfb5b",
-            "dataType": "String",
-            "loop_aware": "0",
-            "closesLoop": false
-        },
-        {
-            "from": -68,
-            "fromPort": "7867911d-fc87-4170-b9bb-d4423c9e670b",
-            "to": -33,
-            "toPort": "63885a48-8616-4371-8edd-2ead4b3c63a4",
-            "dataType": "String",
-            "loop_aware": "0",
-            "closesLoop": false
-        },
-        {
             "from": -31,
             "fromPort": "59987031-f144-4e49-917e-950a922f65c7",
             "to": -17,
@@ -6531,6 +6454,96 @@
             "toPort": "08ef8c3c-f49e-4ab2-a69a-6f118571156b",
             "dataType": "String",
             "loop_aware": "1",
+            "closesLoop": false
+        },
+        {
+            "from": -74,
+            "fromPort": "ca476ee6-b22a-48de-83ab-1c1e2e8d3c5d",
+            "to": -34,
+            "toPort": "a5f020f5-575b-4803-b6d6-b45dea476fae",
+            "dataType": "String",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -34,
+            "fromPort": "19cd97df-6d25-4415-a987-9ea0ba7de131",
+            "to": -30,
+            "toPort": "e1dd4a48-7737-4194-8103-b10806628c92",
+            "dataType": "String",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -34,
+            "fromPort": "2089065a-23ab-4576-b0aa-44ce27f2d3fb",
+            "to": -31,
+            "toPort": "474f7749-06b9-4264-ba2a-07fc9aa074d8",
+            "dataType": "String",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -34,
+            "fromPort": "4e371dfb-a51c-496c-8243-3c116dc8c83b",
+            "to": -32,
+            "toPort": "4873de45-5060-413e-b802-48fc671cfb5b",
+            "dataType": "String",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -34,
+            "fromPort": "cb391a2a-9236-47c9-977a-64f08ec0c5a4",
+            "to": -33,
+            "toPort": "63885a48-8616-4371-8edd-2ead4b3c63a4",
+            "dataType": "String",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -12,
+            "fromPort": "c67568b3-ad8d-4981-90ad-33e28a85495b",
+            "to": -4,
+            "toPort": "eee191df-5ec2-4e7a-970e-bb88d848f475",
+            "dataType": "String",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -4,
+            "fromPort": "8f47b342-b4b5-442a-9165-af39e2a99ab7",
+            "to": -11,
+            "toPort": "b61e2402-97d6-4535-8c03-2d5e118a68e7",
+            "dataType": "String",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -4,
+            "fromPort": "c92ab242-379c-4078-b52d-1a5b85b1065f",
+            "to": -10,
+            "toPort": "269811f9-a375-4871-a63d-67632c6eeed4",
+            "dataType": "String",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -4,
+            "fromPort": "b0931e1b-a0cf-440c-83e5-b7399b307702",
+            "to": -9,
+            "toPort": "ac0fcbf7-b127-4240-aeb1-7c45907d97aa",
+            "dataType": "String",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -4,
+            "fromPort": "896561d0-d040-4514-b4fc-20ee70802b5b",
+            "to": -8,
+            "toPort": "457c4eb6-923b-48d6-ad67-416f3e8ea9cf",
+            "dataType": "String",
+            "loop_aware": "0",
             "closesLoop": false
         }
     ]
