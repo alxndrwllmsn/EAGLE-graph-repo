@@ -850,6 +850,19 @@
                     "positional": false
                 },
                 {
+                    "text": "Runtime Arguments",
+                    "name": "runtime_args",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Optional arguments to include at runtime (eg. \"-l askap.log_cfg\")",
+                    "type": "String",
+                    "fieldType": "ApplicationArgument",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
                     "text": "Log File",
                     "name": "logfile",
                     "value": "",
@@ -1187,6 +1200,19 @@
                     "defaultValue": "False",
                     "description": "use slurm ntask-per-node environment variable to set the srun ntasks parameter",
                     "type": "Boolean",
+                    "fieldType": "ApplicationArgument",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Runtime Arguments",
+                    "name": "runtime_args",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Optional arguments to include at runtime (eg. \"-l askap.log_cfg\")",
+                    "type": "String",
                     "fieldType": "ApplicationArgument",
                     "readonly": false,
                     "options": [],
