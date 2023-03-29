@@ -486,8 +486,8 @@
             "outputLocalPorts": [],
             "fields": [
                 {
-                    "text": "num_of_copies",
-                    "name": "Num of Copies",
+                    "text": "Num of Copies",
+                    "name": "num_of_copies",
                     "value": 2,
                     "defaultValue": "1",
                     "description": "",
@@ -637,8 +637,8 @@
             "outputLocalPorts": [],
             "fields": [
                 {
-                    "text": "num_of_copies",
-                    "name": "Num of Copies",
+                    "text": "Num of Copies",
+                    "name": "num_of_copies",
                     "value": 2,
                     "defaultValue": "1",
                     "description": "",
@@ -788,8 +788,8 @@
             "outputLocalPorts": [],
             "fields": [
                 {
-                    "text": "num_of_copies",
-                    "name": "Num of Copies",
+                    "text": "Num of Copies",
+                    "name": "num_of_copies",
                     "value": 2,
                     "defaultValue": "1",
                     "description": "",
