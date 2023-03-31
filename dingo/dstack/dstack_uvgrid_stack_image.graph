@@ -110,7 +110,7 @@
                 {
                     "text": "File Path",
                     "name": "filepath",
-                    "value": "/scratch/director2193/awilliamson1/component-testing/dataMetadataList.txt",
+                    "value": "/scratch/director2193/awilliamson1/component-testing/data/MetadataList.txt",
                     "defaultValue": "",
                     "description": "Path to the file for this node",
                     "readonly": false,
@@ -263,7 +263,7 @@
                 {
                     "text": "File Path",
                     "name": "filepath",
-                    "value": "/scratch/director2193/awilliamson1/component-testing/dataMeasurementSetList.txt",
+                    "value": "/scratch/director2193/awilliamson1/component-testing/data/MeasurementSetList.txt",
                     "defaultValue": "",
                     "description": "Path to the file for this node",
                     "readonly": false,
@@ -2909,7 +2909,7 @@
             "key": -16,
             "text": "Stacked UVGrid",
             "description": "A standard file on a filesystem mounted to the deployment machine",
-            "x": 1063.514636805667,
+            "x": 1061.1754177064704,
             "y": -861.3015643162377,
             "width": 200,
             "height": 72,
