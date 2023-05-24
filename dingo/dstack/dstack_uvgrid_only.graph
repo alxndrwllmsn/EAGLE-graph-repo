@@ -1248,7 +1248,7 @@
                     "usage": "NoPort"
                 },
                 {
-                    "name": "name",
+                    "name": "image_name",
                     "value": "image.rangeA.dumpgrid",
                     "defaultValue": "image.dal_test.dumpgrid",
                     "description": "The name format to use",
