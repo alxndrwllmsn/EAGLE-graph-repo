@@ -7,9 +7,9 @@
         "readonly": true,
         "filePath": "dstack.palette",
         "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-        "commitHash": "58b4a1c",
+        "commitHash": "b1ff857",
         "downloadUrl": "",
-        "signature": "9482acffe3658694c16710c988ecac75e7dd5b64137a26012406ea9dad67246b"
+        "signature": "39ee00fc228b7797dbe98ec132fdcd1ad4280d34783a0480aaa1af8ad0a2a947"
     },
     "nodeDataArray": [
         {
@@ -115,7 +115,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "58b4a1c",
+            "commitHash": "b1ff857",
             "paletteDownloadUrl": "",
             "dataHash": "52c90309fec54b9826e7289b4a1c8e9e73210905dcd1cbf0730971552c47d67b"
         },
@@ -233,8 +233,8 @@
                     "positional": false
                 },
                 {
-                    "text": "Name",
-                    "name": "name",
+                    "text": "Image Name",
+                    "name": "image_name",
                     "value": "",
                     "defaultValue": "",
                     "description": "The name format to use",
@@ -443,9 +443,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "58b4a1c",
+            "commitHash": "b1ff857",
             "paletteDownloadUrl": "",
-            "dataHash": "691770e58745439fdb5d64ee9f868ec89f79c5f3ccc4145610d2f3f8358cc8d3"
+            "dataHash": "b115dbdb22f74e77fc81f2ad8cc228ab004f991eadf5ae439d3262fd369aaae2"
         },
         {
             "category": "PythonApp",
@@ -561,8 +561,8 @@
                     "positional": false
                 },
                 {
-                    "text": "Name",
-                    "name": "name",
+                    "text": "Image Name",
+                    "name": "image_name",
                     "value": "image.dal_test.dumpgrid",
                     "defaultValue": "image.dal_test.dumpgrid",
                     "description": "The name format to use",
@@ -706,9 +706,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "58b4a1c",
+            "commitHash": "b1ff857",
             "paletteDownloadUrl": "",
-            "dataHash": "8ecb8b4e211681a27c4f3080deeff132e819733b9d269fe66c558d0b12ddd834"
+            "dataHash": "4e22540ff52d6cd51716eddac213759881de0cc3c7ebce2b719c3805ea5b6707"
         },
         {
             "category": "PythonApp",
@@ -791,7 +791,7 @@
                     "defaultValue": "1",
                     "description": "the number of processes to use for srun",
                     "type": "Integer",
-                    "fieldType": "ComponentParameter",
+                    "fieldType": "ApplicationArgument",
                     "readonly": false,
                     "options": [],
                     "precious": false,
@@ -917,9 +917,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "58b4a1c",
+            "commitHash": "b1ff857",
             "paletteDownloadUrl": "",
-            "dataHash": "ebd74424a2660d99f274065fa80902d92f74987f8e861683dc22d593e7263732"
+            "dataHash": "25c57e2fad09d920e9f7a0d622407c3702380ac0d11492819eb29e4c2d1d1b82"
         },
         {
             "category": "File",
@@ -1028,7 +1028,7 @@
                     "defaultValue": "0",
                     "description": "A parameter that allows the user to assign an id that defines it's order in the output list (this is a quick fix until named outputs are fixed)",
                     "type": "Integer",
-                    "fieldType": "ComponentParameter",
+                    "fieldType": "ApplicationArgument",
                     "readonly": false,
                     "options": [],
                     "precious": false,
@@ -1063,9 +1063,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "58b4a1c",
+            "commitHash": "b1ff857",
             "paletteDownloadUrl": "",
-            "dataHash": "591a5e779bce5f419ab6d10921d6cc51231454f12235664c230341e1a43af592"
+            "dataHash": "d71d8ae7a805e668030c26b309632d4561a86f05d05d6f1ecc799dc181167c10"
         },
         {
             "category": "PythonApp",
@@ -1148,7 +1148,7 @@
                     "defaultValue": "1",
                     "description": "the number of processes to use for srun",
                     "type": "Integer",
-                    "fieldType": "ComponentParameter",
+                    "fieldType": "ApplicationArgument",
                     "readonly": false,
                     "options": [],
                     "precious": false,
@@ -1274,9 +1274,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "58b4a1c",
+            "commitHash": "b1ff857",
             "paletteDownloadUrl": "",
-            "dataHash": "eeb48f5f62026ba1b8eac1e17676b6d0037e46497b4f164820779644eea9cce1"
+            "dataHash": "d6eab8331f9e9fab77ffea804950c10ff4d05c627ca0e7ff99d43706f16c4295"
         },
         {
             "category": "PythonApp",
@@ -1433,7 +1433,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "58b4a1c",
+            "commitHash": "b1ff857",
             "paletteDownloadUrl": "",
             "dataHash": "ed8e7a9fd2b5ff812747f2d24673c279d78194e89fcf6f3238341fd2d43cd7f1"
         },
@@ -1505,7 +1505,7 @@
                     "defaultValue": "0",
                     "description": "A parameter that allows the user to assign an id that defines it's order in the output list (this is a quick fix until named outputs are fixed)",
                     "type": "Integer",
-                    "fieldType": "ComponentParameter",
+                    "fieldType": "ApplicationArgument",
                     "readonly": false,
                     "options": [],
                     "precious": false,
@@ -1540,9 +1540,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "58b4a1c",
+            "commitHash": "b1ff857",
             "paletteDownloadUrl": "",
-            "dataHash": "715360d0c338f97d0f22cc843814e55f5b7e71c705830607d8d49307bda80f09"
+            "dataHash": "320f1e8bb6ba52448decfdf642df79fbeff30bc24364eafaa9f024ef4f10b3b9"
         },
         {
             "category": "PythonApp",
@@ -1660,7 +1660,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "58b4a1c",
+            "commitHash": "b1ff857",
             "paletteDownloadUrl": "",
             "dataHash": "107276946db14c4b795e4871a9ecf53d45e166f8964ff764bbdb4e93894cbf82"
         },
@@ -1668,6 +1668,152 @@
             "category": "PythonApp",
             "drawOrderHint": 0,
             "key": -10,
+            "text": "Scatter Filenames Broad",
+            "description": "This app takes in 3 files containing lists of paths (one path per line) and sends each via the outputs.",
+            "collapsed": false,
+            "showPorts": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "inputPorts": [],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg_dstack_components.ScatterFilenamesBroad",
+                    "defaultValue": "dlg_dstack_components.ScatterFilenamesBroad",
+                    "description": "Import direction for application class",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "readonly": true,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "defaultValue": "5",
+                    "description": "Estimated execution time",
+                    "type": "Float",
+                    "fieldType": "ComponentParameter",
+                    "readonly": true,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "defaultValue": "1",
+                    "description": "Number of cores used",
+                    "type": "Integer",
+                    "fieldType": "ComponentParameter",
+                    "readonly": true,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "False",
+                    "defaultValue": "False",
+                    "description": "Is this node the start of a group?",
+                    "type": "Boolean",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Input File",
+                    "name": "visFile",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The input file containing the list of files.",
+                    "type": "String",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Input File",
+                    "name": "psfFile",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The input file containing the list of files.",
+                    "type": "String",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Input File",
+                    "name": "pcfFile",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The input file containing the list of files.",
+                    "type": "String",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Metadata List",
+                    "name": "metadata_list",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The input file containing a list of metadata ( SB,Band,Beam) (this input is optional, delete if not in use)",
+                    "type": "String",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Output File Name",
+                    "name": "outFilename",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "The output file name and an index to go with it",
+                    "type": "Object.List",
+                    "fieldType": "OutputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [],
+            "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
+            "commitHash": "b1ff857",
+            "paletteDownloadUrl": "",
+            "dataHash": "dfcd2b6a8844438286d7fd687c20cd7a1deb349fee983323be27dee48317581d"
+        },
+        {
+            "category": "PythonApp",
+            "drawOrderHint": 0,
+            "key": -11,
             "text": "TestApp",
             "description": "Just testing some stuff",
             "collapsed": false,
@@ -1741,14 +1887,14 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "58b4a1c",
+            "commitHash": "b1ff857",
             "paletteDownloadUrl": "",
             "dataHash": "1ace4ff2bd672279d9a77932501eebdc8281bd2dbe4c7bcd2e7bd77d8ecad5b7"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -11,
+            "key": -12,
             "text": "TestMultiOutput",
             "description": "Checks that the output ports are named appropriately.",
             "collapsed": false,
@@ -1822,14 +1968,14 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "58b4a1c",
+            "commitHash": "b1ff857",
             "paletteDownloadUrl": "",
             "dataHash": "fe53dcf28bf79d7edfb3d1ba3224e534d5cd8d83aeaad697aabe9587367e3627"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -12,
+            "key": -13,
             "text": "TestSrun",
             "description": "Tests that an srun app will run",
             "collapsed": false,
@@ -1916,7 +2062,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/alxndrwllmsn/dlg_dstack_components",
-            "commitHash": "58b4a1c",
+            "commitHash": "b1ff857",
             "paletteDownloadUrl": "",
             "dataHash": "3835153070bc204a98ba7275c8b8dc62b2b86872bdadd7cd8dc238f83ff0e3c7"
         }
