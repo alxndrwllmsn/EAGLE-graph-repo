@@ -366,7 +366,7 @@
                 },
                 {
                     "name": "func_code",
-                    "value": "def print_list(ms_name, parset_in):\n    for key, data in ms_name[0].items():\n        parset_in[key]={'value':data}\n    outdata = []\n    for key, data in parset_in.items():\n        if key != \"Config\":\n            outdata.append(f\"{key} = {data[\"value\"]}\")\n    return \"\\n\".join(outdata)",
+                    "value": "def print_list(ms_name, parset_in, parset_out):\n    for key, data in ms_name[0].items():\n        parset_in[key]={'value':data}\n    outdata = []\n    for key, data in parset_in.items():\n        if key != \"Config\":\n            outdata.append(f\"{key} = {data[\"value\"]}\")\n    with open(parset_out,'w') as f:\n        f.write(\"\\n\".join(outdata))",
                     "defaultValue": "",
                     "description": "Python function code, e.g. 'def func_name(args): return args'. Note that func_name above needs to match the defined name here.",
                     "readonly": false,
@@ -517,7 +517,7 @@
                 },
                 {
                     "name": "output_parser",
-                    "value": "pickle",
+                    "value": "path",
                     "defaultValue": "pickle",
                     "description": "Output port parsing technique Mapping from argname to default value. Should match only the last part of the argnames list. Values are interpreted as Python code literals and that means string values need to be quoted.",
                     "readonly": false,
