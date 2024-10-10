@@ -2044,7 +2044,7 @@
             "outputAppFields": [],
             "inputApplicationName": "GenericScatterApp",
             "inputApplicationType": "PythonApp",
-            "inputApplicationId": "f1d40baa-b29f-4239-adb5-f4b769c4e7f1",
+            "inputApplicationId": "24c7f7a1-8b7f-4c12-b71f-90d2c4d8937a",
             "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
@@ -2241,7 +2241,7 @@
                 },
                 {
                     "name": "dummy",
-                    "value": "",
+                    "value": "[{\"Cimager.dataset\":\"/scratch/director2193/awilliamson1/pilot_processing/visibilities/scienceData_SB10991_G23_T0_B_06.beam17_SL.ms\",\"Cimager.images.direction\":\"[22h42m21.852, -30.24.58.46, J2000]\",\"Cimager.Images.Names\":[\"image.SB10991_B_17.dumpgrid\"},[{\"Cimager.dataset\":\"/scratch/director2193/awilliamson1/pilot_processing/visibilities/scienceData_SB10994_G23_T0_B_05.beam17_SL.ms\",\"Cimager.images.direction\":\"[22h42m21.852, -30.24.58.46, J2000]\",\"Cimager.Images.Names\":[\"image.SB10994_B_17.dumpgrid\"}]",
                     "defaultValue": "",
                     "description": "Dummy port",
                     "readonly": false,
