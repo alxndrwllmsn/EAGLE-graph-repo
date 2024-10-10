@@ -2213,7 +2213,7 @@
             "id": "a01c1027-4fab-413f-a700-24bec138aca6",
             "name": "DoL to LoD",
             "description": "An application that wraps a python function. The inputs of the application are treated as the arguments of the function. Conversely, the output of the function is treated as the output of the application. If the application has more than one output, the result of calling the function is treated as an iterable, with each individual object being written to its corresponding output.",
-            "x": 300.3932559967121,
+            "x": 301.46079693000553,
             "y": 262.06017173602834,
             "radius": 25,
             "collapsed": false,
@@ -2241,7 +2241,7 @@
                 },
                 {
                     "name": "func_code",
-                    "value": "def dol_to_lod(dol):\n    keys = dol.keys()\n    if type(dol[keys[0]]) is not list:\n        raise TypeError\n    lodsize = len(dol[keys[0]])\n    lod = [{}]*lodsize\n    for i in range(lodsize):\n        for k in keys:\n           lod[i][k] = dol[k][i]\n    return lod",
+                    "value": "def dol_to_lod(dol):\n    keys = list(dol.keys())\n    if type(dol[keys[0]]) is not list:\n        raise TypeError\n    lodsize = len(dol[keys[0]])\n    lod = [{}]*lodsize\n    for i in range(lodsize):\n        for k in keys:\n           lod[i][k] = dol[k][i]\n    return lod ",
                     "defaultValue": "",
                     "description": "Python function code, e.g. 'def func_name(args): return args'. Note that func_name above needs to match the defined name here.",
                     "readonly": false,
