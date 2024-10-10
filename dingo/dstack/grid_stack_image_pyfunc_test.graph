@@ -19,7 +19,7 @@
         "lastModifiedName": "",
         "lastModifiedEmail": "",
         "lastModifiedDatetime": 0,
-        "numLGNodes": 5
+        "numLGNodes": 6
     },
     "graphConfigurations": {},
     "nodeDataArray": [
@@ -1300,7 +1300,7 @@
                     "encoding": "pickle",
                     "id": "c8c8d45c-f6db-4c4c-95a8-3f060e18045e",
                     "parameterType": "ComponentParameter",
-                    "usage": "NoPort"
+                    "usage": "OutputPort"
                 },
                 {
                     "name": "command_line_arguments",
@@ -1510,21 +1510,6 @@
                     "id": "b5127d85-5980-4184-9567-97d44de39e29",
                     "parameterType": "ComponentParameter",
                     "usage": "InputPort"
-                },
-                {
-                    "name": "event",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "encoding": "pickle",
-                    "id": "1d6806fe-2e03-414a-b726-fe83820005c6",
-                    "parameterType": "ComponentParameter",
-                    "usage": "OutputPort"
                 }
             ],
             "inputAppFields": [],
@@ -1756,6 +1741,173 @@
             "outputApplicationType": "None",
             "outputApplicationId": null,
             "outputApplicationDescription": ""
+        },
+        {
+            "category": "File",
+            "categoryType": "Data",
+            "isGroup": false,
+            "color": "#2c2c2c",
+            "drawOrderHint": 0,
+            "id": "7c1a8ccf-4991-4086-80d5-32711b3f3c1a",
+            "name": "Imager Log",
+            "description": "A standard file on a filesystem mounted to the deployment machine",
+            "x": 1026.188679833104,
+            "y": 53.60816052167697,
+            "radius": 25,
+            "collapsed": false,
+            "subject": null,
+            "expanded": true,
+            "repositoryUrl": "https://github.com/ICRAR/daliuge",
+            "commitHash": "d075337",
+            "paletteDownloadUrl": "https://raw.githubusercontent.com/ICRAR/EAGLE-graph-repo/master/daliuge/daliuge-master.palette",
+            "dataHash": "fb6b9cc58716743665932ec7d3eba94334ea8ab892708fdb4658751a1878ed22",
+            "fields": [
+                {
+                    "name": "filepath",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "File path for this file. In many cases this does not need to be specified. If it has a \\/ at the end it will be treated as a directory name and the filename will be generated. If it does not have a \\/, the last part will be treated as a filename. If filepath does not start with \\/ (relative path) then the session directory will be prepended to make the path absolute.\"",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "encoding": "pickle",
+                    "id": "d6170ce1-ab9e-4696-85d7-1dea717923ef",
+                    "parameterType": "ApplicationArgument",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "check_filepath_exists",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Perform a check to make sure the file path exists before proceeding with the application",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "encoding": "pickle",
+                    "id": "fa4e9032-b5e8-4197-8104-3f7a78115721",
+                    "parameterType": "ComponentParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "dropclass",
+                    "value": "dlg.data.drops.file.FileDROP",
+                    "defaultValue": "dlg.data.drops.file.FileDROP",
+                    "description": "Drop class",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "encoding": "pickle",
+                    "id": "e9f906f7-f5d7-430f-a1ef-7ee0dca1273f",
+                    "parameterType": "ComponentParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "base_name",
+                    "value": "file",
+                    "defaultValue": "file",
+                    "description": "Base name of application class",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "encoding": "pickle",
+                    "id": "8dc690eb-fca0-4dcf-8c50-f8a6ee4a9bfb",
+                    "parameterType": "ComponentParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "streaming",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Specifies whether this data component streams input and output data",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "encoding": "pickle",
+                    "id": "ae2aa5cc-362c-458f-923b-893bbab81931",
+                    "parameterType": "ComponentParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "persist",
+                    "value": true,
+                    "defaultValue": "True",
+                    "description": "Specifies whether this data component contains data that should not be deleted after execution",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "encoding": "pickle",
+                    "id": "3b86bfcf-ffa4-40c1-bbd8-b62751323787",
+                    "parameterType": "ComponentParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "data_volume",
+                    "value": 5,
+                    "defaultValue": "5",
+                    "description": "Estimated size of the data contained in this node",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "encoding": "pickle",
+                    "id": "17ad55df-c3f1-47d8-a85d-0ab16fd33215",
+                    "parameterType": "ConstraintParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "group_end",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Is this node the end of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "encoding": "pickle",
+                    "id": "c4ed003a-fada-4e1b-b77d-cb702d1a76b5",
+                    "parameterType": "ComponentParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "dummy",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Dummy port",
+                    "readonly": false,
+                    "type": "Object",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "encoding": "pickle",
+                    "id": "ae1db8fc-a41e-4d1a-94ff-105d454b1db1",
+                    "parameterType": "ApplicationArgument",
+                    "usage": "InputOutput"
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationId": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationId": null,
+            "outputApplicationDescription": ""
         }
     ],
     "linkDataArray": [
@@ -1789,6 +1941,14 @@
             "to": "6469af1d-9c58-4a5c-8bf8-89238faf729e",
             "toPort": "963eeb07-2a4b-4732-9f0c-59ee53240077",
             "loop_aware": "1",
+            "closesLoop": false
+        },
+        {
+            "from": "3bc14ff0-6d44-4b9c-a7f3-f7a75e4812b7",
+            "fromPort": "c8c8d45c-f6db-4c4c-95a8-3f060e18045e",
+            "to": "7c1a8ccf-4991-4086-80d5-32711b3f3c1a",
+            "toPort": "ae1db8fc-a41e-4d1a-94ff-105d454b1db1",
+            "loop_aware": "0",
             "closesLoop": false
         }
     ]
