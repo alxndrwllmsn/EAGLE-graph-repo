@@ -1245,7 +1245,7 @@
                 },
                 {
                     "name": "func_code",
-                    "value": "def dol_to_lod(dol: dict) -> list:\n    lod = []\n    for k, d in dol.items():\n        dl = d['value'].split('\\n')\n        if len(lod) == 0:\n            for dle in dl:\n                lod.append({k: {'value':dle}})\n        else:\n            for i, dle in enumerate(dl):\n                lod[i][k] = {'value':dle}\n    print(lod)\n    return lod",
+                    "value": "def dol_to_lod(dol: dict) -> list:\n    lod = []\n    for k, d in dol.items():\n        dl = d['value'].split(';')\n        if len(lod) == 0:\n            for dle in dl:\n                lod.append({k: {'value':dle}})\n        else:\n            for i, dle in enumerate(dl):\n                lod[i][k] = {'value':dle}\n    print(lod)\n    return lod",
                     "defaultValue": "",
                     "description": "Python function code, e.g. 'def func_name(args): return args'. Note that func_name above needs to match the defined name here.",
                     "readonly": false,
