@@ -1751,7 +1751,7 @@
                 },
                 {
                     "name": "Cimager.dataset",
-                    "value": "/scratch/director2193/awilliamson1/pilot_processing/visibilities/scienceData_SB10991_G23_T0_B_06.beam17_SL.ms\n/scratch/director2193/awilliamson1/pilot_processing/visibilities/scienceData_SB10994_G23_T0_B_05.beam17_SL.ms",
+                    "value": "Unknown",
                     "defaultValue": "",
                     "description": "",
                     "readonly": false,
@@ -1766,7 +1766,7 @@
                 },
                 {
                     "name": "Cimager.images.direction",
-                    "value": "[22h42m21.852, -30.24.58.46, J2000]\n[22h42m21.852, -30.24.58.46, J2000]",
+                    "value": "[22h42m21.852, -30.24.58.46, J2000][22h42m21.852, -30.24.58.46, J2000]",
                     "defaultValue": "",
                     "description": "",
                     "readonly": false,
@@ -1781,7 +1781,7 @@
                 },
                 {
                     "name": "Cimager.Images.Names",
-                    "value": "image.SB10991_B_17.dumpgrid\nimage.SB10994_B_17.dumpgrid",
+                    "value": "image.SB10991_B_17.dumpgridimage.SB10994_B_17.dumpgrid",
                     "defaultValue": "",
                     "description": "",
                     "readonly": false,
