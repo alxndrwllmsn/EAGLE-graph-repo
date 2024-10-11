@@ -1035,7 +1035,7 @@
                     "defaultValue": "",
                     "description": "",
                     "readonly": false,
-                    "type": "String",
+                    "type": "Object.File",
                     "precious": false,
                     "options": [],
                     "positional": false,
