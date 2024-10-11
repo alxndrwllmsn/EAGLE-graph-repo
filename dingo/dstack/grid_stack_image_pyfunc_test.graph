@@ -1215,7 +1215,7 @@
             "color": "#0059a5",
             "drawOrderHint": 0,
             "id": "4f336ff8-12c4-48dd-8255-68a38063ceaa",
-            "name": "PyFuncApp",
+            "name": "dol_to_lod",
             "description": "An application that wraps a python function. The inputs of the application are treated as the arguments of the function. Conversely, the output of the function is treated as the output of the application. If the application has more than one output, the result of calling the function is treated as an iterable, with each individual object being written to its corresponding output.",
             "x": 296.8558720714522,
             "y": 217.93501371294073,
@@ -1245,7 +1245,7 @@
                 },
                 {
                     "name": "func_code",
-                    "value": "def dol_to_lod(dol: dict) -> list:\n    lod = []\n    for k, d in dol.items():\n        dl = d.split('\\n')\n        if len(lod) == 0:\n            for dle in dl:\n                lod.append({k, dle})\n        else:\n            for i, dle in enumerate(dl):\n                lod[i][k] = dle\n    return lod",
+                    "value": "def dol_to_lod(dol: dict) -> list:\n    lod = []\n    for k, d in dol.items():\n        dl = d['value'].split('\\n')\n        if len(lod) == 0:\n            for dle in dl:\n                lod.append({k: dle})\n        else:\n            for i, dle in enumerate(dl):\n                lod[i][k] = dle\n    return lod",
                     "defaultValue": "",
                     "description": "Python function code, e.g. 'def func_name(args): return args'. Note that func_name above needs to match the defined name here.",
                     "readonly": false,
