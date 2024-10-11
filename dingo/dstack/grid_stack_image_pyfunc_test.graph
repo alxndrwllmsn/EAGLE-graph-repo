@@ -837,7 +837,7 @@
                 },
                 {
                     "name": "func_code",
-                    "value": "def merge_parset_gridding(ms_name, parset_in):\n    outdata = {}\n    for key, ms in ms_name[0].items():\n        outdata[key] = ms['value']\n    for key, p in parset_in.items():\n        outdata[key] = p['value']\n    parset_out = \"\\n\".join(f\"{x}={y['value']}\" for x,y in outdata.items())\n    return parset_out.encode(\"utf-8\")\n     ",
+                    "value": "def merge_parset_gridding(ms_name, parset_in):\n    outdata = {}\n    for key, ms in ms_name[0].items():\n        print(ms)\n        outdata[key] = ms['value']\n    for key, p in parset_in.items():\n        print(p)\n        outdata[key] = p['value']\n    print(outdata)\n    parset_out = \"\\n\".join(f\"{x}={y['value']}\" for x,y in outdata.items())\n    return parset_out.encode(\"utf-8\")\n     ",
                     "defaultValue": "",
                     "description": "Python function code, e.g. 'def func_name(args): return args'. Note that func_name above needs to match the defined name here.",
                     "readonly": false,
@@ -1245,7 +1245,7 @@
                 },
                 {
                     "name": "func_code",
-                    "value": "def dol_to_lod(dol: dict) -> list:\n    lod = []\n    for k, d in dol.items():\n        dl = d['value'].split('\\n')\n        if len(lod) == 0:\n            for dle in dl:\n                lod.append({k: {'value':dle}})\n        else:\n            for i, dle in enumerate(dl):\n                lod[i][k] = {'value':dle}\n    return lod",
+                    "value": "def dol_to_lod(dol: dict) -> list:\n    lod = []\n    for k, d in dol.items():\n        dl = d['value'].split('\\n')\n        if len(lod) == 0:\n            for dle in dl:\n                lod.append({k: {'value':dle}})\n        else:\n            for i, dle in enumerate(dl):\n                lod[i][k] = {'value':dle}\n    print(lod)\n    return lod",
                     "defaultValue": "",
                     "description": "Python function code, e.g. 'def func_name(args): return args'. Note that func_name above needs to match the defined name here.",
                     "readonly": false,
