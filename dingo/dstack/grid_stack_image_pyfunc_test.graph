@@ -8,7 +8,7 @@
         "repoBranch": "master",
         "repo": "alxndrwllmsn/EAGLE-graph-repo",
         "generatorVersion": "v6.4.2",
-        "generatorCommitHash": "a87dcffb6df5a64b4a5841c439d4a748b46d0158",
+        "generatorCommitHash": "8819881d00d08eaa8dd0dad88e041746d4ef1d70",
         "generatorName": "EAGLE",
         "schemaVersion": "OJS",
         "readonly": false,
@@ -21,7 +21,82 @@
         "lastModifiedDatetime": 0,
         "numLGNodes": 10
     },
-    "graphConfigurations": {},
+    "graphConfigurations": {
+        "51e539f9-972d-45fd-9e0c-04f6d52370b4": {
+            "name": "Test Run",
+            "isFavorite": false,
+            "description": "test running of higher res imaging",
+            "nodes": {
+                "c7859e2e-5ffd-4353-aff9-55e4daaa5f96": {
+                    "fields": {
+                        "c04bbfb3-836d-445b-b769-36d59c82c5dc": {
+                            "value": "1",
+                            "comment": ""
+                        },
+                        "3468773d-baad-4d7b-a322-3dedf32a0183": {
+                            "value": "100",
+                            "comment": ""
+                        },
+                        "d533b90f-4a0b-4d12-98d5-5a4e83b71ee1": {
+                            "value": "[100,6370]",
+                            "comment": ""
+                        },
+                        "77e3eee0-e777-4d36-8a9b-b003695e6969": {
+                            "value": "6000",
+                            "comment": ""
+                        },
+                        "cebd18f0-38b6-4470-854a-bf2a6c3b5045": {
+                            "value": "[2arcsec,2arcsec]",
+                            "comment": ""
+                        },
+                        "37d5bf99-3904-4737-a755-46ac28be7565": {
+                            "value": "[12arcsec, 12arcsec, 0deg]",
+                            "comment": ""
+                        },
+                        "bfc552a7-68b0-48ce-9903-f7e245095905": {
+                            "value": "",
+                            "comment": ""
+                        }
+                    }
+                },
+                "79546eb1-4cd5-4c07-86fc-6cf1e7f06829": {
+                    "fields": {
+                        "d52ee27d-0444-4243-8600-a0cd853b0088": {
+                            "value": "/scratch/director2193/awilliamson1/pilot_processing/visibilities/scienceData_SB10991_G23_T0_B_06.beam17_SL.ms /scratch/director2193/awilliamson1/pilot_processing/visibilities/scienceData_SB10994_G23_T0_B_05.beam17_SL.ms",
+                            "comment": ""
+                        },
+                        "0f341133-61e2-41c3-9fac-45899012c44c": {
+                            "value": "[22h42m21.852, -30.24.58.46, J2000] [22h42m21.852, -30.24.58.46, J2000]",
+                            "comment": ""
+                        },
+                        "9c708839-2ddb-4c86-b371-732b4a3a1d26": {
+                            "value": "image.SB10991_B_17_S6370_N100.dumpgrid image.SB10994_B_17_S6370_N100.dumpgrid",
+                            "comment": ""
+                        }
+                    }
+                },
+                "2a0ebd09-171d-490d-a09c-09214943aec0": {
+                    "fields": {
+                        "2913ea8a-95ef-43e7-b070-5ae7d787b492": {
+                            "value": "2",
+                            "comment": ""
+                        }
+                    }
+                },
+                "580578f6-0fe0-469c-928d-0935d3943656": {
+                    "fields": {
+                        "9ad073d5-0bbb-4c1e-aa96-95ff902839f6": {
+                            "value": "srun -n 101 --jobid=$SLURM_JOBID /software/projects/ja3/awilliamson1/code-dev/yanda_build/install/yandasoft/bin/imager -c %i0 > %o0",
+                            "comment": ""
+                        }
+                    }
+                }
+            },
+            "lastModifiedName": "",
+            "lastModifiedEmail": "",
+            "lastModifiedDatetime": 0
+        }
+    },
     "nodeDataArray": [
         {
             "category": "Memory",
@@ -354,7 +429,7 @@
             "name": "Run Gridding",
             "description": "An application component able to run an arbitrary command within the Bash Shell",
             "x": 688.1493567331067,
-            "y": 218.93477851256455,
+            "y": 218.25444893812042,
             "radius": 25,
             "collapsed": false,
             "subject": null,
@@ -367,7 +442,7 @@
             "fields": [
                 {
                     "name": "command",
-                    "value": "srun -n 101 --jobid=$SLURM_JOBID /software/projects/ja3/awilliamson1/code-dev/yanda_build/install/yandasoft/bin/imager -c %i0 > %o0",
+                    "value": "Unknown",
                     "defaultValue": "",
                     "description": "The command to be executed",
                     "readonly": false,
@@ -610,7 +685,7 @@
                     "defaultValue": "",
                     "description": "",
                     "readonly": false,
-                    "type": "String",
+                    "type": "Object.File",
                     "precious": false,
                     "options": [],
                     "positional": false,
@@ -778,7 +853,7 @@
                     "defaultValue": "",
                     "description": "Dummy port",
                     "readonly": false,
-                    "type": "String",
+                    "type": "Object.File",
                     "precious": false,
                     "options": [],
                     "positional": false,
@@ -1217,7 +1292,7 @@
             "id": "4f336ff8-12c4-48dd-8255-68a38063ceaa",
             "name": "dol_to_lod",
             "description": "An application that wraps a python function. The inputs of the application are treated as the arguments of the function. Conversely, the output of the function is treated as the output of the application. If the application has more than one output, the result of calling the function is treated as an iterable, with each individual object being written to its corresponding output.",
-            "x": 296.8558720714522,
+            "x": 297.5017091192553,
             "y": 217.93501371294073,
             "radius": 25,
             "collapsed": false,
@@ -1580,7 +1655,7 @@
             "outputAppFields": [],
             "inputApplicationName": "GenericScatterApp",
             "inputApplicationType": "PythonApp",
-            "inputApplicationId": "3353ed48-ebd5-498e-9673-ab10b8c9c390",
+            "inputApplicationId": "43d92822-c3d9-4bf7-adf2-b49d28898e94",
             "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
@@ -1597,7 +1672,7 @@
             "name": "ParameterSet",
             "description": "A set of parameters, which can be set and modified in EAGLE and thus is part of the graph. Multiple serialisation formats are available.",
             "x": 147.0737086361612,
-            "y": 265.10417310256344,
+            "y": 263.77800648031626,
             "radius": 25,
             "collapsed": false,
             "subject": null,
@@ -1781,7 +1856,7 @@
                 },
                 {
                     "name": "Cimager.Images.Names",
-                    "value": "image.SB10991_B_17.dumpgridimage.SB10994_B_17.dumpgrid",
+                    "value": "Unknown",
                     "defaultValue": "",
                     "description": "",
                     "readonly": false,
@@ -2265,7 +2340,7 @@
                 },
                 {
                     "name": "Cimager.Images.nyquistgridding",
-                    "value": false,
+                    "value": true,
                     "defaultValue": "false",
                     "description": "Optional parameter to determine thegriddingcellsizeparameter automatically using uvw metadata. Ifgriddingcellsizeis also defined, that value will be used. Setting nyquistgridding=false will not disablegriddingcellsizeif it is defined.",
                     "readonly": false,
@@ -2604,7 +2679,7 @@
             "fromPort": "19fd3619-1b3d-4458-abf0-143174af8696",
             "to": "45b12151-d5d3-42fd-bc57-0ec9eec05d5f",
             "toPort": "8ef136a7-95f9-4b63-ad11-41583244162a",
-            "loop_aware": "1",
+            "loop_aware": "0",
             "closesLoop": false
         },
         {
@@ -2612,7 +2687,7 @@
             "fromPort": "34002b65-5f44-4925-86d6-bf30f23565f4",
             "to": "5ca4efb6-ae31-4db1-8d8f-b0711846aa35",
             "toPort": "fb2ef129-274d-4357-ad57-5ef228ae800e",
-            "loop_aware": "1",
+            "loop_aware": "0",
             "closesLoop": false
         },
         {
@@ -2620,7 +2695,7 @@
             "fromPort": "fb2ef129-274d-4357-ad57-5ef228ae800e",
             "to": "580578f6-0fe0-469c-928d-0935d3943656",
             "toPort": "6da145f0-8d1d-4344-ba84-4dbe5051a1e2",
-            "loop_aware": "1",
+            "loop_aware": "0",
             "closesLoop": false
         },
         {
