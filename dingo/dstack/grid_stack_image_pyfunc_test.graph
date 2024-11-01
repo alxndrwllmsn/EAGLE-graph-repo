@@ -2418,7 +2418,7 @@
                 },
                 {
                     "name": "Cimager.Images.nyquistgridding",
-                    "value": false,
+                    "value": true,
                     "defaultValue": "false",
                     "description": "Optional parameter to determine thegriddingcellsizeparameter automatically using uvw metadata. Ifgriddingcellsizeis also defined, that value will be used. Setting nyquistgridding=false will not disablegriddingcellsizeif it is defined.",
                     "readonly": false,
