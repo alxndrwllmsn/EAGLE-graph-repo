@@ -128,7 +128,7 @@
                             "comment": ""
                         },
                         "bfc552a7-68b0-48ce-9903-f7e245095905": {
-                            "value": "",
+                            "value": "True",
                             "comment": ""
                         },
                         "554273a2-a169-4c49-bd75-3a9c96f3e42e": {
@@ -2418,11 +2418,11 @@
                 },
                 {
                     "name": "Cimager.Images.nyquistgridding",
-                    "value": true,
-                    "defaultValue": "false",
+                    "value": "True",
+                    "defaultValue": "True",
                     "description": "Optional parameter to determine thegriddingcellsizeparameter automatically using uvw metadata. Ifgriddingcellsizeis also defined, that value will be used. Setting nyquistgridding=false will not disablegriddingcellsizeif it is defined.",
                     "readonly": false,
-                    "type": "Boolean",
+                    "type": "String",
                     "precious": false,
                     "options": [],
                     "positional": false,
