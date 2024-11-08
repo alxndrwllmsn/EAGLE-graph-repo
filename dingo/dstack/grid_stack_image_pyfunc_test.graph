@@ -21,7 +21,7 @@
         "lastModifiedDatetime": 0,
         "numLGNodes": 10
     },
-    "activeGraphConfigId": "908abaec-711f-4855-871a-eec394aee938",
+    "activeGraphConfigId": "829bdf63-7ff5-4ef9-b050-96853793cf45",
     "graphConfigurations": {
         "908abaec-711f-4855-871a-eec394aee938": {
             "name": "Test Run",
@@ -208,31 +208,43 @@
                 "c7859e2e-5ffd-4353-aff9-55e4daaa5f96": {
                     "fields": {
                         "c04bbfb3-836d-445b-b769-36d59c82c5dc": {
-                            "value": "1",
+                            "value": "16",
                             "comment": ""
                         },
                         "3468773d-baad-4d7b-a322-3dedf32a0183": {
-                            "value": "100",
+                            "value": "483",
                             "comment": ""
                         },
                         "d533b90f-4a0b-4d12-98d5-5a4e83b71ee1": {
-                            "value": "[100, 6370]",
+                            "value": "[7776,0]",
                             "comment": ""
                         },
                         "77e3eee0-e777-4d36-8a9b-b003695e6969": {
-                            "value": "2000",
+                            "value": "18000",
                             "comment": ""
                         },
                         "554273a2-a169-4c49-bd75-3a9c96f3e42e": {
-                            "value": "[1024,1024]",
+                            "value": "[3072,3072]",
                             "comment": ""
                         },
                         "cebd18f0-38b6-4470-854a-bf2a6c3b5045": {
-                            "value": "[6arcsec,6arcsec]",
+                            "value": "[2arcsec,2arcsec]",
                             "comment": ""
                         },
                         "37d5bf99-3904-4737-a755-46ac28be7565": {
-                            "value": "[30arcsec, 30arcsec, 0deg]",
+                            "value": "[12arcsec, 12arcsec, 0deg]",
+                            "comment": ""
+                        },
+                        "bfc552a7-68b0-48ce-9903-f7e245095905": {
+                            "value": "true",
+                            "comment": ""
+                        }
+                    }
+                },
+                "580578f6-0fe0-469c-928d-0935d3943656": {
+                    "fields": {
+                        "9ad073d5-0bbb-4c1e-aa96-95ff902839f6": {
+                            "value": "srun -n 487 --jobid=$SLURM_JOBID /software/projects/ja3/awilliamson1/code-dev/yanda_build/install/yandasoft/bin/imager -c %i0 > %o0",
                             "comment": ""
                         }
                     }
@@ -575,7 +587,7 @@
             "name": "Run Gridding",
             "description": "An application component able to run an arbitrary command within the Bash Shell",
             "x": 688.1493567331067,
-            "y": 218.25444893812042,
+            "y": 217.44925540657533,
             "radius": 25,
             "collapsed": false,
             "subject": null,
@@ -588,7 +600,7 @@
             "fields": [
                 {
                     "name": "command",
-                    "value": "Unknown",
+                    "value": "srun -n 487 --jobid=$SLURM_JOBID /software/projects/ja3/awilliamson1/code-dev/yanda_build/install/yandasoft/bin/imager -c %i0 > %o0",
                     "defaultValue": "",
                     "description": "The command to be executed",
                     "readonly": false,
@@ -1801,7 +1813,7 @@
             "outputAppFields": [],
             "inputApplicationName": "GenericScatterApp",
             "inputApplicationType": "PythonApp",
-            "inputApplicationId": "a53cdfbd-0fce-40c8-9838-99134c682700",
+            "inputApplicationId": "cbc17db4-724f-4c4f-aa04-96d13a8d3671",
             "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
