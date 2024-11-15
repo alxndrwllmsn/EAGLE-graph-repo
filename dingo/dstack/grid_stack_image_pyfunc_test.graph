@@ -127,7 +127,7 @@
                             "comment": ""
                         },
                         "37d5bf99-3904-4737-a755-46ac28be7565": {
-                            "value": "[12arcsec, 12arcsec, 0deg]",
+                            "value": "[30arcsec, 30arcsec, 0deg]",
                             "comment": ""
                         },
                         "bfc552a7-68b0-48ce-9903-f7e245095905": {
@@ -135,7 +135,7 @@
                             "comment": ""
                         },
                         "554273a2-a169-4c49-bd75-3a9c96f3e42e": {
-                            "value": "[3072,3072]",
+                            "value": "[1024,1024]",
                             "comment": ""
                         }
                     }
