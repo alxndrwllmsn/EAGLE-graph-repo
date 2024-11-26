@@ -107,39 +107,39 @@
                 "c7859e2e-5ffd-4353-aff9-55e4daaa5f96": {
                     "fields": {
                         "c04bbfb3-836d-445b-b769-36d59c82c5dc": {
-                            "value": "1",
+                            "value": "8",
                             "comment": ""
                         },
                         "3468773d-baad-4d7b-a322-3dedf32a0183": {
-                            "value": "100",
+                            "value": "972",
                             "comment": ""
                         },
                         "d533b90f-4a0b-4d12-98d5-5a4e83b71ee1": {
-                            "value": "[100,6370]",
+                            "value": "[7776,0]",
                             "comment": ""
                         },
                         "77e3eee0-e777-4d36-8a9b-b003695e6969": {
-                            "value": "2000",
+                            "value": "18000",
                             "comment": ""
                         },
                         "cebd18f0-38b6-4470-854a-bf2a6c3b5045": {
-                            "value": "[6arcsec,6arcsec]",
+                            "value": "[2arcsec,2arcsec]",
                             "comment": ""
                         },
                         "37d5bf99-3904-4737-a755-46ac28be7565": {
-                            "value": "[30arcsec, 30arcsec, 0deg]",
+                            "value": "[12arcsec, 12arcsec, 0deg]",
                             "comment": ""
                         },
                         "bfc552a7-68b0-48ce-9903-f7e245095905": {
-                            "value": "false",
+                            "value": "true",
                             "comment": ""
                         },
                         "554273a2-a169-4c49-bd75-3a9c96f3e42e": {
-                            "value": "[1024,1024]",
+                            "value": "[3072,3072]",
                             "comment": ""
                         },
                         "ae383d3a-f74d-4d03-8150-7d935bccef2a": {
-                            "value": "/scratch/director2193/awilliamson1/grid_compression_testing/adios_config.yaml",
+                            "value": "",
                             "comment": ""
                         },
                         "c2ba360f-f7c6-4acf-b782-c03ee4cfbd3b": {
@@ -151,15 +151,15 @@
                 "79546eb1-4cd5-4c07-86fc-6cf1e7f06829": {
                     "fields": {
                         "d52ee27d-0444-4243-8600-a0cd853b0088": {
-                            "value": "/scratch/director2193/awilliamson1/grid_compression_testing/visibilities/scienceData_SB10991_G23_T0_B_06.beam17_SL.ms",
+                            "value": "/scratch/director2193/jrhee/deep_imaging/beam17A/scienceData_SB11000_G23_T0_A_03.beam17_SL.ms; /scratch/director2193/jrhee/deep_imaging/beam17A/scienceData_SB11003_G23_T0_A_02.beam17_SL.ms; /scratch/director2193/jrhee/deep_imaging/beam17A/scienceData_SB11006_G23_T0_A_01.beam17_SL.ms",
                             "comment": ""
                         },
                         "0f341133-61e2-41c3-9fac-45899012c44c": {
-                            "value": "[22h42m21.852, -30.24.58.46, J2000]",
+                            "value": "[22h40m18.365, -29.57.40.14, J2000]; [22h40m18.365, -29.57.40.14, J2000]; [22h40m18.365, -29.57.40.14, J2000]",
                             "comment": ""
                         },
                         "9c708839-2ddb-4c86-b371-732b4a3a1d26": {
-                            "value": "image.SB10991_B_17_100c_6370s.dumpgrid",
+                            "value": "image.SB11000_A_17.dumpgrid; image.SB11003_A_17.dumpgrid; image.SB11006_A_17.dumpgrid",
                             "comment": ""
                         }
                     }
@@ -167,7 +167,7 @@
                 "2a0ebd09-171d-490d-a09c-09214943aec0": {
                     "fields": {
                         "2913ea8a-95ef-43e7-b070-5ae7d787b492": {
-                            "value": "1",
+                            "value": "3",
                             "comment": ""
                         }
                     }
@@ -175,7 +175,7 @@
                 "580578f6-0fe0-469c-928d-0935d3943656": {
                     "fields": {
                         "9ad073d5-0bbb-4c1e-aa96-95ff902839f6": {
-                            "value": "srun -n 101 --jobid=$SLURM_JOBID /software/projects/ja3/awilliamson1/code-dev/yanda_build/install/yandasoft/bin/imager -c %i0 > %o0",
+                            "value": "srun -n 973 --jobid=$SLURM_JOBID /software/projects/ja3/awilliamson1/code-dev/yanda_build/install/yandasoft/bin/imager -c %i0 > %o0",
                             "comment": ""
                         }
                     }
@@ -273,8 +273,8 @@
             "id": "a0c80ca2-da3e-445f-a41a-100792789835",
             "name": "split_array",
             "description": "In-memory storage of intermediate data products",
-            "x": 616.0035362546763,
-            "y": 229.72445094574624,
+            "x": 625.0035362546763,
+            "y": 238.72445094574624,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "d075337",
@@ -423,8 +423,8 @@
             "id": "6062a7cd-eee3-43bd-9144-4cb0b10b0f21",
             "name": "Imager Log",
             "description": "A standard file on a filesystem mounted to the deployment machine",
-            "x": 770.0861349420879,
-            "y": 292.7799083580022,
+            "x": 779.0861349420879,
+            "y": 301.7799083580022,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "d075337",
@@ -588,8 +588,8 @@
             "id": "580578f6-0fe0-469c-928d-0935d3943656",
             "name": "Run Gridding",
             "description": "An application component able to run an arbitrary command within the Bash Shell",
-            "x": 699.8441632015616,
-            "y": 229.94925540657533,
+            "x": 712.3441632015616,
+            "y": 242.44925540657533,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "2e9e34f",
@@ -872,8 +872,8 @@
             "id": "5ca4efb6-ae31-4db1-8d8f-b0711846aa35",
             "name": "parset_out",
             "description": "A standard file on a filesystem mounted to the deployment machine",
-            "x": 695.1690466952855,
-            "y": 339.11771161156923,
+            "x": 704.1690466952855,
+            "y": 348.11771161156923,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "2e9e34f",
@@ -1037,8 +1037,8 @@
             "id": "45b12151-d5d3-42fd-bc57-0ec9eec05d5f",
             "name": "Merge Parset Gridding",
             "description": "An application that wraps a python function. The inputs of the application are treated as the arguments of the function. Conversely, the output of the function is treated as the output of the application. If the application has more than one output, the result of calling the function is treated as an iterable, with each individual object being written to its corresponding output.",
-            "x": 610.4504402742721,
-            "y": 330.22472409893805,
+            "x": 622.9504402742721,
+            "y": 342.72472409893805,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "2e9e34f",
@@ -1291,8 +1291,8 @@
             "id": "7d385934-46c0-458d-9ba1-4ab57f1e7c7c",
             "name": "lod",
             "description": "In-memory storage of intermediate data products",
-            "x": 399.29237307557486,
-            "y": 254.7364566212184,
+            "x": 408.29237307557486,
+            "y": 263.7364566212184,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "d075337",
@@ -1440,8 +1440,8 @@
             "id": "4f336ff8-12c4-48dd-8255-68a38063ceaa",
             "name": "dol_to_lod",
             "description": "An application that wraps a python function. The inputs of the application are treated as the arguments of the function. Conversely, the output of the function is treated as the output of the application. If the application has more than one output, the result of calling the function is treated as an iterable, with each individual object being written to its corresponding output.",
-            "x": 310.0017091192553,
-            "y": 230.43501371294073,
+            "x": 322.5017091192553,
+            "y": 242.93501371294073,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "d075337",
@@ -1678,8 +1678,8 @@
             "id": "2a0ebd09-171d-490d-a09c-09214943aec0",
             "name": "Scatter/GenericScatterApp",
             "description": "A default Scatter construct for the GenericScatterApp component.",
-            "x": 686.76828760818,
-            "y": 281.0334835090723,
+            "x": 697.51828760818,
+            "y": 292.5869897527567,
             "subject": null,
             "repositoryUrl": "",
             "commitHash": "",
@@ -1797,7 +1797,7 @@
             "outputAppFields": [],
             "inputApplicationName": "GenericScatterApp",
             "inputApplicationType": "PythonApp",
-            "inputApplicationId": "1e872789-d5b6-4030-8583-baaf18ac1986",
+            "inputApplicationId": "024bfa1f-a39f-4f26-9e01-3acf38f6a8dd",
             "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
@@ -1813,8 +1813,8 @@
             "id": "79546eb1-4cd5-4c07-86fc-6cf1e7f06829",
             "name": "ParameterSet",
             "description": "A set of parameters, which can be set and modified in EAGLE and thus is part of the graph. Multiple serialisation formats are available.",
-            "x": 155.26923854893914,
-            "y": 272.0889813337851,
+            "x": 164.26923854893914,
+            "y": 281.0889813337851,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "2e9e34f",
@@ -2029,8 +2029,8 @@
             "id": "c7859e2e-5ffd-4353-aff9-55e4daaa5f96",
             "name": "Template Parset (Gridding)",
             "description": "The complete set of cImager parameters.",
-            "x": 450.0276288683768,
-            "y": 464.430520267649,
+            "x": 459.0276288683768,
+            "y": 473.430520267649,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "671d6e3",
@@ -2832,8 +2832,8 @@
             "id": "4c6ae476-1537-4049-99e5-ab3d5f29fa9b",
             "name": "BashShellApp",
             "description": "An application component able to run an arbitrary command within the Bash Shell",
-            "x": 925.1532284409285,
-            "y": 288.85409405128536,
+            "x": 937.6532284409285,
+            "y": 301.35409405128536,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "0de3637",
