@@ -1403,7 +1403,7 @@
             "fields": [
                 {
                     "name": "func_name",
-                    "value": "merge_parset_gridding",
+                    "value": "merge_parset_imaging",
                     "defaultValue": "",
                     "description": "Python function name",
                     "readonly": false,
