@@ -163,7 +163,7 @@
                 "1230131a-f419-49d6-96af-da3a422a026d": {
                     "fields": {
                         "1bdcf8e5-93e9-4557-b5cb-a116339f307a": {
-                            "value": "srun -n 100 --jobid=$SLURM_JOBID /software/projects/ja3/awilliamson1/code-dev/yanda_build/install/yandasoft/bin/imager -c %i0 > %o0",
+                            "value": "srun -n 100 --jobid=$SLURM_JOBID /software/projects/ja3/awilliamson1/code-dev/yanda_build/install/yandasoft/bin/cdeconvolver-mpi -c %i0 > %o0",
                             "comment": ""
                         }
                     }
