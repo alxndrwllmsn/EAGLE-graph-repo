@@ -184,7 +184,7 @@
             "id": "f95b9391-dd31-4949-ae9b-916ead9a4f24",
             "name": "Template Parset (Imaging)",
             "description": "A set of parameters, which can be set and modified in EAGLE and thus is part of the graph. Multiple serialisation formats are available.",
-            "x": 564.1702550465758,
+            "x": 565.7744112377259,
             "y": 491.83229378949085,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
@@ -316,7 +316,7 @@
                     "positional": false,
                     "encoding": "pickle",
                     "id": "d876ec5a-123b-4acf-84ad-9fff9542982b",
-                    "parameterType": "ApplicationArgument",
+                    "parameterType": "ComponentParameter",
                     "usage": "OutputPort"
                 },
                 {
@@ -331,7 +331,7 @@
                     "positional": false,
                     "encoding": "pickle",
                     "id": "2af14dd4-f59f-4780-b601-84add9bb9f74",
-                    "parameterType": "ApplicationArgument",
+                    "parameterType": "ComponentParameter",
                     "usage": "NoPort"
                 },
                 {
@@ -481,7 +481,7 @@
                     "positional": false,
                     "encoding": "pickle",
                     "id": "9629966a-6192-4187-ae15-87a729decae8",
-                    "parameterType": "ApplicationArgument",
+                    "parameterType": "ComponentParameter",
                     "usage": "NoPort"
                 },
                 {
@@ -526,7 +526,7 @@
                     "positional": false,
                     "encoding": "pickle",
                     "id": "b6d4e431-95f9-40c3-9784-50eab03c45c7",
-                    "parameterType": "ApplicationArgument",
+                    "parameterType": "ComponentParameter",
                     "usage": "NoPort"
                 },
                 {
@@ -1162,7 +1162,7 @@
                     "positional": false,
                     "encoding": "pickle",
                     "id": "cb8be18d-6075-439b-ab0f-d7e9066effeb",
-                    "parameterType": "ApplicationArgument",
+                    "parameterType": "ComponentParameter",
                     "usage": "OutputPort"
                 },
                 {
