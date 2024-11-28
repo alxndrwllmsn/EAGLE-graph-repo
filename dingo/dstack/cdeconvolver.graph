@@ -1899,7 +1899,7 @@
             "fields": [
                 {
                     "name": "command",
-                    "value": "srun -n 100 --jobid=$SLURM_JOBID /software/projects/ja3/awilliamson1/code-dev/yanda_build/install/yandasoft/bin/imager -c %i0 > %o0",
+                    "value": "srun -n 100 --jobid=$SLURM_JOBID /software/projects/ja3/awilliamson1/code-dev/yanda_build/install/yandasoft/bin/cdeconvolver-mpi -c %i0 > %o0",
                     "defaultValue": "",
                     "description": "The command to be executed",
                     "readonly": false,
