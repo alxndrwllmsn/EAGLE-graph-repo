@@ -103,7 +103,7 @@
                 "f8375f2e-04d1-4f8e-bb43-169932a88999": {
                     "fields": {
                         "97b7d4a5-ff46-4416-8724-a53df4e8d2a3": {
-                            "value": "/scratch/director2193/awilliamson1/deep_imaging/workspace/grid_stack_image_pyfunc_test9-2024-11-28T03-33-50.511Z/visgrid.SB32214_B_17_gal_2k.dumpgrid; /scratch/director2193/awilliamson1/deep_imaging/workspace/grid_stack_image_pyfunc_test22-2024-11-29T03-24-28.930Z/visgrid.SB39995_B_17_gal_2k.dumpgrid",
+                            "value": "/scratch/director2193/awilliamson1/deep_imaging/workspace/grid_stack_image_pyfunc_test9-2024-11-28T03-33-50.511Z/visgrid.SB32214_B_17_gal_2k.dumpgrid, /scratch/director2193/awilliamson1/deep_imaging/workspace/grid_stack_image_pyfunc_test22-2024-11-29T03-24-28.930Z/visgrid.SB39995_B_17_gal_2k.dumpgrid",
                             "comment": ""
                         },
                         "0f986675-4e09-4705-b1e5-974ff596e70c": {
