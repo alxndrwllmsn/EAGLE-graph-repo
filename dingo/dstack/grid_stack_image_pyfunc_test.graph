@@ -42,15 +42,15 @@
                             "comment": ""
                         },
                         "77e3eee0-e777-4d36-8a9b-b003695e6969": {
-                            "value": "2000",
+                            "value": "18000",
                             "comment": ""
                         },
                         "cebd18f0-38b6-4470-854a-bf2a6c3b5045": {
-                            "value": "[6arcsec,6arcsec]",
+                            "value": "[2arcsec,2arcsec]",
                             "comment": ""
                         },
                         "37d5bf99-3904-4737-a755-46ac28be7565": {
-                            "value": "[30arcsec, 30arcsec, 0deg]",
+                            "value": "[12arcsec, 12arcsec, 0deg]",
                             "comment": ""
                         },
                         "bfc552a7-68b0-48ce-9903-f7e245095905": {
@@ -58,7 +58,7 @@
                             "comment": ""
                         },
                         "554273a2-a169-4c49-bd75-3a9c96f3e42e": {
-                            "value": "[1024,1024]",
+                            "value": "[3072,3072]",
                             "comment": ""
                         },
                         "ae383d3a-f74d-4d03-8150-7d935bccef2a": {
@@ -82,7 +82,7 @@
                             "comment": ""
                         },
                         "9c708839-2ddb-4c86-b371-732b4a3a1d26": {
-                            "value": "image.SB39995_B_17_gal_2k.dumpgrid",
+                            "value": "image.SB39995_B_17_gal_6k.dumpgrid",
                             "comment": ""
                         }
                     }
