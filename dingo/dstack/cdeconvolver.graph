@@ -2545,7 +2545,7 @@
             "name": "BashShellApp",
             "description": "An application component able to run an arbitrary command within the Bash Shell",
             "x": 1206.1891644083582,
-            "y": 356.52427366931784,
+            "y": 354.83837258253465,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "0de3637",
@@ -2554,7 +2554,7 @@
             "fields": [
                 {
                     "name": "command",
-                    "value": "scancel $SLURM_JOBID",
+                    "value": "echo scancel $SLURM_JOBID",
                     "defaultValue": "",
                     "description": "The command to be executed",
                     "readonly": false,
