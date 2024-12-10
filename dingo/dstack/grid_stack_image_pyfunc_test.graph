@@ -42,15 +42,15 @@
                             "comment": ""
                         },
                         "77e3eee0-e777-4d36-8a9b-b003695e6969": {
-                            "value": "2000",
+                            "value": "18000",
                             "comment": ""
                         },
                         "cebd18f0-38b6-4470-854a-bf2a6c3b5045": {
-                            "value": "[6arcsec,6arcsec]",
+                            "value": "[2arcsec,2arcsec]",
                             "comment": ""
                         },
                         "37d5bf99-3904-4737-a755-46ac28be7565": {
-                            "value": "[30arcsec, 30arcsec, 0deg]",
+                            "value": "[10arcsec, 10arcsec, 0deg]",
                             "comment": ""
                         },
                         "bfc552a7-68b0-48ce-9903-f7e245095905": {
@@ -58,7 +58,7 @@
                             "comment": ""
                         },
                         "554273a2-a169-4c49-bd75-3a9c96f3e42e": {
-                            "value": "[1024,1024]",
+                            "value": "[3072,3072]",
                             "comment": ""
                         },
                         "ae383d3a-f74d-4d03-8150-7d935bccef2a": {
@@ -74,15 +74,15 @@
                 "79546eb1-4cd5-4c07-86fc-6cf1e7f06829": {
                     "fields": {
                         "d52ee27d-0444-4243-8600-a0cd853b0088": {
-                            "value": "/scratch/director2193/jrhee/deep_imaging/beam18A/scienceData_SB10991_G23_T0_A_06.beam18_SL.ms; /scratch/director2193/jrhee/deep_imaging/beam18A/scienceData_SB10994_G23_T0_A_05.beam18_SL.ms; /scratch/director2193/jrhee/deep_imaging/beam18A/scienceData_SB11000_G23_T0_A_03.beam18_SL.ms; /scratch/director2193/jrhee/deep_imaging/beam18A/scienceData_SB11003_G23_T0_A_02.beam18_SL.ms; /scratch/director2193/jrhee/deep_imaging/beam18A/scienceData_SB11006_G23_T0_A_01.beam18_SL.ms; /scratch/director2193/jrhee/deep_imaging/beam18A/scienceData_SB11010_G23_T0_A_04.beam18_SL.ms; /scratch/director2193/jrhee/deep_imaging/beam18A/scienceData_SB11026_G23_T0_A_07.beam18_SL.ms; /scratch/director2193/jrhee/deep_imaging/beam18A/scienceData.G23_T0_A_01.SB39697.G23_T0_A_01.beam18_SL.ms; /scratch/director2193/jrhee/deep_imaging/beam18A/scienceData.G23_T0_A_02.SB39722.G23_T0_A_02.beam18_SL.ms; /scratch/director2193/jrhee/deep_imaging/beam18A/scienceData.G23_T0_A_03.SB40196.G23_T0_A_03.beam18_SL.ms; /scratch/director2193/jrhee/deep_imaging/beam18A/scienceData.G23_T0_A_H01.SB65177.G23_T0_A_H01.beam18_SL.ms; /scratch/director2193/jrhee/deep_imaging/beam18A/scienceData.G23_T0_A_H02.SB65210.G23_T0_A_H02.beam18_SL.ms; /scratch/director2193/jrhee/deep_imaging/beam18A/scienceData.G23_T0_A_H03.SB65268.G23_T0_A_H03.beam18_SL.ms; /scratch/director2193/jrhee/deep_imaging/beam18A/scienceData.G23_T0_A_H04.SB65297.G23_T0_A_H04.beam18_SL.ms; /scratch/director2193/jrhee/deep_imaging/beam18A/scienceData.G23_T0_A_H05.SB65347.G23_T0_A_H05.beam18_SL.ms; /scratch/director2193/jrhee/deep_imaging/beam18A/scienceData.G23_T0_A_H06.SB65405.G23_T0_A_H06.beam18_SL.ms",
+                            "value": "/scratch/director2193/jrhee/deep_imaging/beam17A/scienceData.G23_T0_A_01.SB39697.G23_T0_A_01.beam17_SL.ms; /scratch/director2193/jrhee/deep_imaging/beam17A/scienceData.G23_T0_A_02.SB39722.G23_T0_A_02.beam17_SL.ms; /scratch/director2193/jrhee/deep_imaging/beam17A/scienceData.G23_T0_A_03.SB40196.G23_T0_A_03.beam17_SL.ms; /scratch/director2193/jrhee/deep_imaging/beam17B/scienceData.G23_T0_B_01.SB32214.G23_T0_B_01.beam17_SL.ms; /scratch/director2193/jrhee/deep_imaging/beam17B/scienceData.G23_T0_B_02.SB39995.G23_T0_B_02.beam17_SL.ms; /scratch/director2193/jrhee/deep_imaging/beam17B/scienceData.G23_T0_B_03.SB40018.G23_T0_B_03.beam17_SL.ms",
                             "comment": ""
                         },
                         "0f341133-61e2-41c3-9fac-45899012c44c": {
-                            "value": "[22h44m27.562, -29.59.45.92, J2000]; [22h44m27.562, -29.59.45.92, J2000]; [22h44m27.562, -29.59.45.92, J2000]; [22h44m27.562, -29.59.45.92, J2000]; [22h44m27.562, -29.59.45.92, J2000]; [22h44m27.562, -29.59.45.92, J2000]; [22h44m27.562, -29.59.45.92, J2000]; [22h44m27.562, -29.59.45.92, J2000]; [22h44m27.562, -29.59.45.92, J2000]; [22h44m27.562, -29.59.45.92, J2000]; [22h44m27.562, -29.59.45.92, J2000]; [22h44m27.562, -29.59.45.92, J2000]; [22h44m27.562, -29.59.45.92, J2000]; [22h44m27.562, -29.59.45.92, J2000]; [22h44m27.562, -29.59.45.92, J2000]; [22h44m27.562, -29.59.45.92, J2000]",
+                            "value": "[22h40m18.365, -29.57.40.14, J2000]; [22h40m18.365, -29.57.40.14, J2000]; [22h40m18.365, -29.57.40.14, J2000]; [22h42m21.852, -30.24.58.46, J2000]; [22h42m21.852, -30.24.58.46, J2000]; [22h42m21.852, -30.24.58.46, J2000]",
                             "comment": ""
                         },
                         "9c708839-2ddb-4c86-b371-732b4a3a1d26": {
-                            "value": "image.SB10991_18_A.dumpgrid; image.SB10994_18_A.dumpgrid; image.SB11000_18_A.dumpgrid; image.SB11003_18_A.dumpgrid; image.SB11006_18_A.dumpgrid; image.SB11010_18_A.dumpgrid; image.SB11026_18_A.dumpgrid; image.SB32214_18_A.dumpgrid; image.SB39995_18_A.dumpgrid; image.SB40196_18_A.dumpgrid; image.SB65177_18_A.dumpgrid; image.SB65210_18_A.dumpgrid; image.SB65268_18_A.dumpgrid; image.SB65297_18_A.dumpgrid; image.SB65347_18_A.dumpgrid; image.SB65405_18_A.dumpgrid",
+                            "value": "image.SB39697_17_A.dumpgrid; image.SB39722_17_A.dumpgrid; image.SB40196_17_A.dumpgrid; image.SB32214_17_B.dumpgrid; image.SB39995_17_B.dumpgrid; image.SB40018_17_B.dumpgrid",
                             "comment": ""
                         }
                     }
@@ -90,7 +90,7 @@
                 "2a0ebd09-171d-490d-a09c-09214943aec0": {
                     "fields": {
                         "2913ea8a-95ef-43e7-b070-5ae7d787b492": {
-                            "value": "16",
+                            "value": "6",
                             "comment": ""
                         }
                     }
@@ -196,8 +196,8 @@
             "id": "a0c80ca2-da3e-445f-a41a-100792789835",
             "name": "split_array",
             "description": "In-memory storage of intermediate data products",
-            "x": 625.0035362546763,
-            "y": 238.72445094574624,
+            "x": 634.0035362546763,
+            "y": 247.72445094574624,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "d075337",
@@ -346,8 +346,8 @@
             "id": "6062a7cd-eee3-43bd-9144-4cb0b10b0f21",
             "name": "Imager Log",
             "description": "A standard file on a filesystem mounted to the deployment machine",
-            "x": 779.0861349420879,
-            "y": 301.7799083580022,
+            "x": 788.0861349420879,
+            "y": 310.7799083580022,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "d075337",
@@ -511,8 +511,8 @@
             "id": "580578f6-0fe0-469c-928d-0935d3943656",
             "name": "Run Gridding",
             "description": "An application component able to run an arbitrary command within the Bash Shell",
-            "x": 712.3441632015616,
-            "y": 242.44925540657533,
+            "x": 724.8441632015616,
+            "y": 254.94925540657533,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "2e9e34f",
@@ -795,8 +795,8 @@
             "id": "5ca4efb6-ae31-4db1-8d8f-b0711846aa35",
             "name": "parset_out",
             "description": "A standard file on a filesystem mounted to the deployment machine",
-            "x": 704.1690466952855,
-            "y": 348.11771161156923,
+            "x": 713.1690466952855,
+            "y": 357.11771161156923,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "2e9e34f",
@@ -960,8 +960,8 @@
             "id": "45b12151-d5d3-42fd-bc57-0ec9eec05d5f",
             "name": "Merge Parset Gridding",
             "description": "An application that wraps a python function. The inputs of the application are treated as the arguments of the function. Conversely, the output of the function is treated as the output of the application. If the application has more than one output, the result of calling the function is treated as an iterable, with each individual object being written to its corresponding output.",
-            "x": 622.9504402742721,
-            "y": 342.72472409893805,
+            "x": 635.4504402742721,
+            "y": 355.22472409893805,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "2e9e34f",
@@ -1214,8 +1214,8 @@
             "id": "7d385934-46c0-458d-9ba1-4ab57f1e7c7c",
             "name": "lod",
             "description": "In-memory storage of intermediate data products",
-            "x": 408.29237307557486,
-            "y": 263.7364566212184,
+            "x": 417.29237307557486,
+            "y": 272.7364566212184,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "d075337",
@@ -1363,8 +1363,8 @@
             "id": "4f336ff8-12c4-48dd-8255-68a38063ceaa",
             "name": "dol_to_lod",
             "description": "An application that wraps a python function. The inputs of the application are treated as the arguments of the function. Conversely, the output of the function is treated as the output of the application. If the application has more than one output, the result of calling the function is treated as an iterable, with each individual object being written to its corresponding output.",
-            "x": 322.5017091192553,
-            "y": 242.93501371294073,
+            "x": 335.0017091192553,
+            "y": 255.43501371294073,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "d075337",
@@ -1601,8 +1601,8 @@
             "id": "2a0ebd09-171d-490d-a09c-09214943aec0",
             "name": "Scatter/GenericScatterApp",
             "description": "A default Scatter construct for the GenericScatterApp component.",
-            "x": 697.51828760818,
-            "y": 292.5869897527567,
+            "x": 708.26828760818,
+            "y": 304.9745875223422,
             "subject": null,
             "repositoryUrl": "",
             "commitHash": "",
@@ -1720,7 +1720,7 @@
             "outputAppFields": [],
             "inputApplicationName": "GenericScatterApp",
             "inputApplicationType": "PythonApp",
-            "inputApplicationId": "024bfa1f-a39f-4f26-9e01-3acf38f6a8dd",
+            "inputApplicationId": "8e3b67af-59ea-4346-805d-ed6a534080a1",
             "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
@@ -1736,8 +1736,8 @@
             "id": "79546eb1-4cd5-4c07-86fc-6cf1e7f06829",
             "name": "ParameterSet",
             "description": "A set of parameters, which can be set and modified in EAGLE and thus is part of the graph. Multiple serialisation formats are available.",
-            "x": 164.26923854893914,
-            "y": 281.0889813337851,
+            "x": 173.26923854893914,
+            "y": 290.0889813337851,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "2e9e34f",
@@ -1952,8 +1952,8 @@
             "id": "c7859e2e-5ffd-4353-aff9-55e4daaa5f96",
             "name": "Template Parset (Gridding)",
             "description": "The complete set of cImager parameters.",
-            "x": 459.0276288683768,
-            "y": 473.430520267649,
+            "x": 468.0276288683768,
+            "y": 482.430520267649,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "671d6e3",
@@ -2755,8 +2755,8 @@
             "id": "4c6ae476-1537-4049-99e5-ab3d5f29fa9b",
             "name": "BashShellApp",
             "description": "An application component able to run an arbitrary command within the Bash Shell",
-            "x": 937.6532284409285,
-            "y": 301.35409405128536,
+            "x": 950.1532284409285,
+            "y": 313.85409405128536,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "0de3637",
