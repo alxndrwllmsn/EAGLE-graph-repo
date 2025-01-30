@@ -103,7 +103,7 @@
                 "f8375f2e-04d1-4f8e-bb43-169932a88999": {
                     "fields": {
                         "97b7d4a5-ff46-4416-8724-a53df4e8d2a3": {
-                            "value": "/scratch/director2193/awilliamson1/grid_compression_testing/grids_replacement/SB10994_beam17B_2km_1e-3_ABS/visgrid.SB10994_17_B_1e-3_ABS.dumpgrid",
+                            "value": "/scratch/director2193/awilliamson1/grid_compression_testing/grids_replacement/SB10994_beam17B_2km_1e-4_ABS/visgrid.SB10994_17_B_1e-4_ABS.dumpgrid",
                             "comment": ""
                         },
                         "0f986675-4e09-4705-b1e5-974ff596e70c": {
