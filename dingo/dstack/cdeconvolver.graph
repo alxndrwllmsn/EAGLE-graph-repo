@@ -115,15 +115,15 @@
                             "comment": ""
                         },
                         "d8894b15-4368-4fb5-9bd3-bcdc51feb872": {
-                            "value": "[640,640]",
+                            "value": "[640,640];[640,640];[640,640];[640,640];[640,640];[640,640];[640,640];[640,640];[640,640]",
                             "comment": ""
                         },
                         "494fd032-0b81-4030-afa2-97010a72e4c2": {
-                            "value": "[9.6arcsec,9.6arcsec]",
+                            "value": "[9.6arcsec,9.6arcsec];[9.6arcsec,9.6arcsec];[9.6arcsec,9.6arcsec];[9.6arcsec,9.6arcsec];[9.6arcsec,9.6arcsec];[9.6arcsec,9.6arcsec];[9.6arcsec,9.6arcsec];[9.6arcsec,9.6arcsec];[9.6arcsec,9.6arcsec];",
                             "comment": ""
                         },
                         "4a1491f2-4304-4f1a-a6f4-93926181c80b": {
-                            "value": "1.6",
+                            "value": "1.6;1.6;1.6;1.6;1.6;1.6;1.6;1.6;1.6",
                             "comment": ""
                         }
                     }
