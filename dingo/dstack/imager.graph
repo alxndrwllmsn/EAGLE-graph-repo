@@ -1962,7 +1962,7 @@
             "fields": [
                 {
                     "name": "Cimager.imagetype",
-                    "value": "adios",
+                    "value": "casa",
                     "defaultValue": "",
                     "description": "Type of the image handler (determines the format of the images, both which are written to or read from the disk). Either \u201cfits\u201d or \u201ccasa\u201d can be requested.",
                     "readonly": false,
