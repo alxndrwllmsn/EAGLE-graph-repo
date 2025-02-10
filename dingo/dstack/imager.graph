@@ -1952,7 +1952,7 @@
             "id": "c7859e2e-5ffd-4353-aff9-55e4daaa5f96",
             "name": "Template Parset (Gridding)",
             "description": "The complete set of cImager parameters.",
-            "x": 486.0276288683768,
+            "x": 487.04130402222233,
             "y": 500.430520267649,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
@@ -2635,6 +2635,21 @@
                     "encoding": "pickle",
                     "id": "ae383d3a-f74d-4d03-8150-7d935bccef2a",
                     "parameterType": "ApplicationArgument",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "Cimager.singleoutputfile",
+                    "value": true,
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "encoding": "pickle",
+                    "id": "9dd3c39b-5096-4dd9-aa78-de556de359f5",
+                    "parameterType": "ComponentParameter",
                     "usage": "NoPort"
                 },
                 {
