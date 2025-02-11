@@ -103,7 +103,7 @@
                 "f8375f2e-04d1-4f8e-bb43-169932a88999": {
                     "fields": {
                         "97b7d4a5-ff46-4416-8724-a53df4e8d2a3": {
-                            "value": "/scratch/director2193/awilliamson1/ncycles_test/workspace/imager9-2025-02-10T02-43-56.489Z/visgrid.wr.1.SB10991_17_B.dumpgrid; /scratch/director2193/awilliamson1/ncycles_test/workspace/imager9-2025-02-10T02-43-56.489Z/visgrid.wr.1.SB10994_17_B.dumpgrid",
+                            "value": "/scratch/director2193/awilliamson1/ncycles_test/workspace/imager2-2025-02-11T00-52-33.057Z/visgrid.wr.1.SB10991_17_B.dumpgrid, /scratch/director2193/awilliamson1/ncycles_test/workspace/imager2-2025-02-11T00-52-33.057Z/visgrid.wr.1.SB10994_17_B.dumpgrid",
                             "comment": ""
                         },
                         "0f986675-4e09-4705-b1e5-974ff596e70c": {
@@ -363,7 +363,7 @@
                 },
                 {
                     "name": "Cdeconvolver.imagetype",
-                    "value": "fits",
+                    "value": "casa",
                     "defaultValue": "",
                     "description": "",
                     "readonly": false,
