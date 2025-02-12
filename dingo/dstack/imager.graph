@@ -2354,7 +2354,7 @@
                 },
                 {
                     "name": "Cimager.ncycles",
-                    "value": 3,
+                    "value": 1,
                     "defaultValue": "0",
                     "description": "Number of major cycles (and iterations over the dataset)",
                     "readonly": false,
