@@ -2241,7 +2241,7 @@
                 },
                 {
                     "name": "Cimager.write.modelImage",
-                    "value": false,
+                    "value": true,
                     "defaultValue": "false",
                     "description": "",
                     "readonly": false,
