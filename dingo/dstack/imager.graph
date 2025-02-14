@@ -66,7 +66,7 @@
                             "comment": ""
                         },
                         "c2ba360f-f7c6-4acf-b782-c03ee4cfbd3b": {
-                            "value": "collective",
+                            "value": "individual",
                             "comment": ""
                         }
                     }
@@ -1962,7 +1962,7 @@
             "fields": [
                 {
                     "name": "Cimager.imagetype",
-                    "value": "adios",
+                    "value": "casa",
                     "defaultValue": "",
                     "description": "Type of the image handler (determines the format of the images, both which are written to or read from the disk). Either \u201cfits\u201d or \u201ccasa\u201d can be requested.",
                     "readonly": false,
