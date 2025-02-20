@@ -98,7 +98,7 @@
                 "580578f6-0fe0-469c-928d-0935d3943656": {
                     "fields": {
                         "9ad073d5-0bbb-4c1e-aa96-95ff902839f6": {
-                            "value": "srun -n 101 --jobid=$SLURM_JOBID /software/projects/ja3/awilliamson1/code-dev/yanda_build/install/yandasoft/bin/imager -c %i0 -l /scratch/director2193/awilliamson1/ncycles_test/askap.log_cfg > %o0",
+                            "value": "srun -n 101 --jobid=$SLURM_JOBID /software/projects/ja3/awilliamson1/code-dev/yanda_build/install/yandasoft/bin/imager -c %i0 > %o0",
                             "comment": ""
                         }
                     }
