@@ -363,7 +363,7 @@
                 },
                 {
                     "name": "Cdeconvolver.imagetype",
-                    "value": "fits",
+                    "value": "adios",
                     "defaultValue": "",
                     "description": "",
                     "readonly": false,
@@ -573,7 +573,7 @@
                 },
                 {
                     "name": "Cdeconvolver.Clean.algorithm",
-                    "value": "hogbom",
+                    "value": "basisfunctionMFS",
                     "defaultValue": "",
                     "description": "",
                     "readonly": false,
