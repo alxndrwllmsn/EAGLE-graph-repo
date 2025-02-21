@@ -74,15 +74,15 @@
                 "79546eb1-4cd5-4c07-86fc-6cf1e7f06829": {
                     "fields": {
                         "d52ee27d-0444-4243-8600-a0cd853b0088": {
-                            "value": "/scratch/director2193/awilliamson1/ncycles_test/visibilities/scienceData_SB10991_G23_T0_B_06.beam17_SL.ms; /scratch/director2193/awilliamson1/ncycles_test/visibilities/scienceData_SB10994_G23_T0_B_05.beam17_SL.ms; /scratch/director2193/awilliamson1/ncycles_test/visibilities/scienceData_SB11000_G23_T0_B_03.beam17_SL.ms; /scratch/director2193/awilliamson1/ncycles_test/visibilities/scienceData_SB11003_G23_T0_B_02.beam17_SL.ms; /scratch/director2193/awilliamson1/ncycles_test/visibilities/scienceData_SB11006_G23_T0_B_01.beam17_SL.ms; /scratch/director2193/awilliamson1/ncycles_test/visibilities/scienceData_SB11010_G23_T0_B_04.beam17_SL.ms; /scratch/director2193/awilliamson1/ncycles_test/visibilities/scienceData_SB11026_G23_T0_B_07.beam17_SL.ms; /scratch/director2193/awilliamson1/ncycles_test/visibilities/scienceData.G23_T0_B_01.SB32214.G23_T0_B_01.beam17_SL.ms; /scratch/director2193/awilliamson1/ncycles_test/visibilities/scienceData.G23_T0_B_02.SB39995.G23_T0_B_02.beam17_SL.ms; /scratch/director2193/awilliamson1/ncycles_test/visibilities/scienceData.G23_T0_B_03.SB40018.G23_T0_B_03.beam17_SL.ms",
+                            "value": "/scratch/director2193/awilliamson1/ncycles_test/visibilities/scienceData_SB10991_G23_T0_B_06.beam17_SL.ms",
                             "comment": ""
                         },
                         "0f341133-61e2-41c3-9fac-45899012c44c": {
-                            "value": "[22h42m21.852, -30.24.58.46, J2000]; [22h42m21.852, -30.24.58.46, J2000]; [22h42m21.852, -30.24.58.46, J2000]; [22h42m21.852, -30.24.58.46, J2000]; [22h42m21.852, -30.24.58.46, J2000]; [22h42m21.852, -30.24.58.46, J2000]; [22h42m21.852, -30.24.58.46, J2000]; [22h42m21.852, -30.24.58.46, J2000]; [22h42m21.852, -30.24.58.46, J2000]; [22h42m21.852, -30.24.58.46, J2000]",
+                            "value": "[22h42m21.852, -30.24.58.46, J2000]",
                             "comment": ""
                         },
                         "9c708839-2ddb-4c86-b371-732b4a3a1d26": {
-                            "value": "image.SB10991_17_B.dumpgrid; image.SB10994_17_B.dumpgrid; image.SB11000_17_B.dumpgrid; image.SB11003_17_B.dumpgrid; image.SB11006_17_B.dumpgrid; image.SB11010_17_B.dumpgrid; image.SB11026_17_B.dumpgrid; image.SB32214_17_B.dumpgrid; image.SB39995_17_B.dumpgrid; image.SB40018_17_B.dumpgrid",
+                            "value": "image.SB10991_17_B.dumpgrid",
                             "comment": ""
                         }
                     }
@@ -90,7 +90,7 @@
                 "2a0ebd09-171d-490d-a09c-09214943aec0": {
                     "fields": {
                         "2913ea8a-95ef-43e7-b070-5ae7d787b492": {
-                            "value": "10",
+                            "value": "1",
                             "comment": ""
                         }
                     }
@@ -2136,7 +2136,7 @@
                 },
                 {
                     "name": "Cimager.solver.Clean.algorithm",
-                    "value": "BasisfunctionMFS",
+                    "value": "hogbom",
                     "defaultValue": "",
                     "description": "",
                     "readonly": false,
@@ -2196,7 +2196,7 @@
                 },
                 {
                     "name": "Cimager.solver.Clean.scales",
-                    "value": "[0,6,15,30]",
+                    "value": "",
                     "defaultValue": "",
                     "description": "",
                     "readonly": false,
@@ -2210,27 +2210,12 @@
                     "usage": "NoPort"
                 },
                 {
-                    "name": "Cimager.solver.Clean.decoupled",
-                    "value": true,
-                    "defaultValue": "",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "encoding": "pickle",
-                    "id": "986c5e2a-9b06-4ab7-88f5-999f73bbea0d",
-                    "parameterType": "ApplicationArgument",
-                    "usage": "NoPort"
-                },
-                {
                     "name": "Cimager.solver.Clean.psfwidth",
-                    "value": 768,
+                    "value": "",
                     "defaultValue": "",
                     "description": "",
                     "readonly": false,
-                    "type": "Integer",
+                    "type": "String",
                     "precious": false,
                     "options": [],
                     "positional": false,
