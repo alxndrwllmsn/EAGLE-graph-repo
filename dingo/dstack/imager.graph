@@ -2376,7 +2376,7 @@
                 },
                 {
                     "name": "Cimager.restore",
-                    "value": true,
+                    "value": false,
                     "defaultValue": "false",
                     "description": "If true, the image will be restored (by convolving with the given 2D gaussian). This is an additional step to normal imaging, which, by default, ends with just a model image. The restored image is written into a separate image file (with the.restoredsuffix). The convolution is done with the restore solver (see alsoSolvers) which by default reuses the same parameters used to setup the image solver. An additional preconditioning step with alternative parameters can be specified usingrestore.preconditioner.xxx, which results in a second set of restored files (with the.alt.restoredsuffix). The only additional parameter of the restore solver is the shape of the gaussian representing clean beam (or flag to determine the shape). It is given by therestore.beamparameter, which must be present ifrestoreis set to True.",
                     "readonly": false,
