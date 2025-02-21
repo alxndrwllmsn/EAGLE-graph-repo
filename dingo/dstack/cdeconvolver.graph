@@ -139,11 +139,11 @@
                 "f95b9391-dd31-4949-ae9b-916ead9a4f24": {
                     "fields": {
                         "71eb10d0-eabe-4067-aa36-fa33263c7c40": {
-                            "value": "50",
+                            "value": "25",
                             "comment": ""
                         },
                         "ce24c1f8-92e0-4939-82bd-c3d619cde152": {
-                            "value": "2",
+                            "value": "4",
                             "comment": ""
                         },
                         "1427a254-95bd-4f34-a48a-c0baaac47ffa": {
@@ -175,7 +175,7 @@
                 "1230131a-f419-49d6-96af-da3a422a026d": {
                     "fields": {
                         "1bdcf8e5-93e9-4557-b5cb-a116339f307a": {
-                            "value": "srun -n 2 --jobid=$SLURM_JOBID /software/projects/ja3/awilliamson1/code-dev/yanda_build/install/yandasoft/bin/cdeconvolver-mpi -c %i0 -l /scratch/director2193/awilliamson1/ncycles_test/askap.log_cfg > %o0",
+                            "value": "srun -n 4 --jobid=$SLURM_JOBID /software/projects/ja3/awilliamson1/code-dev/yanda_build/install/yandasoft/bin/cdeconvolver-mpi -c %i0 -l /scratch/director2193/awilliamson1/ncycles_test/askap.log_cfg > %o0",
                             "comment": ""
                         }
                     }
