@@ -2211,7 +2211,7 @@
                 },
                 {
                     "name": "Cimager.solver.Clean.solutiontype",
-                    "value": "MAXBASE",
+                    "value": "",
                     "defaultValue": "",
                     "description": "",
                     "readonly": false,
@@ -2226,7 +2226,7 @@
                 },
                 {
                     "name": "Cimager.solver.Clean.tolerance",
-                    "value": 0,
+                    "value": null,
                     "defaultValue": "",
                     "description": "",
                     "readonly": false,
@@ -2241,7 +2241,7 @@
                 },
                 {
                     "name": "Cimager.solver.Clean.weightcutoff",
-                    "value": "truncate",
+                    "value": "",
                     "defaultValue": "",
                     "description": "",
                     "readonly": false,
@@ -2301,7 +2301,7 @@
                 },
                 {
                     "name": "Cimager.solver.Clean.detectdivergence",
-                    "value": true,
+                    "value": false,
                     "defaultValue": "",
                     "description": "",
                     "readonly": false,
