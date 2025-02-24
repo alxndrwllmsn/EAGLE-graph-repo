@@ -34,7 +34,7 @@
                             "comment": ""
                         },
                         "3468773d-baad-4d7b-a322-3dedf32a0183": {
-                            "value": "100",
+                            "value": "1",
                             "comment": ""
                         },
                         "d533b90f-4a0b-4d12-98d5-5a4e83b71ee1": {
@@ -1962,7 +1962,7 @@
             "fields": [
                 {
                     "name": "Cimager.imagetype",
-                    "value": "adios",
+                    "value": "fits",
                     "defaultValue": "",
                     "description": "Type of the image handler (determines the format of the images, both which are written to or read from the disk). Either \u201cfits\u201d or \u201ccasa\u201d can be requested.",
                     "readonly": false,
