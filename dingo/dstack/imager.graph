@@ -2458,7 +2458,7 @@
                     "usage": "NoPort"
                 },
                 {
-                    "name": "Cimager.gridder.MPIWProject.wmax",
+                    "name": "Cimager.gridder.WProject.wmax",
                     "value": 35000,
                     "defaultValue": "largest w value relative to the tangent of the first image (or the largest residual w when using snapshots)",
                     "description": "Largest allowed absolute value of the w term in wavelengths.  An exception will be thrown if the dataset contains w-term exceeding this value (W scaling error: recommend allowing larger range of w).",
@@ -2473,7 +2473,7 @@
                     "usage": "NoPort"
                 },
                 {
-                    "name": "Cimager.gridder.MPIWProject.nwplanes",
+                    "name": "Cimager.gridder.WProject.nwplanes",
                     "value": 557,
                     "defaultValue": "0",
                     "description": "Number of w-planes. Number of w planes must be an odd positive number. For the WProject gridder this scales up the number of convolution functions calculated. For the WStack gridder this is the number of grids maintained. You may (and will) run out of memory for a large number of w planes, especially for the stacking algorithm",
@@ -2488,7 +2488,7 @@
                     "usage": "NoPort"
                 },
                 {
-                    "name": "Cimager.gridder.MPIWProject.oversample",
+                    "name": "Cimager.gridder.WProject.oversample",
                     "value": 8,
                     "defaultValue": "0",
                     "description": "Oversampling factor. Convolution functions will be computed for this number of pixels per uv-cell.",
@@ -2503,7 +2503,7 @@
                     "usage": "NoPort"
                 },
                 {
-                    "name": "Cimager.gridder.MPIWProject.maxsupport",
+                    "name": "Cimager.gridder.WProject.maxsupport",
                     "value": 2048,
                     "defaultValue": "0",
                     "description": "The largest allowed support size in pixels. The grid used to compute the convolution function (before the support is searched and the appropriate inner part of the grid is extracted) is initialised to have the size equal to the smallest of maxsupport and the image size. WProject uses maxsupport x maxsupport grid at the moment regardless of the image size.",
@@ -2518,7 +2518,7 @@
                     "usage": "NoPort"
                 },
                 {
-                    "name": "Cimager.gridder.MPIWProject.variablesupport",
+                    "name": "Cimager.gridder.WProject.variablesupport",
                     "value": true,
                     "defaultValue": "false",
                     "description": "If true, the support will be searched separately for each convolution function. This can speed things up considerably, unless costs to search the support dominates. It was also found that when variable support is used, the algorithm is more sensitive to cutoff value. Too high cutoff value has a significant impact on the image quality if the variable support is used.",
@@ -2533,7 +2533,7 @@
                     "usage": "NoPort"
                 },
                 {
-                    "name": "Cimager.gridder.MPIWProject.offsetsupport",
+                    "name": "Cimager.gridder.WProject.offsetsupport",
                     "value": true,
                     "defaultValue": "false",
                     "description": "If true, an offset of the convolution function will be treated separately (the support will be defined by size and offset, which can be non-zero in general). This option reduces the memory footprint and speeds up greeting. It can only be used in conjunction withvariablesupport=true",
