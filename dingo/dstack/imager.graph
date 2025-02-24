@@ -2195,36 +2195,6 @@
                     "usage": "NoPort"
                 },
                 {
-                    "name": "Cimager.solver.Clean.scales",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "encoding": "pickle",
-                    "id": "f0ba47f0-ffe0-4228-97ef-ec3f2f9c668b",
-                    "parameterType": "ApplicationArgument",
-                    "usage": "NoPort"
-                },
-                {
-                    "name": "Cimager.solver.Clean.psfwidth",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "encoding": "pickle",
-                    "id": "c15a1ba5-c96e-43fa-85f3-6884b4301616",
-                    "parameterType": "ApplicationArgument",
-                    "usage": "NoPort"
-                },
-                {
                     "name": "Cimager.solver.Clean.detectdivergence",
                     "value": false,
                     "defaultValue": "",
