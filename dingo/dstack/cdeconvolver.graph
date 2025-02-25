@@ -103,7 +103,7 @@
                 "f8375f2e-04d1-4f8e-bb43-169932a88999": {
                     "fields": {
                         "97b7d4a5-ff46-4416-8724-a53df4e8d2a3": {
-                            "value": "/scratch/director2193/awilliamson1/ncycles_test/workspace/imager38-2025-02-25T02-43-51.691Z/visgrid.SB10991_17_A.dumpgrid",
+                            "value": "/scratch/director2193/awilliamson1/ncycles_test/workspace/imager40-2025-02-25T05-12-12.603Z/visgrid.SB10991_17_A.dumpgrid",
                             "comment": ""
                         },
                         "0f986675-4e09-4705-b1e5-974ff596e70c": {
@@ -111,7 +111,7 @@
                             "comment": ""
                         },
                         "620310db-d28b-40b9-85d3-b4982c9a9d82": {
-                            "value": "[22h42m21.852, -30.24.58.46, J2000]",
+                            "value": "[22h40m18.365, -29.57.40.14, J2000]",
                             "comment": ""
                         },
                         "d8894b15-4368-4fb5-9bd3-bcdc51feb872": {
