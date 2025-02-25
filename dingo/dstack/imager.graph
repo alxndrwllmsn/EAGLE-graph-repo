@@ -2136,7 +2136,7 @@
                 },
                 {
                     "name": "Cimager.solver.Clean.algorithm",
-                    "value": "Hogbom",
+                    "value": "BasisfunctionMFS",
                     "defaultValue": "",
                     "description": "",
                     "readonly": false,
