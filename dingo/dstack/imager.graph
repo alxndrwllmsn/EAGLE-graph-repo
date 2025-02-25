@@ -2195,21 +2195,6 @@
                     "usage": "NoPort"
                 },
                 {
-                    "name": "Cimager.solver.Clean.detectdivergence",
-                    "value": false,
-                    "defaultValue": "",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "encoding": "pickle",
-                    "id": "811fbb80-8037-4fc9-9d07-6726869eadc9",
-                    "parameterType": "ApplicationArgument",
-                    "usage": "NoPort"
-                },
-                {
                     "name": "Cimager.write.psfimage",
                     "value": false,
                     "defaultValue": "false",
@@ -2331,7 +2316,7 @@
                 },
                 {
                     "name": "Cimager.gridder",
-                    "value": "MPIWProject",
+                    "value": "WProject",
                     "defaultValue": "",
                     "description": "Name of the gridder, further parameters are given bygridder.something. SeeGriddersfor details.",
                     "readonly": false,
