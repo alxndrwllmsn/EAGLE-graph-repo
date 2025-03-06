@@ -196,7 +196,7 @@
             "id": "f95b9391-dd31-4949-ae9b-916ead9a4f24",
             "name": "Template Parset (Imaging)",
             "description": "A set of parameters, which can be set and modified in EAGLE and thus is part of the graph. Multiple serialisation formats are available.",
-            "x": 609.8367063474974,
+            "x": 611.1273935671619,
             "y": 536.8322937894909,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
@@ -363,7 +363,7 @@
                 },
                 {
                     "name": "Cdeconvolver.imagetype",
-                    "value": "adios",
+                    "value": "fits",
                     "defaultValue": "",
                     "description": "",
                     "readonly": false,
