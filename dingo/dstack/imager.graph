@@ -30,11 +30,11 @@
                 "c7859e2e-5ffd-4353-aff9-55e4daaa5f96": {
                     "fields": {
                         "c04bbfb3-836d-445b-b769-36d59c82c5dc": {
-                            "value": "4",
+                            "value": "8",
                             "comment": ""
                         },
                         "3468773d-baad-4d7b-a322-3dedf32a0183": {
-                            "value": "1944",
+                            "value": "972",
                             "comment": ""
                         },
                         "d533b90f-4a0b-4d12-98d5-5a4e83b71ee1": {
@@ -98,7 +98,7 @@
                 "580578f6-0fe0-469c-928d-0935d3943656": {
                     "fields": {
                         "9ad073d5-0bbb-4c1e-aa96-95ff902839f6": {
-                            "value": "srun -n 1945 --jobid=$SLURM_JOBID /software/projects/ja3/awilliamson1/code-dev/yanda_build/install/yandasoft/bin/imager -c %i0 > %o0",
+                            "value": "srun -n 972 --jobid=$SLURM_JOBID /software/projects/ja3/awilliamson1/code-dev/yanda_build/install/yandasoft/bin/imager -c %i0 > %o0",
                             "comment": ""
                         }
                     }
