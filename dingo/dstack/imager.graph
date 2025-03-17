@@ -74,15 +74,15 @@
                 "79546eb1-4cd5-4c07-86fc-6cf1e7f06829": {
                     "fields": {
                         "d52ee27d-0444-4243-8600-a0cd853b0088": {
-                            "value": "/scratch/director2193/jrhee/deep_imaging/beam17A/scienceData_SB11000_G23_T0_A_03.beam17_SL.ms; /scratch/director2193/jrhee/deep_imaging/beam17A/scienceData_SB11003_G23_T0_A_02.beam17_SL.ms",
+                            "value": "/scratch/director2193/jrhee/deep_imaging/beam17B/scienceData_SB10991_G23_T0_B_06.beam17_SL.ms; /scratch/director2193/jrhee/deep_imaging/beam17B/scienceData_SB10994_G23_T0_B_05.beam17_SL.ms",
                             "comment": ""
                         },
                         "0f341133-61e2-41c3-9fac-45899012c44c": {
-                            "value": "[22h40m18.365, -29.57.40.14, J2000]; [22h40m18.365, -29.57.40.14, J2000]",
+                            "value": "[22h42m21.852, -30.24.58.46, J2000]; [22h42m21.852, -30.24.58.46, J2000]",
                             "comment": ""
                         },
                         "9c708839-2ddb-4c86-b371-732b4a3a1d26": {
-                            "value": "image.SB11000_16_B.dumpgrid; image.SB11003_16_B.dumpgrid",
+                            "value": "image.SB10991_17_B.dumpgrid; image.SB10994_17_B.dumpgrid",
                             "comment": ""
                         }
                     }
