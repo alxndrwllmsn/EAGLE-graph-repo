@@ -74,15 +74,15 @@
                 "79546eb1-4cd5-4c07-86fc-6cf1e7f06829": {
                     "fields": {
                         "d52ee27d-0444-4243-8600-a0cd853b0088": {
-                            "value": "/scratch/director2193/jrhee/deep_imaging/beam18A/scienceData_SB11003_G23_T0_A_02.beam18_SL.ms; /scratch/director2193/jrhee/deep_imaging/beam18A/scienceData_SB11006_G23_T0_A_01.beam18_SL.ms",
+                            "value": "/scratch/director2193/awilliamson1/deep_imaging/visibilities/scienceData.G23_T0_B_01.SB32214.G23_T0_B_01.beam16_SL.ms; /scratch/director2193/awilliamson1/deep_imaging/visibilities/scienceData.G23_T0_B_02.SB39995.G23_T0_B_02.beam16_SL.ms",
                             "comment": ""
                         },
                         "0f341133-61e2-41c3-9fac-45899012c44c": {
-                            "value": "[22h44m27.562, -29.59.45.92, J2000]; [22h44m27.562, -29.59.45.92, J2000]",
+                            "value": "[22h38m11.556, -30.22.36.30, J2000]; [22h38m11.556, -30.22.36.30, J2000]",
                             "comment": ""
                         },
                         "9c708839-2ddb-4c86-b371-732b4a3a1d26": {
-                            "value": "image.SB11003_18_A.dumpgrid; image.SB11006_18_A.dumpgrid",
+                            "value": "image.SB32214_16_B.dumpgrid; image.SB39995_16_B.dumpgrid",
                             "comment": ""
                         }
                     }
