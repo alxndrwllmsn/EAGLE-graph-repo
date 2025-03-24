@@ -961,7 +961,7 @@
             "name": "Merge Parset Gridding",
             "description": "An application that wraps a python function. The inputs of the application are treated as the arguments of the function. Conversely, the output of the function is treated as the output of the application. If the application has more than one output, the result of calling the function is treated as an iterable, with each individual object being written to its corresponding output.",
             "x": 735.4504402742721,
-            "y": 455.22472409893805,
+            "y": 453.8058528322452,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "2e9e34f",
@@ -986,7 +986,7 @@
                 },
                 {
                     "name": "func_code",
-                    "value": "def merge_parset_gridding(ms_name, parset_in, parset_out):\n    import pickle\n    outdata = {}\n    for key, ms in ms_name[0].items():\n        print(ms)\n        outdata[key] = ms['value']\n    for key, p in parset_in.items():\n        print(p)\n        outdata[key] = p['value']\n    print(outdata)\n    outtxt = \"\\n\".join(f\"{x}={y}\" for x,y in outdata.items())\n    data = pickle.dumps(outtxt)\n    parset_out.len = len(data)\n    parset_out.write(data)\n     ",
+                    "value": "def merge_parset_gridding(ms_name, parset_in, parset_out):\n    import pickle\n    outdata = {}\n    for key, ms in ms_name[0].items():\n        print(ms)\n        outdata[key] = ms['value']\n    for key, p in parset_in.items():\n        print(p)\n        outdata[key] = p['value']\n    print(outdata)\n    outtxt = \"\\n\".join(f\"{x}={y}\" for x,y in outdata.items())\n    print(parset_out)\n    data = pickle.dumps(outtxt)\n    parset_out.len = len(data)\n    parset_out.write(data)\n     ",
                     "defaultValue": "",
                     "description": "Python function code, e.g. 'def func_name(args): return args'. Note that func_name above needs to match the defined name here.",
                     "readonly": false,
