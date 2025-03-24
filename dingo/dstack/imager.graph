@@ -1128,7 +1128,7 @@
                 },
                 {
                     "name": "output_parser",
-                    "value": "pickle",
+                    "value": "raw",
                     "defaultValue": "pickle",
                     "description": "Output port parsing technique Mapping from argname to default value. Should match only the last part of the argnames list. Values are interpreted as Python code literals and that means string values need to be quoted.",
                     "readonly": false,
@@ -1184,11 +1184,11 @@
                     "defaultValue": "",
                     "description": "",
                     "readonly": false,
-                    "type": "Object.File",
+                    "type": "String",
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "encoding": "pickle",
+                    "encoding": "utf-8",
                     "id": "34002b65-5f44-4925-86d6-bf30f23565f4",
                     "parameterType": "ApplicationArgument",
                     "usage": "OutputPort"
