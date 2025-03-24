@@ -3315,7 +3315,7 @@
                     "encoding": "pickle",
                     "id": "21d59982-7167-4c57-93ae-29442094d04e",
                     "parameterType": "ApplicationArgument",
-                    "usage": "InputOutput"
+                    "usage": "InputPort"
                 },
                 {
                     "name": "input_parser",
@@ -3390,6 +3390,21 @@
                     "id": "7f6acca7-418a-48ed-9610-fdeaa9a6a56c",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
+                },
+                {
+                    "name": "dummy copy",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Dummy port",
+                    "readonly": false,
+                    "type": "Object",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "encoding": "utf-8",
+                    "id": "de5e9eaa-8fd1-4212-b4cf-52d7ee6f48ab",
+                    "parameterType": "ApplicationArgument",
+                    "usage": "OutputPort"
                 }
             ],
             "inputAppFields": [],
@@ -3645,7 +3660,7 @@
         },
         {
             "from": "8dbe03a0-f956-4c41-b4f3-5cb9dbeb0567",
-            "fromPort": "21d59982-7167-4c57-93ae-29442094d04e",
+            "fromPort": "de5e9eaa-8fd1-4212-b4cf-52d7ee6f48ab",
             "to": "5ca4efb6-ae31-4db1-8d8f-b0711846aa35",
             "toPort": "fb2ef129-274d-4357-ad57-5ef228ae800e",
             "loop_aware": "0",
