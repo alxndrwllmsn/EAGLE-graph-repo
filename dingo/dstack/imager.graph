@@ -986,7 +986,7 @@
                 },
                 {
                     "name": "func_code",
-                    "value": "def merge_parset_gridding(ms_name, parset_in, parset_out):\n    import pickle\n    outdata = {}\n    for key, ms in ms_name[0].items():\n        print(ms)\n        outdata[key] = ms['value']\n    for key, p in parset_in.items():\n        print(p)\n        outdata[key] = p['value']\n    print(outdata)\n    outtxt = \"\\n\".join(f\"{x}={y}\" for x,y in outdata.items())\n    print(parset_out)\n    data = pickle.dumps(outtxt)\n    parset_out.len = len(data)\n    parset_out.write(data)\n     ",
+                    "value": "def merge_parset_gridding(ms_name, parset_in, parset_out):\n    import pickle\n    outdata = {}\n    for key, ms in ms_name[0].items():\n        print(ms)\n        outdata[key] = ms['value']\n    for key, p in parset_in.items():\n        print(p)\n        outdata[key] = p['value']\n    print(outdata)\n    outtxt = \"\\n\".join(f\"{x}={y}\" for x,y in outdata.items())\n    print(f\"{parset_out=}\")\n    data = pickle.dumps(outtxt)\n    parset_out.len = len(data)\n    parset_out.write(data)\n     ",
                     "defaultValue": "",
                     "description": "Python function code, e.g. 'def func_name(args): return args'. Note that func_name above needs to match the defined name here.",
                     "readonly": false,
