@@ -43,7 +43,7 @@
             "fields": [
                 {
                     "name": "pydata",
-                    "value": "None",
+                    "value": "[]",
                     "defaultValue": "None",
                     "description": "Data to be loaded into memory",
                     "readonly": false,
@@ -762,7 +762,7 @@
                 },
                 {
                     "name": "func_code",
-                    "value": "def read_psf(base_filename : str):\n    import adios2\n    import numpy as np\n    base_filename = base_filename.split(',')\n    fname_r = f\"{base_filename[0]}/psfgrid.{base_filename[1]}.real/table.f0.bp\"\n    fname_i = f\"{base_filename[0]}/psfgrid.{base_filename[1]}.imag/table.f0.bp\"\n    with adios2.FileReader(fname_r) as f:\n        mapvars = f.available_variables()[\"map\"]\n        shape = [int(x) for x in mapvars[\"Shape\"].split(',')[1:]]\n        data = f.read(\"map\", start=(0,shape[0]//2,0,0,0), count=(1,1,1,shape[2],shape[3])).reshape(shape[2],shape[3]).astype(np.complex64)\n    with adios2.FileReader(fname_i) as f:\n        mapvars = f.available_variables()[\"map\"]\n        shape = [int(x) for x in mapvars[\"Shape\"].split(',')[1:]]\n        data.imag = f.read(\"map\", start=(0,shape[0]//2,0,0,0), count=(1,1,1,shape[2],shape[3])).reshape(shape[2],shape[3])\n\n    psf = np.fft.fftshift(np.fft.fft2(data))\n    psf /= psf.max()\n    return psf",
+                    "value": "def read_psf(base_filename : str):\n    import adios2\n    import numpy as np\n    base_filename = base_filename.split(',')\n    fname_r = f\"{base_filename[0]}/psfgrid.{base_filename[1]}.dumpgrid.real/table.f0.bp\"\n    fname_i = f\"{base_filename[0]}/psfgrid.{base_filename[1]}.dumpgrid.imag/table.f0.bp\"\n    with adios2.FileReader(fname_r) as f:\n        mapvars = f.available_variables()[\"map\"]\n        shape = [int(x) for x in mapvars[\"Shape\"].split(',')[1:]]\n        data = f.read(\"map\", start=(0,shape[0]//2,0,0,0), count=(1,1,1,shape[2],shape[3])).reshape(shape[2],shape[3]).astype(np.complex64)\n    with adios2.FileReader(fname_i) as f:\n        mapvars = f.available_variables()[\"map\"]\n        shape = [int(x) for x in mapvars[\"Shape\"].split(',')[1:]]\n        data.imag = f.read(\"map\", start=(0,shape[0]//2,0,0,0), count=(1,1,1,shape[2],shape[3])).reshape(shape[2],shape[3])\n\n    psf = np.fft.fftshift(np.fft.fft2(data))\n    psf /= psf.max()\n    return psf",
                     "defaultValue": "",
                     "description": "Python function code, e.g. 'def func_name(args): return args'. Note that func_name above needs to match the defined name here.",
                     "readonly": false,
